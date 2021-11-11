@@ -1,5 +1,7 @@
 # Angular Bulma Monorepo
 
+[![Angular-Bulma Testing](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml)
+
 Monorepo for the @angular-bulma projects.
 
 ## Demo
