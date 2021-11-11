@@ -1,0 +1,31 @@
+{
+  "name": "@angular-bulma/hero",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.0.0",
+    "@angular/core": "^13.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "bulma",
+    "styles",
+    "sass"
+  ],
+  "homepage": "http://quinnjr.github.io/angular-bulma",
+  "bugs": {
+    "url": "https://github.com/quinnjr/angular-bulma/issues"
+  },
+  "author": {
+    "name": "Joseph R. Quinn",
+    "email": "423821+quinnjr@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quinnjr/angular-bulma"
+  },
+  "license": "ISC"
+}

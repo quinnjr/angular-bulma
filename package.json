@@ -1,0 +1,79 @@
+{
+  "name": "angular-bulma",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [
+    "angular",
+    "ngx",
+    "bulma",
+    "styles",
+    "sass"
+  ],
+  "homepage": "http://quinnjr.github.io/angular-bulma",
+  "bugs": {
+    "url": "https://github.com/quinnjr/angular-bulma/issues"
+  },
+  "author": {
+    "name": "Joseph R. Quinn",
+    "email": "423821+quinnjr@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quinnjr/angular-bulma"
+  },
+  "license": "ISC",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "sync-packages": "pnpm run ts-node scripts/sync-package-files.ts",
+    "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
+  },
+  "devDependencies": {
+    "@angular-builders/jest": "^13.0.0",
+    "@angular-devkit/build-angular": "~13.0.2",
+    "@angular-devkit/core": "^13.0.2",
+    "@angular-eslint/schematics": "^13.0.0-alpha.0",
+    "@angular-eslint/template-parser": "^12.0.0",
+    "@angular/animations": "^13.0.1",
+    "@angular/cli": "^13.0.2",
+    "@angular/common": "^13.0.1",
+    "@angular/compiler": "^13.0.1",
+    "@angular/compiler-cli": "^13.0.1",
+    "@angular/core": "^13.0.1",
+    "@angular/platform-browser": "^13.0.1",
+    "@angular/platform-browser-dynamic": "^13.0.1",
+    "@angular/router": "^13.0.1",
+    "@types/glob": "^7.2.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^12.20.37",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "bulma": "^0.9.3",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.2.4",
+    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-rxjs": "^4.0.2",
+    "glob": "^7.2.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "jest-preset-angular": "^11.0.0-rc.3\n",
+    "ng-packagr": "^13.0.0",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0",
+    "rxjs": "~7.4.0",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "~4.4.4",
+    "zone.js": "~0.11.4"
+  },
+  "optionalDependencies": {
+    "cypress": "^9.0.0"
+  }
+}
