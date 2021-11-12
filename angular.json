@@ -93,18 +93,8 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/demo/src/test.ts",
-            "polyfills": "projects/demo/src/polyfills.ts",
-            "tsConfig": "projects/demo/tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/demo/src/favicon.ico",
-              "projects/demo/src/assets"
-            ],
-            "styles": [
-              "projects/demo/src/styles.scss"
-            ],
-            "scripts": []
+            "configPath": "projects/demo/jest.config.js",
+            "tsConfig": "projects/demo/tsconfig.spec.json"
           }
         },
         "lint": {
@@ -142,7 +132,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/footer/src/test.ts",
+            "configPath": "projects/footer/jest.config.js",
             "tsConfig": "projects/footer/tsconfig.spec.json"
           }
         },
@@ -181,7 +171,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/breadcrumb/src/test.ts",
+            "configPath": "projects/breadcrumb/jest.config.js",
             "tsConfig": "projects/breadcrumb/tsconfig.spec.json"
           }
         },
@@ -220,7 +210,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/button/src/test.ts",
+            "configPath": "projects/button/jest.config.js",
             "tsConfig": "projects/button/tsconfig.spec.json"
           }
         },
@@ -259,7 +249,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/card/src/test.ts",
+            "configPath": "projects/card/jest.config.js",
             "tsConfig": "projects/card/tsconfig.spec.json"
           }
         },
@@ -298,7 +288,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/directives/src/test.ts",
+            "configPath": "projects/directives/jest.config.js",
             "tsConfig": "projects/directives/tsconfig.spec.json"
           }
         },
@@ -337,7 +327,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/dropdown/src/test.ts",
+            "configPath": "projects/dropdown/jest.config.js",
             "tsConfig": "projects/dropdown/tsconfig.spec.json"
           }
         },
@@ -376,7 +366,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/hero/src/test.ts",
+            "configPath": "projects/hero/jest.config.js",
             "tsConfig": "projects/hero/tsconfig.spec.json"
           }
         },
@@ -415,7 +405,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/icon/src/test.ts",
+            "configPath": "projects/icon/jest.config.js",
             "tsConfig": "projects/icon/tsconfig.spec.json"
           }
         },
@@ -454,7 +444,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/level/src/test.ts",
+            "configPath": "projects/level/jest.config.js",
             "tsConfig": "projects/level/tsconfig.spec.json"
           }
         },
@@ -493,7 +483,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/media-object/src/test.ts",
+            "configPath": "projects/media-object/jest.config.js",
             "tsConfig": "projects/media-object/tsconfig.spec.json"
           }
         },
@@ -532,7 +522,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/menu/src/test.ts",
+            "configPath": "projects/menu/jest.config.js",
             "tsConfig": "projects/menu/tsconfig.spec.json"
           }
         },
@@ -571,7 +561,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/message/src/test.ts",
+            "configPath": "projects/message/jest.config.js",
             "tsConfig": "projects/message/tsconfig.spec.json"
           }
         },
@@ -610,7 +600,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/modal/src/test.ts",
+            "configPath": "projects/modal/jest.config.js",
             "tsConfig": "projects/modal/tsconfig.spec.json"
           }
         },
@@ -649,7 +639,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/navbar/src/test.ts",
+            "configPath": "projects/navbar/jest.config.js",
             "tsConfig": "projects/navbar/tsconfig.spec.json"
           }
         },
@@ -688,7 +678,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/pagination/src/test.ts",
+            "configPath": "projects/pagination/jest.config.js",
             "tsConfig": "projects/pagination/tsconfig.spec.json"
           }
         },
@@ -727,7 +717,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/panel/src/test.ts",
+            "configPath": "projects/panel/jest.config.js",
             "tsConfig": "projects/panel/tsconfig.spec.json"
           }
         },
@@ -766,7 +756,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/tabs/src/test.ts",
+            "configPath": "projects/tabs/jest.config.js",
             "tsConfig": "projects/tabs/tsconfig.spec.json"
           }
         },
@@ -776,6 +766,45 @@
             "lintFilePatterns": [
               "projects/tabs/**/*.ts",
               "projects/tabs/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "carousel": {
+      "projectType": "library",
+      "root": "projects/carousel",
+      "sourceRoot": "projects/carousel/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/carousel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/carousel/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/carousel/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "configPath": "projects/carousel/jest.config.js",
+            "tsConfig": "projects/carousel/tsconfig.spec.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/carousel/**/*.ts",
+              "projects/carousel/**/*.html"
             ]
           }
         }

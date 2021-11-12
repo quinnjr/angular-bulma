@@ -24,6 +24,10 @@
         "dist/card/card",
         "dist/card"
       ],
+      "carousel": [
+        "dist/carousel/carousel",
+        "dist/carousel"
+      ],
       "directives": [
         "dist/directives/directives",
         "dist/directives"

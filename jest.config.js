@@ -1,10 +1,26 @@
-{
+const path = require('path');
+
+module.exports = {
   "preset": "jest-preset-angular",
+  "moduleFileExtensions": [
+    "ts",
+    "html",
+    "js",
+    "json",
+    "mjs"
+  ],
   "moduleNameMapper": {
     "@core/(.*)": "<rootDir>/src/app/core/$1"
   },
-  "rootDir": ".",
-  "testMatch": ["<rootDir>/projects/**/+(*.)+(spec).+(ts)"],
+  "rootDir": path.resolve(__dirname),
+  "testMatch": [
+    "<rootDir>/projects/**/src/**/+(*.)+(spec).+(ts)"
+  ],
+  "globals": {
+    "ts-jest": {
+      "allowSyntheticDefaultImports": true
+    }
+  },
   "transform": {
     "^.+\\.(ts|js|mjs|html)$": "jest-preset-angular"
   },
@@ -12,7 +28,7 @@
   "setupFilesAfterEnv": ["<rootDir>/setup-jest.ts"],
   "transformIgnorePatterns": [
     "<rootDir>/node_modules/(?!${esModules})",
-    "<rootDir>/node_modules/(?!@angular)"
+    "<rootDir>/node_modules/(?!.*\\.mjs$)"
   ],
   "testEnvironment": "jsdom",
   "collectCoverage": true,
