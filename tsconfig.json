@@ -97,6 +97,10 @@
     "lib": [
       "es2020",
       "dom"
+    ],
+    "types": [
+      "jest",
+      "cypress"
     ]
   },
   "angularCompilerOptions": {

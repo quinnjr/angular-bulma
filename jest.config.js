@@ -1,5 +1,7 @@
 const path = require('path');
 
+require('jest-preset-angular/ngcc-jest-processor');
+
 module.exports = {
   "preset": "jest-preset-angular",
   "moduleFileExtensions": [
@@ -18,17 +20,20 @@ module.exports = {
   ],
   "globals": {
     "ts-jest": {
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "stringifyContentPathRegex": '\\.html$',
+      "useESM": true
     }
   },
   "transform": {
-    "^.+\\.(ts|js|mjs|html)$": "jest-preset-angular"
+    "^.+\\.(ts|html)$": "jest-preset-angular",
+    "^.+\\.(js|mjs)$": "babel-jest"
   },
   "resolver": "jest-preset-angular/build/resolvers/ng-jest-resolver.js",
   "setupFilesAfterEnv": ["<rootDir>/setup-jest.ts"],
   "transformIgnorePatterns": [
     "<rootDir>/node_modules/(?!${esModules})",
-    "<rootDir>/node_modules/(?!.*\\.mjs$)"
+    "<rootDir>/node_modules/(?!@angular)"
   ],
   "testEnvironment": "jsdom",
   "collectCoverage": true,
