@@ -93,7 +93,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/demo/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -120,10 +120,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/footer/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/footer/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -131,7 +131,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/footer/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -158,10 +158,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/breadcrumb/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/breadcrumb/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -169,7 +169,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/breadcrumb/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -196,10 +196,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/button/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/button/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -207,7 +207,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/button/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -234,10 +234,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/card/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/card/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -245,7 +245,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/card/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -272,10 +272,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/directives/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/directives/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -283,7 +283,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/directives/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -310,10 +310,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/dropdown/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/dropdown/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -321,7 +321,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/dropdown/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -348,10 +348,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/hero/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/hero/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -359,7 +359,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/hero/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -386,10 +386,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/icon/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/icon/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -397,7 +397,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/icon/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -424,10 +424,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/level/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/level/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -435,7 +435,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/level/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -462,10 +462,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/media-object/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/media-object/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -473,7 +473,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/media-object/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -500,10 +500,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/menu/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/menu/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -511,7 +511,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/menu/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -538,10 +538,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/message/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/message/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -549,7 +549,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/message/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -576,10 +576,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/modal/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/modal/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -587,7 +587,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/modal/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -614,10 +614,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/navbar/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/navbar/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -625,7 +625,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/navbar/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -652,10 +652,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/pagination/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/pagination/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -663,7 +663,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/pagination/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -690,10 +690,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/panel/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/panel/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -701,7 +701,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/panel/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -728,10 +728,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/tabs/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/tabs/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -739,7 +739,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/tabs/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
@@ -766,10 +766,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/carousel/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/carousel/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -777,7 +777,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/carousel/tsconfig.spec.json"
+            "tsConfig": "./tsconfig.spec.json"
           }
         },
         "lint": {
