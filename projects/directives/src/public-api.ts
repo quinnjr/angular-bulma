@@ -2,6 +2,5 @@
  * Public API Surface of directives
  */
 
-export * from './lib/directives.service';
-export * from './lib/directives.component';
+export * from './lib/is-active.directive';
 export * from './lib/directives.module';

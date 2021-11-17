@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
-import { DirectivesComponent } from './directives.component';
-
-
+import { IsActiveDirective } from './is-active.directive';
 
 @NgModule({
   declarations: [
-    DirectivesComponent
+    IsActiveDirective
   ],
   imports: [
   ],
   exports: [
-    DirectivesComponent
+    IsActiveDirective
   ]
 })
 export class DirectivesModule { }

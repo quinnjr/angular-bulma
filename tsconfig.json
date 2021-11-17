@@ -100,7 +100,8 @@
     ],
     "types": [
       "jest",
-      "cypress"
+      "cypress",
+      "node"
     ]
   },
   "angularCompilerOptions": {
