@@ -21,6 +21,7 @@ jobs:
             ${{ runner.os }}-
       - uses: pnpm/action-setup@v2.0.1
         with:
+          version: 6.22.2
           run_install: true
       - run: pnpx ng run demo:build:production
       - uses: JamesIves/github-pages-deploy-action@4.1.5
