@@ -1,0 +1,15 @@
+@import '~bulma';
+@import '~highlight.js/scss/atom-one-dark';
+
+.navbar-menu.is-active {
+  transition: display 0.10s ease-in-out;
+}
+
+.navbar-brand > a.navbar-burger > span {
+  transition: transform 0.10s ease-in-out;
+}
+
+.content pre {
+  margin: -0.5rem 0rem 1rem;
+  padding: 0rem 0rem 0rem 1rem;
+}
