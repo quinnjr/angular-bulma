@@ -33,6 +33,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --ci --coverage=false",
+    "lint": "ng lint",
     "postinstall": "husky install",
     "sync-packages": "pnpm run ts-node scripts/sync-package-files.ts",
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
