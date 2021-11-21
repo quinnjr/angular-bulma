@@ -11,6 +11,10 @@ import { BulmaBreadcrumbComponent } from './breadcrumb.component';
   declarations: [
     BulmaBreadcrumbsComponent,
     BulmaBreadcrumbComponent
+  ],
+  exports: [
+    BulmaBreadcrumbComponent,
+    BulmaBreadcrumbsComponent
   ]
 })
 export class BulmaBreadcrumbsModule { }
