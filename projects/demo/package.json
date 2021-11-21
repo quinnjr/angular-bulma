@@ -1,0 +1,33 @@
+{
+  "name": "@angular-bulma/demo",
+  "version": "1.0.0",
+  "description": "Demo application to show off the `angular-bulma` project",
+  "main": "src/main.ts",
+  "private": true,
+  "scripts": {
+    "test": "ng test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quinnjr/angular-bulma"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "bulma",
+    "styles",
+    "sass"
+  ],
+  "author": {
+    "name": "Joseph R. Quinn",
+    "email": "423821+quinnjr@users.noreply.github.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quinnjr/angular-bulma/issues"
+  },
+  "homepage": "http://quinnjr.github.io/angular-bulma",
+  "dependencies": {
+    "@angular-bulma/components": "workspace:components@*"
+  }
+}

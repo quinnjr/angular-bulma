@@ -10,7 +10,7 @@
       ],
       "parserOptions": {
         "project": [
-          "./tsconfig.app.json",
+          "./tsconfig.lib.json",
           "./tsconfig.spec.json"
         ],
         "createDefaultProgram": true
@@ -20,7 +20,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "app",
+            "prefix": "lib",
             "style": "camelCase"
           }
         ],
@@ -28,7 +28,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "app",
+            "prefix": "lib",
             "style": "kebab-case"
           }
         ]

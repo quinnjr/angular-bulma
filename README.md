@@ -15,7 +15,6 @@ TODO
 - [breadcrumb](./projects/breadcrumb)
 - [button](./projects/button)
 - [card](./projects/card)
-- [directives](./projects/directives)
 - [dropdown](./projects/dropdown)
 - [footer](./projects/footer)
 - [hero](./projects/hero)

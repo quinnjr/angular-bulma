@@ -12,77 +12,9 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "paths": {
-      "breadcrumb": [
-        "dist/breadcrumb/breadcrumb",
-        "dist/breadcrumb"
-      ],
-      "button": [
-        "dist/button/button",
-        "dist/button"
-      ],
-      "card": [
-        "dist/card/card",
-        "dist/card"
-      ],
-      "carousel": [
-        "dist/carousel/carousel",
-        "dist/carousel"
-      ],
-      "directives": [
-        "dist/directives/directives",
-        "dist/directives"
-      ],
-      "dropdown": [
-        "dist/dropdown/dropdown",
-        "dist/dropdown"
-      ],
-      "footer": [
-        "dist/footer/footer",
-        "dist/footer"
-      ],
-      "hero": [
-        "dist/hero/hero",
-        "dist/hero"
-      ],
-      "icon": [
-        "dist/icon/icon",
-        "dist/icon"
-      ],
-      "level": [
-        "dist/level/level",
-        "dist/level"
-      ],
-      "media-object": [
-        "dist/media-object/media-object",
-        "dist/media-object"
-      ],
-      "menu": [
-        "dist/menu/menu",
-        "dist/menu"
-      ],
-      "message": [
-        "dist/message/message",
-        "dist/message"
-      ],
-      "modal": [
-        "dist/modal/modal",
-        "dist/modal"
-      ],
-      "navbar": [
-        "dist/navbar/navbar",
-        "dist/navbar"
-      ],
-      "pagination": [
-        "dist/pagination/pagination",
-        "dist/pagination"
-      ],
-      "panel": [
-        "dist/panel/panel",
-        "dist/panel"
-      ],
-      "tabs": [
-        "dist/tabs/tabs",
-        "dist/tabs"
+      "components": [
+        "dist/components/components",
+        "dist/components"
       ]
     },
     "declaration": false,

@@ -1,1 +1,42 @@
-<h1 class="title">Under Construction</h1>
+<bu-navbar label="navigation" color="success">
+  <div class="navbar-brand">
+    <a brand class="navbar-item" routerLink="/">@angular-bulma</a>
+  </div>
+  <div class="navbar-start">
+    <!-- stuff goes here -->
+  </div>
+  <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="buttons">
+        <a class="button is-link icon-text" href="https://github.com/quinnjr/angular-bulma">
+          <span class="icon is-large">
+            <i class="fab fa-github fa-lg"></i>
+          </span>
+          <span>Github</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</bu-navbar>
+<div class="columns">
+  <div class="column is-2 ml-3">
+    <bu-menu>
+      <bu-menu-label>Concepts</bu-menu-label>
+      <bu-menu-list>
+        <a>Overview</a>
+      </bu-menu-list>
+      <bu-menu-label>Library</bu-menu-label>
+      <bu-menu-list>
+        <ng-container *ngFor="let component of routes">
+          <a [routerLink]="component">{{ capitalizeFirstLetter(component) }}</a>
+        </ng-container>
+      </bu-menu-list>
+    </bu-menu>
+  </div>
+  <div class="column">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
