@@ -14,6 +14,12 @@ import { BulmaMenuListComponent, BulmaMenuListItemComponent } from './menu-list.
     BulmaMenuLabelComponent,
     BulmaMenuListComponent,
     BulmaMenuListItemComponent
+  ],
+  exports: [
+    BulmaMenuComponent,
+    BulmaMenuLabelComponent,
+    BulmaMenuListComponent,
+    BulmaMenuListItemComponent
   ]
 })
 export class BulmaMenuModule { }

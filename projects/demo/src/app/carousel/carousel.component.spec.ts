@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BulmaCarouselModule } from '../../../../components/src/public-api';
+import { CodeSnippetComponent } from '../code-snippet/code-snippet.component';
 
 import { CarouselComponent } from './carousel.component';
 
@@ -8,7 +10,8 @@ describe('CarouselComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CarouselComponent ]
+      imports: [BulmaCarouselModule],
+      declarations: [ CarouselComponent, CodeSnippetComponent ]
     })
     .compileComponents();
   });
