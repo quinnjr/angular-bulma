@@ -9,6 +9,9 @@ import { BulmaNavbarComponent } from './navbar.component';
   ],
   declarations: [
     BulmaNavbarComponent
+  ],
+  exports: [
+    BulmaNavbarComponent
   ]
 })
 export class BulmaNavbarModule { }

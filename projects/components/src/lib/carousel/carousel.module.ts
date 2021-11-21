@@ -10,6 +10,10 @@ import { BulmaCarouselComponent, BulmaCarouselItemComponent } from './carousel.c
   declarations: [
     BulmaCarouselComponent,
     BulmaCarouselItemComponent
+  ],
+  exports: [
+    BulmaCarouselComponent,
+    BulmaCarouselItemComponent
   ]
 })
 export class BulmaCarouselModule {}
