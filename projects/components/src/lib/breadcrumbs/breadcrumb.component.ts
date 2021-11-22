@@ -1,4 +1,10 @@
-import { AfterContentInit, ChangeDetectorRef, Component, TemplateRef, ViewChild } from '@angular/core';
+import {
+  AfterContentInit,
+  ChangeDetectorRef,
+  Component,
+  TemplateRef,
+  ViewChild
+} from '@angular/core';
 
 @Component({
   selector: 'bu-breadcrumb',

@@ -10,10 +10,9 @@ describe('BreadcrumbsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ BulmaBreadcrumbsModule ],
-      declarations: [ BreadcrumbsComponent, CodeSnippetComponent ]
-    })
-    .compileComponents();
+      imports: [BulmaBreadcrumbsModule],
+      declarations: [BreadcrumbsComponent, CodeSnippetComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

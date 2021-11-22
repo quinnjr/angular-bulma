@@ -11,9 +11,8 @@ describe('MenuComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [BulmaMenuModule],
-      declarations: [ MenuComponent, CodeSnippetComponent ]
-    })
-    .compileComponents();
+      declarations: [MenuComponent, CodeSnippetComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

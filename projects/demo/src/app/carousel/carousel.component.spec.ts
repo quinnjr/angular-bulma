@@ -11,9 +11,8 @@ describe('CarouselComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [BulmaCarouselModule],
-      declarations: [ CarouselComponent, CodeSnippetComponent ]
-    })
-    .compileComponents();
+      declarations: [CarouselComponent, CodeSnippetComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

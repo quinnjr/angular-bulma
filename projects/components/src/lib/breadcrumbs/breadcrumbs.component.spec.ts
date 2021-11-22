@@ -8,9 +8,8 @@ describe('BreadcrumbComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BulmaBreadcrumbsComponent ]
-    })
-    .compileComponents();
+      declarations: [BulmaBreadcrumbsComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

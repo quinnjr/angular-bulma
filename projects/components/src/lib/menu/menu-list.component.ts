@@ -21,7 +21,7 @@ export class BulmaMenuListItemComponent implements AfterContentInit {
   @ViewChild(TemplateRef) public templateRef!: TemplateRef<any>;
 
   constructor(private readonly cdr: ChangeDetectorRef) {
-    console.log('constructed')
+    console.log('constructed');
   }
 
   public ngAfterContentInit() {
@@ -37,14 +37,18 @@ export class BulmaMenuListItemComponent implements AfterContentInit {
         <ng-container *ngTemplateOutlet="menuItem.templateRef"></ng-container>
       </li>
     </ul>
-  `,
+  `
 })
 export class BulmaMenuListComponent {
-  @ContentChildren(BulmaMenuListItemComponent) public menuItems!: QueryList<BulmaMenuListItemComponent>;
+  @ContentChildren(BulmaMenuListItemComponent)
+  public menuItems!: QueryList<BulmaMenuListItemComponent>;
 
   constructor(private readonly elementRef: ElementRef) {}
 
   public get isChildContext(): boolean {
-    return this.elementRef.nativeElement.parentElement?.parentElement?.tagName !== "BU-MENU";
+    return (
+      this.elementRef.nativeElement.parentElement?.parentElement?.tagName !==
+      'BU-MENU'
+    );
   }
 }

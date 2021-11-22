@@ -15,13 +15,13 @@ export interface BulmaCarouselOptions {
   autoplaySpeed?: number;
   pauseOnHover?: boolean;
   breakpoints?: Array<{
-    changePoint: number,
-    slidesToShow: number,
-    slidesToScroll: number
+    changePoint: number;
+    slidesToShow: number;
+    slidesToScroll: number;
   }>;
-  onReady?: Function | null;
+  onReady?: () => void;
   icons: {
     previous: string;
     next: string;
-  }
+  };
 }

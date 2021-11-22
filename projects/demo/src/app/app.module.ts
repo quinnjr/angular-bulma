@@ -40,4 +40,4 @@ import { CarouselComponent } from './carousel/carousel.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
