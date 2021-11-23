@@ -3,8 +3,15 @@
   "overrides": [
     {
       "files": [
-        "projects/**/*.ts"
+        "**/*.ts"
       ],
+      "parserOptions": {
+        "project": [
+          "./tsconfig.json",
+          "./tsconfig.spec.json"
+        ],
+        "createDefaultProgram": true
+      },
       "env": {
         "browser": true
       },
@@ -21,23 +28,7 @@
       ],
       "rules": {
         "no-unused-vars": ["warn"],
-        "@typescript-eslint/no-non-null-assertions": ["warn"],
-        "@angular-eslint/directive-selector": [
-          "error",
-          {
-            "type": "attribute",
-            "prefix": "bulma",
-            "style": "camelCase"
-          }
-        ],
-        "@angular-eslint/component-selector": [
-          "error",
-          {
-            "type": "element",
-            "prefix": "bulma",
-            "style": "kebab-case"
-          }
-        ],
+        "@typescript-eslint/no-non-null-assertion": ["warn"],
         "rxjs/no-implicit-any-catch": [
           "error",
           {
@@ -49,12 +40,11 @@
     },
     {
       "files": [
-        "./projects/**/*.html"
+        "**/*.html"
       ],
       "extends": [
         "plugin:@angular-eslint/template/recommended"
-      ],
-      "rules": {}
+      ]
     }
   ]
 }

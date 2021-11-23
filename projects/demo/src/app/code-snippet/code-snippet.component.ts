@@ -1,8 +1,14 @@
-import { Component, AfterViewInit, ElementRef, Input, ContentChild } from '@angular/core';
+import {
+  Component,
+  AfterViewInit,
+  ElementRef,
+  Input,
+  ContentChild
+} from '@angular/core';
 import hljs from 'highlight.js';
 
 @Component({
-  selector: 'demo-code-snippet',
+  selector: 'app-code-snippet',
   template: `
     <p class="snippet-title">{{ title }}</p>
     <ng-content></ng-content>
@@ -22,7 +28,7 @@ export class CodeSnippetComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     if (this.codeBlock) {
-      hljs.highlightElement(this.codeBlock.nativeElement)
+      hljs.highlightElement(this.codeBlock.nativeElement);
     }
   }
 }

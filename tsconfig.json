@@ -15,6 +15,14 @@
       "components": [
         "dist/components/components",
         "dist/components"
+      ],
+      "directives": [
+        "dist/directives/directives",
+        "dist/directives"
+      ],
+      "elements": [
+        "dist/elements/elements",
+        "dist/elements"
       ]
     },
     "declaration": false,

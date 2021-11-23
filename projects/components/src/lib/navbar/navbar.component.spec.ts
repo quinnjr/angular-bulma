@@ -8,9 +8,8 @@ describe('NavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BulmaNavbarComponent ]
-    })
-    .compileComponents();
+      declarations: [BulmaNavbarComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

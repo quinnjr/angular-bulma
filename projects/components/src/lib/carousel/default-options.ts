@@ -1,6 +1,6 @@
 import { BulmaCarouselOptions } from './carousel-options';
 
-export const BulmaCarouselDefaultOptions: BulmaCarouselOptions = {
+export const BULMA_CAROUSEL_DEFAULT_OPTIONS: BulmaCarouselOptions = {
   initialSlide: 0,
   slidesToScroll: 1,
   slidesToShow: 1,
@@ -33,7 +33,6 @@ export const BulmaCarouselDefaultOptions: BulmaCarouselOptions = {
       slidesToScroll: 3
     }
   ],
-  onReady: null,
   icons: {
     previous: `
       <svg viewBox="0 0 50 80 xml:space="preserve">

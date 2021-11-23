@@ -1,9 +1,12 @@
-import { Component, ContentChild, Input } from '@angular/core';
+/* eslint-disable @angular-eslint/no-input-rename */
+
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'bu-navbar',
   template: `
-    <nav class="navbar"
+    <nav
+      class="navbar"
       role="navigation"
       [attr.aria-label]="ariaLabel"
       [attr.aria-expanded]="isActive"
@@ -13,21 +16,22 @@ import { Component, ContentChild, Input } from '@angular/core';
         'is-fixed-bottom': isFixed === 'bottom',
         'is-spaced': isSpaced,
         'has-shadow': hasShadow,
-        'is-primary': color == 'primary',
-        'is-link': color == 'link',
-        'is-info': color == 'info',
-        'is-success': color == 'success',
-        'is-warning': color == 'warning',
-        'is-danger': color == 'danger',
-        'is-black': color == 'black',
-        'is-dark': color == 'dark',
-        'is-light': color == 'light',
-        'is-white': color == 'white'
+        'is-primary': color === 'primary',
+        'is-link': color === 'link',
+        'is-info': color === 'info',
+        'is-success': color === 'success',
+        'is-warning': color === 'warning',
+        'is-danger': color === 'danger',
+        'is-black': color === 'black',
+        'is-dark': color === 'dark',
+        'is-light': color === 'light',
+        'is-white': color === 'white'
       }"
     >
       <div class="navbar-brand">
         <ng-content select=".navbar-brand"></ng-content>
-        <a *ngIf="hasBurger"
+        <a
+          *ngIf="hasBurger"
           (click)="isActive = !isActive"
           [ngClass]="{ 'is-active': isActive }"
           role="button"
@@ -40,9 +44,7 @@ import { Component, ContentChild, Input } from '@angular/core';
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu"
-        [ngClass]="{ 'is-active': isActive }"
-      >
+      <div class="navbar-menu" [ngClass]="{ 'is-active': isActive }">
         <ng-content selector=".navbar-start"></ng-content>
         <ng-content selector=".navbar-end"></ng-content>
       </div>
@@ -56,7 +58,7 @@ export class BulmaNavbarComponent {
   @Input('fixed') isFixed = '';
   @Input('spaced') isSpaced = false;
   @Input('shadow') hasShadow = false;
-  @Input('color') color = 'white';
+  @Input() color = 'white';
 
   public isActive = false;
 

@@ -6,12 +6,12 @@
   "overrides": [
     {
       "files": [
-        "*.ts"
+        "**/*.ts"
       ],
       "parserOptions": {
         "project": [
-          "./tsconfig.app.json",
-          "./tsconfig.spec.json"
+          "projects/demo/tsconfig.app.json",
+          "projects/demo/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },
@@ -33,12 +33,6 @@
           }
         ]
       }
-    },
-    {
-      "files": [
-        "*.html"
-      ],
-      "rules": {}
     }
   ]
 }

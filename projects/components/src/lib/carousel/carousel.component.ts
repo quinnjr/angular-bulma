@@ -1,3 +1,5 @@
+/* eslint-disable no-underscore-dangle */
+
 import {
   Component,
   ContentChildren,
@@ -13,7 +15,7 @@ import {
 import merge from 'lodash.mergewith';
 
 import { BulmaCarouselOptions } from './carousel-options';
-import { BulmaCarouselDefaultOptions } from './default-options';
+import { BULMA_CAROUSEL_DEFAULT_OPTIONS } from './default-options';
 
 @Component({
   selector: 'bu-carousel-item',
@@ -37,30 +39,29 @@ export class BulmaCarouselItemComponent {
         <ng-container *ngFor="let item of items; let idx = index">
           <ng-container *ngTemplateOutlet="item.templateRef"></ng-container>
         </ng-container>
-        <div class="slider-navigation-previous"
-          [ngClass]="{ 'is-hidden': false }">
-        </div>
-        <div class="slider-navigation-next"
-          [ngClass]="{ 'is-hidden': false }">
-        </div>
-        <div class="slider-pagination">
-        </div>
+        <div
+          class="slider-navigation-previous"
+          [ngClass]="{ 'is-hidden': false }"
+        ></div>
+        <div
+          class="slider-navigation-next"
+          [ngClass]="{ 'is-hidden': false }"
+        ></div>
+        <div class="slider-pagination"></div>
       </div>
     </div>
   `,
   styleUrls: ['./carousel.component.scss']
 })
 export class BulmaCarouselComponent implements OnInit {
-
-  @ContentChildren(BulmaCarouselItemComponent) items!: QueryList<BulmaCarouselItemComponent>;
+  @ContentChildren(BulmaCarouselItemComponent)
+  items!: QueryList<BulmaCarouselItemComponent>;
 
   public events: EventEmitter<any> = new EventEmitter();
 
-  private _options: BulmaCarouselOptions = BulmaCarouselDefaultOptions;
+  private _options: BulmaCarouselOptions = BULMA_CAROUSEL_DEFAULT_OPTIONS;
 
-  constructor(
-    private readonly elementRef: ElementRef
-  ) {}
+  constructor(private readonly elementRef: ElementRef) {}
 
   public get options() {
     return this._options;
@@ -74,10 +75,14 @@ export class BulmaCarouselComponent implements OnInit {
   public ngOnInit() {
     const prevButton = document.createElement('template');
     prevButton.innerHTML = this.options.icons.previous;
-    this.elementRef.nativeElement.querySelector('.slider-navigation-previous').append(prevButton);
+    this.elementRef.nativeElement
+      .querySelector('.slider-navigation-previous')
+      .append(prevButton);
 
     const nextButton = document.createElement('template');
     nextButton.innerHTML = this.options.icons.next;
-    this.elementRef.nativeElement.querySelector('.slider-navigation-next').append(nextButton);
+    this.elementRef.nativeElement
+      .querySelector('.slider-navigation-next')
+      .append(nextButton);
   }
 }

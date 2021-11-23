@@ -4,14 +4,8 @@ import { CommonModule } from '@angular/common';
 import { BulmaNavbarComponent } from './navbar.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    BulmaNavbarComponent
-  ],
-  exports: [
-    BulmaNavbarComponent
-  ]
+  imports: [CommonModule],
+  declarations: [BulmaNavbarComponent],
+  exports: [BulmaNavbarComponent]
 })
-export class BulmaNavbarModule { }
+export class BulmaNavbarModule {}

@@ -5,16 +5,8 @@ import { BulmaBreadcrumbsComponent } from './breadcrumbs.component';
 import { BulmaBreadcrumbComponent } from './breadcrumb.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    BulmaBreadcrumbsComponent,
-    BulmaBreadcrumbComponent
-  ],
-  exports: [
-    BulmaBreadcrumbComponent,
-    BulmaBreadcrumbsComponent
-  ]
+  imports: [CommonModule],
+  declarations: [BulmaBreadcrumbsComponent, BulmaBreadcrumbComponent],
+  exports: [BulmaBreadcrumbComponent, BulmaBreadcrumbsComponent]
 })
-export class BulmaBreadcrumbsModule { }
+export class BulmaBreadcrumbsModule {}

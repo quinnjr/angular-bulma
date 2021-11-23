@@ -10,11 +10,37 @@
       ],
       "parserOptions": {
         "project": [
-          "./tsconfig.lib.json",
-          "./tsconfig.spec.json"
+          "projects/components/tsconfig.lib.json",
+          "projects/components/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
+      },
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "bu",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "bu",
+            "style": "kebab-case"
+          }
+        ]
       }
+    },
+    {
+      "files": [
+        "**/*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ]
     }
   ]
 }

@@ -8,9 +8,8 @@ describe('MenuListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BulmaMenuListComponent ]
-    })
-    .compileComponents();
+      declarations: [BulmaMenuListComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

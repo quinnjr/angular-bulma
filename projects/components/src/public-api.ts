@@ -1,7 +1,6 @@
 /*
  * Public API Surface of components
  */
-export { BulmaComponentsModule } from './lib/module';
 export * from './lib/breadcrumbs';
 export * from './lib/carousel';
 export * from './lib/menu';

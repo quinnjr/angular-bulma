@@ -1,2 +1,2 @@
 pnpm run lint
-pnpm test
+pnpm test -- --pass-with-no-tests

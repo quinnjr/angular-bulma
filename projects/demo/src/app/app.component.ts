@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public routes = [
+  public components = [
     'breadcrumbs',
     'button',
     'card',
@@ -25,6 +25,8 @@ export class AppComponent {
     'panel',
     'tabs'
   ];
+
+  public elements = ['image'];
 
   public capitalizeFirstLetter(str: string): string {
     return str.charAt(0).toUpperCase() + str.slice(1);
