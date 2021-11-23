@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { MenuComponent } from './menu/menu.component';
-import { CarouselComponent } from './carousel/carousel.component';
+
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 const routes: Routes = [
   { path: 'breadcrumbs', component: BreadcrumbsComponent },

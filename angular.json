@@ -37,8 +37,7 @@
             "styles": [
               "projects/demo/src/styles.scss"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -155,6 +154,82 @@
             "lintFilePatterns": [
               "projects/components/**/*.ts",
               "projects/components/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "elements": {
+      "projectType": "library",
+      "root": "projects/elements",
+      "sourceRoot": "projects/elements/src",
+      "prefix": "bu",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/elements/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/elements/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/elements/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "tsConfig": "tsconfig.spec.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/elements/**/*.ts",
+              "projects/elements/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "directives": {
+      "projectType": "library",
+      "root": "projects/directives",
+      "sourceRoot": "projects/directives/src",
+      "prefix": "bu",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/directives/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/directives/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/directives/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "tsConfig": "tsconfig.spec.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/directives/**/*.ts",
+              "projects/directives/**/*.html"
             ]
           }
         }

@@ -22,5 +22,6 @@ module.exports = {
     'node_modules/(?!.*\\.mjs$)'
   ],
   testEnvironment: 'jsdom',
-  collectCoverage: true
+  collectCoverage: true,
+  coverageDirectory: resolve(__dirname, '../../dist/coverage/demo')
 };
