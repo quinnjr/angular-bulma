@@ -1,0 +1,435 @@
+<div class="columns">
+  <div class="column is-10">
+    <section class="section" id="intro">
+      <h1 class="title">Breadcrumb</h1>
+      <h2 class="subtitle">A simple <strong>breadcrumb</strong> component to improve a website's navigation experience.</h2>
+      <hr />
+      <div class="content">
+        <p>The Bulma <strong>breadcrumb</strong> is a simple navigation component that only requires a <code>bu-breadcrumbs</code> container and a <code>bu-breadcrumb</code> list. The dividers are automatically created in the content of the <code>::before</code> pseudo-element.</p>
+        <p>Additional attributes are available on the <code>bu-breadcrumbs</code> component:</p>
+        <ul>
+          <li><code>alignment</code>: Changes the alignment of the elements in the <code>bu-breadcrumbs</code> container. Can be set to <code>center</code> or <code>left.</code></li>
+        </ul>
+        <p>The <code>is-active</code> state of the <code>bu-breadcrumb</code> is controlled automatically by the <code>bu-breadcrumbs</code> component.</p>
+      </div>
+    </section>
+    <section class="section" id="example">
+      <span class="tag is-primary">Example</span>
+      <div class="mt-5" id="example-example">
+        <bu-breadcrumbs>
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5" id="example-source">
+        <app-code-snippet title="HTML">
+          <pre #highlight class="language-xml">
+            <code>
+&lt;bu-breadcrumbs&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+    </section>
+    <section class="section" id="alignment">
+      <h3 class="title is-4 is-spaced">
+        <a href="/breadcrumbs/#alignment">#</a> Alignment
+      </h3>
+      <div class="content">
+        <p>For alternative alignments, use the <code>alignment</code> attribute on the <code>bu-breadcrumbs</code> element.</p>
+        <p>Alignments are <code>centered</code> and <code>right</code></p>
+      </div>
+      <span class="tag is-primary">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs alignment="centered">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML">
+          <pre #highlight class="language-xml">
+            <code>
+&lt;bu-breadcrumbs alignment=&quot;centered&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+      <span class="tag is-primary mt-5">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs alignment="right">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML">
+        <pre #highlight class="language-xml">
+          <code>
+&lt;bu-breadcrumbs alignment=&quot;right&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+    </section>
+    <section class="section" id="separators">
+      <h3 class="title is-4 is-spaced">
+        <a href="/breadcrumbs/#separators">#</a> Alternative Separators
+      </h3>
+      <div class="content">
+        <p>You can choose between <strong>4 additional separators</strong> <code>arrow</code>, <code>bullet</code>, <code>dot</code>, and <code>succeeds</code></p>
+      </div>
+      <span class="tag is-primary mt-5">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs separator="arrow">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML">
+          <pre #highlight class="language-xml">
+            <code>
+&lt;bu-breadcrumbs separator=&quot;arrow&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+      <span class="tag is-primary mt-5">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs separator="bullet">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML">
+          <pre #highlight class="language-xml">
+            <code>
+&lt;bu-breadcrumbs separator=&quot;bullet&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+      <span class="tag is-primary mt-5">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs separator="dot">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML">
+          <pre #highlight class="language-xml">
+            <code>
+&lt;bu-breadcrumbs separator=&quot;dot&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+      <span class="tag is-primary mt-5">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs separator="succeeds">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML">
+          <pre #highlight class="language-xml">
+            <code>
+&lt;bu-breadcrumbs separator=&quot;succeeds&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+    </section>
+    <section class="section" id="sizes">
+      <h3 class="title is-4 is-spaced">
+        <a href="/breadcrumbs/#sizes">#</a> Sizes
+      </h3>
+      <div class="content">
+        <p>You can choose between <strong>3 additional sizes</strong>: <code>small</code>, <code>medium</code>, and <code>large</code></p>
+      </div>
+      <span class="tag is-primary">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs size="small">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML">
+          <pre #highlight class="language-xml">
+            <code>
+&lt;bu-breadcrumbs size=&quot;small&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+        <span class="tag is-primary mt-5">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs size="medium">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML" language="xml">
+          <pre #highlight class="language-xml">
+            <code>
+&lt;bu-breadcrumbs size=&quot;medium&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+            </code>
+          </pre>
+        </app-code-snippet>
+      </div>
+      <span class="tag is-primary mt-5">Example</span>
+      <div class="mt-5">
+        <bu-breadcrumbs size="large">
+          <bu-breadcrumb>
+            <a href="#">@angular-bulma</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Components</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Documentation</a>
+          </bu-breadcrumb>
+          <bu-breadcrumb>
+            <a href="#">Breadcrumbs</a>
+          </bu-breadcrumb>
+        </bu-breadcrumbs>
+      </div>
+      <div class="mt-5">
+        <app-code-snippet title="HTML">
+          <pre #highlight class="language">
+            <code>
+&lt;bu-breadcrumbs size=&quot;large&quot;&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;@angular-bulma&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Documentation&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+  &lt;bu-breadcrumb&gt;
+    &lt;a href=&quot;#&quot;&gt;Breadcrumbs&lt;/a&gt;
+  &lt;/bu-breadcrumb&gt;
+&lt;/bu-breadcrumbs&gt;
+          </code>
+        </pre>
+        </app-code-snippet>
+      </div>
+    </section>
+  </div>
+  <div class="column"></div>
+</div>
