@@ -1,32 +1,19 @@
 # Angular Bulma Monorepo
 
+![GitHub](https://img.shields.io/github/license/quinnjr/angular-bulma)
+
 [![Angular-Bulma Testing](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml) [![CodeQL](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml)
 
 Monorepo for the @angular-bulma projects.
 
-## Demo
-
-TODO
-
 ## Current Projects
+
+- @angular-bulma/components ![npm](https://img.shields.io/npm/v/@angular-bulma/components)
 
 ## Future Projects
 
-- [breadcrumb](./projects/breadcrumb)
-- [button](./projects/button)
-- [card](./projects/card)
-- [dropdown](./projects/dropdown)
-- [footer](./projects/footer)
-- [hero](./projects/hero)
-- [icon](./projects/icon)
-- [level](./projects/level)
-- [media-object](./projects/media-object)
-- [menu](./projects/menu)
-- [message](./projects/message)
-- [modal](./projects/model)
-- [pagination](./projects/pagination)
-- [panel](./projects/panel)
-- [tabs](./projects/tabs)
+- @angular-bulma/directives
+- @angular-bulma/elements
 
 ## License
 
