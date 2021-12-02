@@ -6,6 +6,8 @@
 
 Monorepo for the @angular-bulma projects.
 
+## [Demo](https://quinnjr.github.io/angular-bulma/)
+
 ## Current Projects
 
 - @angular-bulma/components ![npm](https://img.shields.io/npm/v/@angular-bulma/components)
