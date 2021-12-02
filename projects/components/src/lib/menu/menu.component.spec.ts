@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BulmaMenuLabelComponent, BulmaMenuListComponent } from '.';
 
 import { BulmaMenuComponent } from './menu.component';
 
@@ -8,7 +9,11 @@ describe('MenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [BulmaMenuComponent]
+      declarations: [
+        BulmaMenuComponent,
+        BulmaMenuListComponent,
+        BulmaMenuLabelComponent
+      ]
     }).compileComponents();
   });
 

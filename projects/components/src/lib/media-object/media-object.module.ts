@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MediaObjectComponent } from './media-object.component';
 
 @NgModule({
-  declarations: [MediaObjectComponent],
-  imports: [CommonModule]
+  imports: [CommonModule],
+  declarations: [MediaObjectComponent]
 })
-export class MediaObjectModule {}
+export class BulmaMediaObjectModule {}

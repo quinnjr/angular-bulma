@@ -1,4 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  BulmaDropdownModule,
+  BulmaNavbarModule,
+  BulmaMenuModule
+} from '../../../../../components/src/public-api';
+import { CodeSnippetComponent } from '../../code-snippet/code-snippet.component';
 
 import { DropdownComponent } from './dropdown.component';
 
@@ -8,7 +14,8 @@ describe('DropdownComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DropdownComponent]
+      imports: [BulmaDropdownModule, BulmaNavbarModule, BulmaMenuModule],
+      declarations: [DropdownComponent, CodeSnippetComponent]
     }).compileComponents();
   });
 

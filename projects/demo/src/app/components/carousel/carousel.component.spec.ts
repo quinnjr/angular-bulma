@@ -1,5 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BulmaCarouselModule } from '../../../../../components/src/public-api';
+import {
+  BulmaCarouselModule,
+  BulmaNavbarModule,
+  BulmaMenuModule
+} from '../../../../../components/src/public-api';
 import { CodeSnippetComponent } from '../../code-snippet/code-snippet.component';
 
 import { CarouselComponent } from './carousel.component';
@@ -10,7 +14,7 @@ describe('CarouselComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BulmaCarouselModule],
+      imports: [BulmaCarouselModule, BulmaNavbarModule, BulmaMenuModule],
       declarations: [CarouselComponent, CodeSnippetComponent]
     }).compileComponents();
   });

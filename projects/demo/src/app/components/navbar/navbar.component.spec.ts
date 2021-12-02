@@ -1,4 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  BulmaNavbarModule,
+  BulmaMenuModule
+} from '../../../../../components/src/public-api';
+import { CodeSnippetComponent } from '../../code-snippet/code-snippet.component';
 
 import { NavbarComponent } from './navbar.component';
 
@@ -8,7 +13,8 @@ describe('NavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NavbarComponent]
+      imports: [BulmaNavbarModule, BulmaMenuModule],
+      declarations: [NavbarComponent, CodeSnippetComponent]
     }).compileComponents();
   });
 

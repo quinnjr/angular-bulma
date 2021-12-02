@@ -2,8 +2,7 @@ import {
   AfterContentInit,
   ChangeDetectorRef,
   Component,
-  Input,
-  QueryList
+  Input
 } from '@angular/core';
 
 @Component({

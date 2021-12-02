@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LevelComponent } from './level.component';
 
 @NgModule({
-  declarations: [LevelComponent],
-  imports: [CommonModule]
+  imports: [CommonModule],
+  declarations: [LevelComponent]
 })
-export class LevelModule {}
+export class BulmaLevelModule {}

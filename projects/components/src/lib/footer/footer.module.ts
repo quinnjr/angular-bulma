@@ -6,4 +6,4 @@ import { FooterComponent } from './footer.component';
   declarations: [FooterComponent],
   imports: [CommonModule]
 })
-export class FooterModule {}
+export class BulmaFooterModule {}
