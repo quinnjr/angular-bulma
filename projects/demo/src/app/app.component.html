@@ -1,14 +1,30 @@
-<bu-navbar label="navigation" color="success">
+<bu-navbar label="navigation" color="dark">
   <div class="navbar-brand">
-    <a brand class="navbar-item" routerLink="/">@angular-bulma</a>
+    <a brand class="navbar-item" routerLink="/">
+      <img src="/assets/img/bulma.svg" height="24px" width="28px" />
+      @angular-bulma
+    </a>
   </div>
   <div class="navbar-start">
-    <!-- stuff goes here -->
+    <div
+      class="navbar-item has-dropdown"
+      [ngClass]="{ 'is-active': isDropdownActive }"
+      (click)="isDropdownActive = !isDropdownActive"
+    >
+      <a class="navbar-link">Theme</a>
+      <div class="navbar-dropdown">
+        <a
+          *ngFor="let theme of themes"
+          class="navbar-item"
+          (click)="changeStylesheet(theme); isDropdownActive = false"
+        >{{ theme }}</a>
+      </div>
+    </div>
   </div>
   <div class="navbar-end">
     <div class="navbar-item">
       <div class="buttons">
-        <a class="button is-link icon-text" href="https://github.com/quinnjr/angular-bulma">
+        <a class="button is-info icon-text" href="https://github.com/quinnjr/angular-bulma">
           <span class="icon is-large">
             <i class="fab fa-github fa-lg"></i>
           </span>
@@ -18,18 +34,26 @@
     </div>
   </div>
 </bu-navbar>
-<div class="columns">
-  <div class="column is-2 ml-3">
+<div class="columns" style="margin: 0.5rem 0rem">
+  <div class="column is-2">
     <bu-menu>
       <bu-menu-label>Concepts</bu-menu-label>
+      <bu-menu-label>Elements</bu-menu-label>
       <bu-menu-list>
-        <a>Overview</a>
+        <a>Button</a>
+        <a>Delete</a>
+        <a>Icon</a>
+        <a>Image</a>
+        <a>Notification</a>
+        <a>Tag</a>
       </bu-menu-list>
-      <bu-menu-label>Library</bu-menu-label>
+      <bu-menu-label>Components</bu-menu-label>
       <bu-menu-list>
-        <ng-container *ngFor="let component of routes">
-          <a [routerLink]="component">{{ capitalizeFirstLetter(component) }}</a>
-        </ng-container>
+        <a [routerLink]="['components', 'breadcrumbs']">Breadcrumbs</a>
+        <a [routerLink]="['components', 'carousel']">Carousel</a>
+        <a [routerLink]="['components', 'dropdown']">Dropdown</a>
+        <a [routerLink]="['components', 'menu']">Menu</a>
+        <a [routerLink]="['components', 'navbar']">Navbar</a>
       </bu-menu-list>
     </bu-menu>
   </div>
@@ -39,4 +63,5 @@
     </div>
   </div>
 </div>
+<link #stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet" type="text/css" />
 

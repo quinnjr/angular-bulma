@@ -28,6 +28,8 @@
       ],
       "rules": {
         "no-unused-vars": ["warn"],
+        "@angular-eslint/no-input-rename": ["off"],
+        "@angular-eslint/directive-selector": ["off"],
         "@typescript-eslint/no-non-null-assertion": ["warn"],
         "rxjs/no-implicit-any-catch": [
           "error",
