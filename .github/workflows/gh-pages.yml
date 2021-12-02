@@ -2,9 +2,9 @@ name: Angular Bulma gh-pages
 on:
   push:
     branches:
+      - main
       - release/*
-    tags:
-      - v0.*
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
