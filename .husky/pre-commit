@@ -1,2 +1,2 @@
 pnpm run lint
-pnpm test -- --pass-with-no-tests
+pnpm test -- --pass-with-no-tests --run-in-band

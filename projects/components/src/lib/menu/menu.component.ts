@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'bu-menu',
@@ -10,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class BulmaMenuComponent {
   constructor() {}
+
+  @Input('is-active') public isActiveFunc: () => boolean = () => false;
 }

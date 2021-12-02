@@ -1,6 +1,12 @@
 /* eslint-disable @angular-eslint/no-input-rename */
 
-import { Component, Input } from '@angular/core';
+import {
+  AfterContentInit,
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  Input
+} from '@angular/core';
 
 @Component({
   selector: 'bu-navbar',
@@ -51,7 +57,7 @@ import { Component, Input } from '@angular/core';
     </nav>
   `
 })
-export class BulmaNavbarComponent {
+export class BulmaNavbarComponent implements AfterContentInit, AfterViewInit {
   @Input('label') ariaLabel = '';
   @Input('has-burger') hasBurger = true;
   @Input('transparent') isTransparent = false;
@@ -62,5 +68,13 @@ export class BulmaNavbarComponent {
 
   public isActive = false;
 
-  constructor() {}
+  constructor(private readonly cdr: ChangeDetectorRef) {}
+
+  public ngAfterContentInit() {
+    this.cdr.detectChanges();
+  }
+
+  public ngAfterViewInit() {
+    this.cdr.detectChanges();
+  }
 }

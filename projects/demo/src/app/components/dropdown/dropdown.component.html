@@ -1,0 +1,364 @@
+<div class="columns">
+  <div class="column is-10">
+    <section class="section" id="intro">
+      <h1 class="title">Dropdown</h1>
+      <h2 class="subtitle">An interactive <strong>dropdown menu</strong> for discoverable content.</h2>
+    </section>
+    <section class="section">
+      <div class="content">
+        <p>A <code>bu-dropwdown</code> component is a container for a dropdown button and a dropdown menu:</p>
+        <ul>
+          <li><code>bu-dropdown</code> is the main container</li>
+          <li>All content defined inside the <code>bu-dropdown</code> is either a <code>dropdown-item</code> or <code>dropdown-divider</code></li>
+        </ul>
+      </div>
+      <div class="columns">
+        <div class="column is-6">
+          <bu-dropdown title="Dropdown Button">
+            <a href="#" class="dropdown-item">
+              Dropdown item
+            </a>
+            <a class="dropdown-item">
+              Other dropdown item
+            </a>
+            <a href="#" class="dropdown-item is-active">
+              Active dropdown item
+            </a>
+            <a href="#" class="dropdown-item">
+              Other dropdown item
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              With a divider
+            </a>
+          </bu-dropdown>
+        </div>
+        <div class="column is-6">
+          <app-code-snippet title="HTML">
+            <pre #highlight class="language-xml">
+              <code>
+&lt;bu-dropdown title=&quot;Dropdown Button&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Dropdown item
+  &lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot;&gt;
+    Other dropdown item
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item is-active&quot;&gt;
+    Active dropdown item
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Other dropdown item
+  &lt;/a&gt;
+  &lt;hr class=&quot;dropdown-divider&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    With a divider
+  &lt;/a&gt;
+&lt;/bu-dropdown&gt;
+              </code>
+            </pre>
+          </app-code-snippet>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="dropdown-hoverable">
+      <div class="content">
+        <h3 class="title">
+          <a href="#dropdown-hoverable">#</a> Hoverable or Togglable
+        </h3>
+        <p>The <code>bu-dropdown</code> component has <strong>2 additional modifiers:</strong></p>
+        <ul>
+          <li><code>is-hoverable</code>: The dropdown will show up when <strong>hovering</strong> the <code>bu-dropdown</code>.</li>
+          <li><code>is-active</code>: The dropdown will show up <strong>all the time</strong>.</li>
+        </ul>
+      </div>
+      <div class="columns">
+        <div class="column is-6">
+          <bu-dropdown title="Click Me!">
+            <a href="#" class="dropdown-item">
+              Overview
+            </a>
+            <a href="#" class="dropdown-item">
+              Modifiers
+            </a>
+            <a href="#" class="dropdown-item">
+              Grid
+            </a>
+            <a href="#" class="dropdown-item">
+              Form
+            </a>
+            <a href="#" class="dropdown-item">
+              Elements
+            </a>
+            <a href="#" class="dropdown-item">
+              Components
+            </a>
+            <a href="#" class="dropdown-item">
+              Layout
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              More
+            </a>
+          </bu-dropdown>
+        </div>
+        <div class="column is-6">
+          <app-code-snippet title="HTML">
+            <pre #highlight class="language-xml">
+              <code>
+&lt;bu-dropdown title=&quot;Click Me!&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Overview
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Modifiers
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Grid
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Form
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Elements
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Components
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Layout
+  &lt;/a&gt;
+  &lt;hr class=&quot;dropdown-divider&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    More
+  &lt;/a&gt;
+&lt;/bu-dropdown&gt;
+              </code>
+            </pre>
+          </app-code-snippet>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-6">
+          <bu-dropdown title="Hover Me!" [is-hoverable]="true">
+            <a href="#" class="dropdown-item">
+              Overview
+            </a>
+            <a href="#" class="dropdown-item">
+              Modifiers
+            </a>
+            <a href="#" class="dropdown-item">
+              Grid
+            </a>
+            <a href="#" class="dropdown-item">
+              Form
+            </a>
+            <a href="#" class="dropdown-item">
+              Elements
+            </a>
+            <a href="#" class="dropdown-item">
+              Components
+            </a>
+            <a href="#" class="dropdown-item">
+              Layout
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              More
+            </a>
+          </bu-dropdown>
+        </div>
+        <div class="column is-6">
+          <app-code-snippet title="HTML">
+            <pre #highlight class="language-xml">
+              <code>
+&lt;bu-dropdown title=&quot;Hover Me!&quot; [is-hoverable]=&quot;true&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Overview
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Modifiers
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Grid
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Form
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Elements
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Components
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Layout
+  &lt;/a&gt;
+  &lt;hr class=&quot;dropdown-divider&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    More
+  &lt;/a&gt;
+&lt;/bu-dropdown&gt;
+              </code>
+            </pre>
+          </app-code-snippet>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="right-aligned">
+      <div class="content">
+        <h3 class="title">
+          <a href="#right-aligned">#</a> Right aligned
+        </h3>
+        <p>You can add the <code>is-right</code> attribute to have a <strong>right-aligned</strong> dropdown.</p>
+      </div>
+      <div class="columns">
+        <div class="column is-6">
+          <bu-dropdown title="Right Aligned" [is-right]="true">
+            <a href="#" class="dropdown-item">
+              Overview
+            </a>
+            <a href="#" class="dropdown-item">
+              Modifiers
+            </a>
+            <a href="#" class="dropdown-item">
+              Grid
+            </a>
+            <a href="#" class="dropdown-item">
+              Form
+            </a>
+            <a href="#" class="dropdown-item">
+              Elements
+            </a>
+            <a href="#" class="dropdown-item">
+              Components
+            </a>
+            <a href="#" class="dropdown-item">
+              Layout
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              More
+            </a>
+          </bu-dropdown>
+        </div>
+        <div class="column is-6">
+          <app-code-snippet title="HTML">
+            <pre #highlight class="language-xml">
+              <code>
+&lt;bu-dropdown title=&quot;Right Aligned&quot; [is-right]=&quot;true&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Overview
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Modifiers
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Grid
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Form
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Elements
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Components
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Layout
+  &lt;/a&gt;
+  &lt;hr class=&quot;dropdown-divider&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    More
+  &lt;/a&gt;
+&lt;/bu-dropdown&gt;
+              </code>
+            </pre>
+          </app-code-snippet>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="dropup">
+      <div class="content">
+        <h3 class="title">
+          <a href="#dropup">#</a> Dropup
+        </h3>
+        <p>You can add the <code>is-dropup</code> attribute to have a dropdown menu that appears above the dropdown button.</p>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <bu-dropdown title="Dropup" [is-up]="true">
+            <a href="#" class="dropdown-item">
+              Overview
+            </a>
+            <a href="#" class="dropdown-item">
+              Modifiers
+            </a>
+            <a href="#" class="dropdown-item">
+              Grid
+            </a>
+            <a href="#" class="dropdown-item">
+              Form
+            </a>
+            <a href="#" class="dropdown-item">
+              Elements
+            </a>
+            <a href="#" class="dropdown-item">
+              Components
+            </a>
+            <a href="#" class="dropdown-item">
+              Layout
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              More
+            </a>
+          </bu-dropdown>
+        </div>
+        <div class="column">
+          <app-code-snippet title="HTML">
+            <pre #highlight class="language-xml">
+              <code>
+&lt;bu-dropdown title=&quot;Dropup&quot; [is-up]=&quot;true&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Overview
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Modifiers
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Grid
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Form
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Elements
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Components
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    Layout
+  &lt;/a&gt;
+  &lt;hr class=&quot;dropdown-divider&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;
+    More
+  &lt;/a&gt;
+&lt;/bu-dropdown&gt;
+              </code>
+            </pre>
+          </app-code-snippet>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="column is-2">
+    <bu-menu>
+      <bu-menu-list>
+        <a routerLink="./" fragment="intro">Introduction</a>
+      </bu-menu-list>
+    </bu-menu>
+  </div>
+</div>

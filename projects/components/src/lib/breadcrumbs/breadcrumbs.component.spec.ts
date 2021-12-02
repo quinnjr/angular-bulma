@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BulmaBreadcrumbComponent } from '.';
 
 import { BulmaBreadcrumbsComponent } from './breadcrumbs.component';
 
@@ -8,7 +9,8 @@ describe('BreadcrumbComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [BulmaBreadcrumbsComponent]
+      imports: [],
+      declarations: [BulmaBreadcrumbsComponent, BulmaBreadcrumbComponent]
     }).compileComponents();
   });
 

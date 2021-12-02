@@ -7,36 +7,25 @@ import { AppComponent } from './app.component';
 import {
   BulmaNavbarModule,
   BulmaMenuModule,
-  BulmaBreadcrumbsModule,
-  BulmaCarouselModule
+  BulmaDropdownModule
 } from '../../../components/src/public-api';
 
 import { HomeComponent } from './home/home.component';
-import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { MenuComponent } from './components/menu/menu.component';
 import { CodeSnippetComponent } from './code-snippet/code-snippet.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { ComponentsRoutingModule } from './components/components-routing.module';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ComponentsModule,
     // Angular-Bulma modules
     BulmaNavbarModule,
-    BulmaBreadcrumbsModule,
     BulmaMenuModule,
-    BulmaCarouselModule
+    BulmaDropdownModule
   ],
-  declarations: [
-    CodeSnippetComponent,
-    AppComponent,
-    HomeComponent,
-    BreadcrumbsComponent,
-    NavbarComponent,
-    MenuComponent,
-    CarouselComponent
-  ],
+  declarations: [AppComponent, HomeComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

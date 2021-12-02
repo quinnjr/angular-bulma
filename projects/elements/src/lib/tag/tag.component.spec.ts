@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BulmaMenuLabelComponent } from './menu-label.component';
+import { TagComponent } from './tag.component';
 
-describe('MenuLabelComponent', () => {
-  let component: BulmaMenuLabelComponent;
-  let fixture: ComponentFixture<BulmaMenuLabelComponent>;
+describe('TagComponent', () => {
+  let component: TagComponent;
+  let fixture: ComponentFixture<TagComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [BulmaMenuLabelComponent]
+      declarations: [TagComponent]
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BulmaMenuLabelComponent);
+    fixture = TestBed.createComponent(TagComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [],
-  imports: [CommonModule]
+  imports: [CommonModule],
+  declarations: []
 })
-export class TabsModule {}
+export class BulmaTabsModule {}
