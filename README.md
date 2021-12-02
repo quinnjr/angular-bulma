@@ -1,6 +1,6 @@
 # Angular Bulma Monorepo
 
-[![Angular-Bulma Testing](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml)
+[![Angular-Bulma Testing](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml) [![CodeQL](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml)
 
 Monorepo for the @angular-bulma projects.
 
