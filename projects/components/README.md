@@ -1,15 +1,21 @@
 # @angular-bulma/components
 
+![npm](https://img.shields.io/npm/v/@angular-bulma/components)
+
+[![Angular-Bulma Testing](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml) [![CodeQL](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml)
+
 ## Current Components
 
 - Breadcrumb
+- Dropdown
+- Menu
+- Message
 - Navbar
 
 ## Future Components
 
-- Dropdown
-- Menu
-- Message
+- Alert
+- Carousel
 - Modal
 - Pagination
 - Panel

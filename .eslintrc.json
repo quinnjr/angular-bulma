@@ -37,7 +37,9 @@
             "allowExplicitAny": true
           }
         ],
-        "rxjs/no-nested-subscribe": ["error"]
+        "rxjs/no-nested-subscribe": ["error"],
+        "no-underscore-dangle": ["off"],
+        "@typescript-eslint/member-ordering": ["off"]
       }
     },
     {

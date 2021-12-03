@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BulmaAlertModule } from './alert';
 
 import { BulmaBreadcrumbsModule } from './breadcrumbs/breadcrumbs.module';
 import { BulmaCardModule } from './card/card.module';
@@ -17,6 +18,7 @@ import { BulmaTabsModule } from './tabs/tabs.module';
 
 @NgModule({
   imports: [
+    BulmaAlertModule,
     BulmaBreadcrumbsModule,
     BulmaCardModule,
     BulmaCarouselModule,
@@ -30,9 +32,10 @@ import { BulmaTabsModule } from './tabs/tabs.module';
     BulmaNavbarModule,
     BulmaPaginationModule,
     BulmaPanelModule,
-    BulmaTabsModule,
+    BulmaTabsModule
   ],
   exports: [
+    BulmaAlertModule,
     BulmaBreadcrumbsModule,
     BulmaCardModule,
     BulmaDropdownModule,
