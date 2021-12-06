@@ -12,7 +12,7 @@ import {
   /* eslint-disable-next-line @angular-eslint/directive-selector */
   selector: '[class]'
 })
-class ClassDirective {
+export class ClassDirective {
   @HostBinding('class') @Input('class') className = '';
 }
 
@@ -51,9 +51,13 @@ class ClassDirective {
   `
 })
 export class BulmaMessageComponent {
-  @ContentChildren(ClassDirective) classes!: QueryList<ElementRef>;
+  @ContentChildren(ClassDirective, {
+    descendants: true,
+    read: ElementRef
+  })
+  classes!: QueryList<ElementRef>;
 
-  @Input() public delete: () => void = () => {};
+  @Input() public delete: (id?: unknown) => unknown = () => {};
   @Input() public color = '';
   @Input() public size = '';
 

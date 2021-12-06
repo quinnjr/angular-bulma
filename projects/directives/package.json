@@ -1,11 +1,45 @@
 {
-  "name": "directives",
-  "version": "0.0.1",
+  "name": "@angular-bulma/directives",
+  "version": "1.0.0",
+  "scripts": {
+    "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
+    "generate": "pnpm ts-node ./bin/generate-directives.ts",
+    "test": "ng test",
+    "build": "ng-packgr"
+  },
   "peerDependencies": {
     "@angular/common": "^13.0.0",
     "@angular/core": "^13.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "devDependencies": {
+    "@types/lodash.startcase": "^4.4.6",
+    "@types/lodash.upperfirst": "^4.3.6",
+    "lodash.startcase": "^4.4.0",
+    "lodash.upperfirst": "^4.3.1"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "bulma",
+    "styles",
+    "sass",
+    "directive",
+    "directives"
+  ],
+  "homepage": "http://quinnjr.github.io/angular-bulma",
+  "bugs": {
+    "url": "https://github.com/quinnjr/angular-bulma/issues"
+  },
+  "author": {
+    "name": "Joseph R. Quinn",
+    "email": "423821+quinnjr@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quinnjr/angular-bulma"
+  },
+  "license": "ISC"
 }

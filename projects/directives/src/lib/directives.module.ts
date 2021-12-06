@@ -1,29 +1,29 @@
 import { NgModule } from '@angular/core';
 
-import { ColorModule } from './color/color.module';
-import { FlexboxModule } from './flexbox/flexbox.module';
-import { OtherModule } from './other/other.module';
-import { SpacingModule } from './spacing/spacing.module';
-import { TypographyModule } from './typography/typography.module';
-import { VisabilityModule } from './visability/visability.module';
+import { BulmaColorDirectivesModule } from './color/color.module';
+import { BulmaFlexboxDirectivesModule } from './flexbox/flexbox.module';
+import { BulmaOtherDirectivesModule } from './other/other.module';
+import { BulmaSpacingDirectivesModule } from './spacing/spacing.module';
+import { BulmaTypographyDirectivesModule } from './typography/typography.module';
+import { BulmaVisibilityDirectivesModule } from './visibility/visibility.module';
 
 @NgModule({
   imports: [
-    ColorModule,
-    FlexboxModule,
-    OtherModule,
-    SpacingModule,
-    TypographyModule,
-    VisabilityModule
+    BulmaColorDirectivesModule,
+    BulmaFlexboxDirectivesModule,
+    BulmaOtherDirectivesModule,
+    BulmaSpacingDirectivesModule,
+    BulmaTypographyDirectivesModule,
+    BulmaVisibilityDirectivesModule
   ],
   declarations: [],
   exports: [
-    ColorModule,
-    FlexboxModule,
-    OtherModule,
-    SpacingModule,
-    TypographyModule,
-    VisabilityModule
+    BulmaColorDirectivesModule,
+    BulmaFlexboxDirectivesModule,
+    BulmaOtherDirectivesModule,
+    BulmaSpacingDirectivesModule,
+    BulmaTypographyDirectivesModule,
+    BulmaVisibilityDirectivesModule
   ]
 })
-export class DirectivesModule {}
+export class BulmaDirectivesModule {}

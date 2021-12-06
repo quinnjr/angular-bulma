@@ -5,6 +5,7 @@ import { BulmaMessageComponent } from './message.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [BulmaMessageComponent]
+  declarations: [BulmaMessageComponent],
+  exports: [BulmaMessageComponent]
 })
 export class BulmaMessageModule {}

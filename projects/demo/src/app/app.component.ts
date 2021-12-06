@@ -8,6 +8,8 @@ import {
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+import { capitalizeFirstLetter } from './utils';
+
 const themes = new Map<string, string>([
   [
     'Default',
@@ -107,7 +109,10 @@ const themes = new Map<string, string>([
 export class AppComponent implements AfterContentInit, AfterViewInit {
   @ViewChild('stylesheet') public stylesheet!: ElementRef<any>;
 
+  public concepts = [];
+
   public components = [
+    'alert',
     'breadcrumbs',
     'button',
     'card',
@@ -128,6 +133,15 @@ export class AppComponent implements AfterContentInit, AfterViewInit {
   ];
 
   public elements = ['image'];
+
+  public directives = [
+    'colors',
+    'flexbox',
+    'other',
+    'spacing',
+    'typography',
+    'visibility'
+  ];
 
   public isDropdownActive = false;
 

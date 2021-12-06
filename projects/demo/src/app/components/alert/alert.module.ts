@@ -5,4 +5,4 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [CommonModule]
 })
-export class VisabilityModule {}
+export class AlertModule {}

@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-icon',
+  selector: 'bu-icon',
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.css']
 })
-export class IconComponent implements OnInit {
+export class IconComponent {
   constructor() {}
-
-  ngOnInit(): void {}
 }

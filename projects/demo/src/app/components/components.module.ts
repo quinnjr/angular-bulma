@@ -6,7 +6,9 @@ import {
   BulmaMenuModule,
   BulmaNavbarModule,
   BulmaDropdownModule,
-  BulmaBreadcrumbsModule
+  BulmaBreadcrumbsModule,
+  BulmaAlertModule,
+  BulmaMessageModule
 } from '../../../../components/src/public-api';
 
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
@@ -21,11 +23,13 @@ import { ComponentsRoutingModule } from './components-routing.module';
   imports: [
     CommonModule,
     ComponentsRoutingModule,
+    BulmaAlertModule,
     BulmaBreadcrumbsModule,
     BulmaCarouselModule,
     BulmaDropdownModule,
     BulmaMenuModule,
-    BulmaNavbarModule
+    BulmaNavbarModule,
+    BulmaMessageModule
   ],
   declarations: [
     BreadcrumbsComponent,
