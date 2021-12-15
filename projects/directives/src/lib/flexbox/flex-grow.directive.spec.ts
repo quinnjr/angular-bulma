@@ -4,7 +4,7 @@ import {
   BulmaIsFlexGrow2Directive,
   BulmaIsFlexGrow3Directive,
   BulmaIsFlexGrow4Directive,
-  BulmaIsFlexGrow5Directive
+  BulmaIsFlexGrow5Directive,
 } from './flex-grow.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -47,9 +47,7 @@ describe('FlexGrow Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexGrow0Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexGrow0Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-grow-0')).toBeTruthy();
@@ -104,9 +102,7 @@ describe('FlexGrow Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexGrow1Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexGrow1Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-grow-1')).toBeTruthy();
@@ -161,9 +157,7 @@ describe('FlexGrow Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexGrow2Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexGrow2Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-grow-2')).toBeTruthy();
@@ -218,9 +212,7 @@ describe('FlexGrow Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexGrow3Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexGrow3Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-grow-3')).toBeTruthy();
@@ -275,9 +267,7 @@ describe('FlexGrow Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexGrow4Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexGrow4Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-grow-4')).toBeTruthy();
@@ -332,9 +322,7 @@ describe('FlexGrow Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexGrow5Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexGrow5Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-grow-5')).toBeTruthy();

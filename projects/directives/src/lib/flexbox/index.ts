@@ -6,3 +6,4 @@ export * from './align-items.directive';
 export * from './align-self.directive';
 export * from './flex-grow.directive';
 export * from './flex-shrink.directive';
+export * from './flexbox.module';

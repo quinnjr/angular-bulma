@@ -3,7 +3,7 @@ import {
   BulmaIsFlexDirective,
   BulmaIsInlineDirective,
   BulmaIsInlineBlockDirective,
-  BulmaIsInlineFlexDirective
+  BulmaIsInlineFlexDirective,
 } from './show.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -46,9 +46,7 @@ describe('Show Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsBlockDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block')).toBeTruthy();
@@ -103,9 +101,7 @@ describe('Show Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex')).toBeTruthy();
@@ -160,9 +156,7 @@ describe('Show Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsInlineDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline')).toBeTruthy();
@@ -217,9 +211,7 @@ describe('Show Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsInlineBlockDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-block')).toBeTruthy();
@@ -274,9 +266,7 @@ describe('Show Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsInlineFlexDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-flex')).toBeTruthy();

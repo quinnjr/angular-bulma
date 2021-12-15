@@ -4,9 +4,7 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-has-text-centered]'
 })
 export class BulmaHasTextCenteredDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered') public set buHasTextCentered(
-    val: string | boolean
-  ) {
+  @Input('bu-has-text-centered') public set buHasTextCentered(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -47,9 +45,7 @@ export class BulmaHasTextCenteredDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-justified]'
 })
 export class BulmaHasTextJustifiedDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified') public set buHasTextJustified(
-    val: string | boolean
-  ) {
+  @Input('bu-has-text-justified') public set buHasTextJustified(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

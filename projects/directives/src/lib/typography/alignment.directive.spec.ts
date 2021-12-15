@@ -2,7 +2,7 @@ import {
   BulmaHasTextCenteredDirective,
   BulmaHasTextJustifiedDirective,
   BulmaHasTextLeftDirective,
-  BulmaHasTextRightDirective
+  BulmaHasTextRightDirective,
 } from './alignment.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -45,9 +45,7 @@ describe('Alignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaHasTextCenteredDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-centered')).toBeTruthy();
@@ -102,9 +100,7 @@ describe('Alignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaHasTextJustifiedDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-justified')).toBeTruthy();
@@ -159,9 +155,7 @@ describe('Alignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaHasTextLeftDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-left')).toBeTruthy();
@@ -216,9 +210,7 @@ describe('Alignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaHasTextRightDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-right')).toBeTruthy();

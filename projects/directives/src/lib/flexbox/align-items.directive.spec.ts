@@ -7,7 +7,7 @@ import {
   BulmaIsAlignItemsStartDirective,
   BulmaIsAlignItemsEndDirective,
   BulmaIsAlignItemsSelfStartDirective,
-  BulmaIsAlignItemsSelfEndDirective
+  BulmaIsAlignItemsSelfEndDirective,
 } from './align-items.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -50,9 +50,7 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsStretchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsStretchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-items-stretch')).toBeTruthy();
@@ -107,25 +105,17 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsFlexStartDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsFlexStartDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-align-items-flex-start')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-align-items-flex-start')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-align-items-flex-start')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-align-items-flex-start')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-align-items-flex-start')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-align-items-flex-start')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -170,9 +160,7 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsFlexEndDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsFlexEndDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-items-flex-end')).toBeTruthy();
@@ -227,9 +215,7 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsCenterDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsCenterDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-items-center')).toBeTruthy();
@@ -284,9 +270,7 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsBaselineDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsBaselineDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-items-baseline')).toBeTruthy();
@@ -341,9 +325,7 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsStartDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsStartDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-items-start')).toBeTruthy();
@@ -398,9 +380,7 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsEndDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsEndDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-items-end')).toBeTruthy();
@@ -455,25 +435,17 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsSelfStartDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsSelfStartDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-align-items-self-start')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-align-items-self-start')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-align-items-self-start')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-align-items-self-start')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-align-items-self-start')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-align-items-self-start')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -518,9 +490,7 @@ describe('AlignItems Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignItemsSelfEndDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignItemsSelfEndDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-items-self-end')).toBeTruthy();

@@ -45,9 +45,7 @@ export class BulmaIsFlexNowrapDirective implements OnChanges, OnInit {
   selector: '[bu-is-flex-wrap-wrap]'
 })
 export class BulmaIsFlexWrapWrapDirective implements OnChanges, OnInit {
-  @Input('bu-is-flex-wrap-wrap') public set buIsFlexWrapWrap(
-    val: string | boolean
-  ) {
+  @Input('bu-is-flex-wrap-wrap') public set buIsFlexWrapWrap(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -88,9 +86,7 @@ export class BulmaIsFlexWrapWrapDirective implements OnChanges, OnInit {
   selector: '[bu-is-flex-wrap-wrap-reverse]'
 })
 export class BulmaIsFlexWrapWrapReverseDirective implements OnChanges, OnInit {
-  @Input('bu-is-flex-wrap-wrap-reverse') public set buIsFlexWrapWrapReverse(
-    val: string | boolean
-  ) {
+  @Input('bu-is-flex-wrap-wrap-reverse') public set buIsFlexWrapWrapReverse(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -114,9 +110,7 @@ export class BulmaIsFlexWrapWrapReverseDirective implements OnChanges, OnInit {
     if (this.buIsFlexWrapWrapReverse) {
       this.elementRef.nativeElement.classList.add('is-flex-wrap-wrap-reverse');
     } else {
-      this.elementRef.nativeElement.classList.remove(
-        'is-flex-wrap-wrap-reverse'
-      );
+      this.elementRef.nativeElement.classList.remove('is-flex-wrap-wrap-reverse');
     }
   }
 
@@ -124,9 +118,7 @@ export class BulmaIsFlexWrapWrapReverseDirective implements OnChanges, OnInit {
     if (this.buIsFlexWrapWrapReverse) {
       this.elementRef.nativeElement.classList.add('is-flex-wrap-wrap-reverse');
     } else {
-      this.elementRef.nativeElement.classList.remove(
-        'is-flex-wrap-wrap-reverse'
-      );
+      this.elementRef.nativeElement.classList.remove('is-flex-wrap-wrap-reverse');
     }
   }
 }

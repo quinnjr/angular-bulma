@@ -5,7 +5,7 @@ import {
   BulmaMx3Directive,
   BulmaMx4Directive,
   BulmaMx5Directive,
-  BulmaMx6Directive
+  BulmaMx6Directive,
 } from './margin-left-right.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -48,9 +48,7 @@ describe('MarginLeftRight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaMx0Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaMx0Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('mx-0')).toBeTruthy();
@@ -105,9 +103,7 @@ describe('MarginLeftRight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaMx1Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaMx1Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('mx-1')).toBeTruthy();
@@ -162,9 +158,7 @@ describe('MarginLeftRight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaMx2Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaMx2Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('mx-2')).toBeTruthy();
@@ -219,9 +213,7 @@ describe('MarginLeftRight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaMx3Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaMx3Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('mx-3')).toBeTruthy();
@@ -276,9 +268,7 @@ describe('MarginLeftRight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaMx4Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaMx4Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('mx-4')).toBeTruthy();
@@ -333,9 +323,7 @@ describe('MarginLeftRight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaMx5Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaMx5Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('mx-5')).toBeTruthy();
@@ -390,9 +378,7 @@ describe('MarginLeftRight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaMx6Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaMx6Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('mx-6')).toBeTruthy();

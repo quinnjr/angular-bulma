@@ -5,7 +5,7 @@ import {
   BulmaIsSize4Directive,
   BulmaIsSize5Directive,
   BulmaIsSize6Directive,
-  BulmaIsSize7Directive
+  BulmaIsSize7Directive,
 } from './size.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -48,9 +48,7 @@ describe('Size Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize1Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize1Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-1')).toBeTruthy();
@@ -105,9 +103,7 @@ describe('Size Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize2Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize2Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-2')).toBeTruthy();
@@ -162,9 +158,7 @@ describe('Size Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize3Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize3Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-3')).toBeTruthy();
@@ -219,9 +213,7 @@ describe('Size Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize4Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize4Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-4')).toBeTruthy();
@@ -276,9 +268,7 @@ describe('Size Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize5Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize5Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-5')).toBeTruthy();
@@ -333,9 +323,7 @@ describe('Size Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize6Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize6Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-6')).toBeTruthy();
@@ -390,9 +378,7 @@ describe('Size Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize7Directive)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize7Directive));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-7')).toBeTruthy();

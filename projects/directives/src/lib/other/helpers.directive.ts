@@ -86,9 +86,7 @@ export class BulmaIsPulledLeftDirective implements OnChanges, OnInit {
   selector: '[bu-is-pulled-right]'
 })
 export class BulmaIsPulledRightDirective implements OnChanges, OnInit {
-  @Input('bu-is-pulled-right') public set buIsPulledRight(
-    val: string | boolean
-  ) {
+  @Input('bu-is-pulled-right') public set buIsPulledRight(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -293,9 +291,7 @@ export class BulmaIsShadowlessDirective implements OnChanges, OnInit {
   selector: '[bu-is-unselectable]'
 })
 export class BulmaIsUnselectableDirective implements OnChanges, OnInit {
-  @Input('bu-is-unselectable') public set buIsUnselectable(
-    val: string | boolean
-  ) {
+  @Input('bu-is-unselectable') public set buIsUnselectable(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

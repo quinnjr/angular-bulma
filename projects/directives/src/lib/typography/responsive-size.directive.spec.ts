@@ -40,7 +40,7 @@ import {
   BulmaIsSize7TabletDirective,
   BulmaIsSize7DesktopDirective,
   BulmaIsSize7WidescreenDirective,
-  BulmaIsSize7FullhdDirective
+  BulmaIsSize7FullhdDirective,
 } from './responsive-size.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -83,9 +83,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize1MobileDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize1MobileDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-1-mobile')).toBeTruthy();
@@ -140,9 +138,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize1TouchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize1TouchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-1-touch')).toBeTruthy();
@@ -197,9 +193,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize1TabletDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize1TabletDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-1-tablet')).toBeTruthy();
@@ -254,9 +248,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize1DesktopDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize1DesktopDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-1-desktop')).toBeTruthy();
@@ -311,9 +303,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize1WidescreenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize1WidescreenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-1-widescreen')).toBeTruthy();
@@ -368,9 +358,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize1FullhdDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize1FullhdDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-1-fullhd')).toBeTruthy();
@@ -425,9 +413,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize2MobileDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize2MobileDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-2-mobile')).toBeTruthy();
@@ -482,9 +468,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize2TouchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize2TouchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-2-touch')).toBeTruthy();
@@ -539,9 +523,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize2TabletDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize2TabletDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-2-tablet')).toBeTruthy();
@@ -596,9 +578,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize2DesktopDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize2DesktopDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-2-desktop')).toBeTruthy();
@@ -653,9 +633,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize2WidescreenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize2WidescreenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-2-widescreen')).toBeTruthy();
@@ -710,9 +688,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize2FullhdDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize2FullhdDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-2-fullhd')).toBeTruthy();
@@ -767,9 +743,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize3MobileDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize3MobileDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-3-mobile')).toBeTruthy();
@@ -824,9 +798,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize3TouchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize3TouchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-3-touch')).toBeTruthy();
@@ -881,9 +853,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize3TabletDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize3TabletDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-3-tablet')).toBeTruthy();
@@ -938,9 +908,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize3DesktopDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize3DesktopDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-3-desktop')).toBeTruthy();
@@ -995,9 +963,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize3WidescreenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize3WidescreenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-3-widescreen')).toBeTruthy();
@@ -1052,9 +1018,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize3FullhdDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize3FullhdDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-3-fullhd')).toBeTruthy();
@@ -1109,9 +1073,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize4MobileDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize4MobileDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-4-mobile')).toBeTruthy();
@@ -1166,9 +1128,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize4TouchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize4TouchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-4-touch')).toBeTruthy();
@@ -1223,9 +1183,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize4TabletDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize4TabletDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-4-tablet')).toBeTruthy();
@@ -1280,9 +1238,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize4DesktopDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize4DesktopDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-4-desktop')).toBeTruthy();
@@ -1337,9 +1293,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize4WidescreenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize4WidescreenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-4-widescreen')).toBeTruthy();
@@ -1394,9 +1348,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize4FullhdDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize4FullhdDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-4-fullhd')).toBeTruthy();
@@ -1451,9 +1403,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize5MobileDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize5MobileDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-5-mobile')).toBeTruthy();
@@ -1508,9 +1458,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize5TouchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize5TouchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-5-touch')).toBeTruthy();
@@ -1565,9 +1513,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize5TabletDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize5TabletDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-5-tablet')).toBeTruthy();
@@ -1622,9 +1568,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize5DesktopDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize5DesktopDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-5-desktop')).toBeTruthy();
@@ -1679,9 +1623,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize5WidescreenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize5WidescreenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-5-widescreen')).toBeTruthy();
@@ -1736,9 +1678,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize5FullhdDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize5FullhdDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-5-fullhd')).toBeTruthy();
@@ -1793,9 +1733,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize6MobileDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize6MobileDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-6-mobile')).toBeTruthy();
@@ -1850,9 +1788,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize6TouchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize6TouchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-6-touch')).toBeTruthy();
@@ -1907,9 +1843,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize6TabletDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize6TabletDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-6-tablet')).toBeTruthy();
@@ -1964,9 +1898,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize6DesktopDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize6DesktopDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-6-desktop')).toBeTruthy();
@@ -2021,9 +1953,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize6WidescreenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize6WidescreenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-6-widescreen')).toBeTruthy();
@@ -2078,9 +2008,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize6FullhdDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize6FullhdDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-6-fullhd')).toBeTruthy();
@@ -2135,9 +2063,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize7MobileDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize7MobileDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-7-mobile')).toBeTruthy();
@@ -2192,9 +2118,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize7TouchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize7TouchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-7-touch')).toBeTruthy();
@@ -2249,9 +2173,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize7TabletDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize7TabletDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-7-tablet')).toBeTruthy();
@@ -2306,9 +2228,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize7DesktopDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize7DesktopDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-7-desktop')).toBeTruthy();
@@ -2363,9 +2283,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize7WidescreenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize7WidescreenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-7-widescreen')).toBeTruthy();
@@ -2420,9 +2338,7 @@ describe('ResponsiveSize Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsSize7FullhdDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSize7FullhdDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-size-7-fullhd')).toBeTruthy();

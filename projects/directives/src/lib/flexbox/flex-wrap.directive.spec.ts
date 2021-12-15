@@ -1,7 +1,7 @@
 import {
   BulmaIsFlexNowrapDirective,
   BulmaIsFlexWrapWrapDirective,
-  BulmaIsFlexWrapWrapReverseDirective
+  BulmaIsFlexWrapWrapReverseDirective,
 } from './flex-wrap.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -44,9 +44,7 @@ describe('FlexWrap Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexNowrapDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexNowrapDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-nowrap')).toBeTruthy();
@@ -101,9 +99,7 @@ describe('FlexWrap Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexWrapWrapDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexWrapWrapDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-wrap-wrap')).toBeTruthy();
@@ -158,25 +154,17 @@ describe('FlexWrap Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsFlexWrapWrapReverseDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexWrapWrapReverseDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-flex-wrap-wrap-reverse')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-flex-wrap-wrap-reverse')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-flex-wrap-wrap-reverse')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-flex-wrap-wrap-reverse')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-flex-wrap-wrap-reverse')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-flex-wrap-wrap-reverse')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {

@@ -4,9 +4,7 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-is-flex-shrink-0]'
 })
 export class BulmaIsFlexShrink0Directive implements OnChanges, OnInit {
-  @Input('bu-is-flex-shrink-0') public set buIsFlexShrink0(
-    val: string | boolean
-  ) {
+  @Input('bu-is-flex-shrink-0') public set buIsFlexShrink0(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -47,9 +45,7 @@ export class BulmaIsFlexShrink0Directive implements OnChanges, OnInit {
   selector: '[bu-is-flex-shrink-1]'
 })
 export class BulmaIsFlexShrink1Directive implements OnChanges, OnInit {
-  @Input('bu-is-flex-shrink-1') public set buIsFlexShrink1(
-    val: string | boolean
-  ) {
+  @Input('bu-is-flex-shrink-1') public set buIsFlexShrink1(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -90,9 +86,7 @@ export class BulmaIsFlexShrink1Directive implements OnChanges, OnInit {
   selector: '[bu-is-flex-shrink-2]'
 })
 export class BulmaIsFlexShrink2Directive implements OnChanges, OnInit {
-  @Input('bu-is-flex-shrink-2') public set buIsFlexShrink2(
-    val: string | boolean
-  ) {
+  @Input('bu-is-flex-shrink-2') public set buIsFlexShrink2(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -133,9 +127,7 @@ export class BulmaIsFlexShrink2Directive implements OnChanges, OnInit {
   selector: '[bu-is-flex-shrink-3]'
 })
 export class BulmaIsFlexShrink3Directive implements OnChanges, OnInit {
-  @Input('bu-is-flex-shrink-3') public set buIsFlexShrink3(
-    val: string | boolean
-  ) {
+  @Input('bu-is-flex-shrink-3') public set buIsFlexShrink3(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -176,9 +168,7 @@ export class BulmaIsFlexShrink3Directive implements OnChanges, OnInit {
   selector: '[bu-is-flex-shrink-4]'
 })
 export class BulmaIsFlexShrink4Directive implements OnChanges, OnInit {
-  @Input('bu-is-flex-shrink-4') public set buIsFlexShrink4(
-    val: string | boolean
-  ) {
+  @Input('bu-is-flex-shrink-4') public set buIsFlexShrink4(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -219,9 +209,7 @@ export class BulmaIsFlexShrink4Directive implements OnChanges, OnInit {
   selector: '[bu-is-flex-shrink-5]'
 })
 export class BulmaIsFlexShrink5Directive implements OnChanges, OnInit {
-  @Input('bu-is-flex-shrink-5') public set buIsFlexShrink5(
-    val: string | boolean
-  ) {
+  @Input('bu-is-flex-shrink-5') public set buIsFlexShrink5(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

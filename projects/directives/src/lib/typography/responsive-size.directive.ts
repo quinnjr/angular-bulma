@@ -4,9 +4,7 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-is-size-1-mobile]'
 })
 export class BulmaIsSize1MobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-1-mobile') public set buIsSize1Mobile(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-1-mobile') public set buIsSize1Mobile(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -47,9 +45,7 @@ export class BulmaIsSize1MobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-1-touch]'
 })
 export class BulmaIsSize1TouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-1-touch') public set buIsSize1Touch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-1-touch') public set buIsSize1Touch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -90,9 +86,7 @@ export class BulmaIsSize1TouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-1-tablet]'
 })
 export class BulmaIsSize1TabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-1-tablet') public set buIsSize1Tablet(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-1-tablet') public set buIsSize1Tablet(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -133,9 +127,7 @@ export class BulmaIsSize1TabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-1-desktop]'
 })
 export class BulmaIsSize1DesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-1-desktop') public set buIsSize1Desktop(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-1-desktop') public set buIsSize1Desktop(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -176,9 +168,7 @@ export class BulmaIsSize1DesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-1-widescreen]'
 })
 export class BulmaIsSize1WidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-1-widescreen') public set buIsSize1Widescreen(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-1-widescreen') public set buIsSize1Widescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -219,9 +209,7 @@ export class BulmaIsSize1WidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-1-fullhd]'
 })
 export class BulmaIsSize1FullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-1-fullhd') public set buIsSize1Fullhd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-1-fullhd') public set buIsSize1Fullhd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -262,9 +250,7 @@ export class BulmaIsSize1FullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-2-mobile]'
 })
 export class BulmaIsSize2MobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-2-mobile') public set buIsSize2Mobile(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-2-mobile') public set buIsSize2Mobile(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -305,9 +291,7 @@ export class BulmaIsSize2MobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-2-touch]'
 })
 export class BulmaIsSize2TouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-2-touch') public set buIsSize2Touch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-2-touch') public set buIsSize2Touch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -348,9 +332,7 @@ export class BulmaIsSize2TouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-2-tablet]'
 })
 export class BulmaIsSize2TabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-2-tablet') public set buIsSize2Tablet(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-2-tablet') public set buIsSize2Tablet(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -391,9 +373,7 @@ export class BulmaIsSize2TabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-2-desktop]'
 })
 export class BulmaIsSize2DesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-2-desktop') public set buIsSize2Desktop(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-2-desktop') public set buIsSize2Desktop(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -434,9 +414,7 @@ export class BulmaIsSize2DesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-2-widescreen]'
 })
 export class BulmaIsSize2WidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-2-widescreen') public set buIsSize2Widescreen(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-2-widescreen') public set buIsSize2Widescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -477,9 +455,7 @@ export class BulmaIsSize2WidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-2-fullhd]'
 })
 export class BulmaIsSize2FullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-2-fullhd') public set buIsSize2Fullhd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-2-fullhd') public set buIsSize2Fullhd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -520,9 +496,7 @@ export class BulmaIsSize2FullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-3-mobile]'
 })
 export class BulmaIsSize3MobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-3-mobile') public set buIsSize3Mobile(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-3-mobile') public set buIsSize3Mobile(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -563,9 +537,7 @@ export class BulmaIsSize3MobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-3-touch]'
 })
 export class BulmaIsSize3TouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-3-touch') public set buIsSize3Touch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-3-touch') public set buIsSize3Touch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -606,9 +578,7 @@ export class BulmaIsSize3TouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-3-tablet]'
 })
 export class BulmaIsSize3TabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-3-tablet') public set buIsSize3Tablet(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-3-tablet') public set buIsSize3Tablet(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -649,9 +619,7 @@ export class BulmaIsSize3TabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-3-desktop]'
 })
 export class BulmaIsSize3DesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-3-desktop') public set buIsSize3Desktop(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-3-desktop') public set buIsSize3Desktop(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -692,9 +660,7 @@ export class BulmaIsSize3DesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-3-widescreen]'
 })
 export class BulmaIsSize3WidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-3-widescreen') public set buIsSize3Widescreen(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-3-widescreen') public set buIsSize3Widescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -735,9 +701,7 @@ export class BulmaIsSize3WidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-3-fullhd]'
 })
 export class BulmaIsSize3FullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-3-fullhd') public set buIsSize3Fullhd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-3-fullhd') public set buIsSize3Fullhd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -778,9 +742,7 @@ export class BulmaIsSize3FullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-4-mobile]'
 })
 export class BulmaIsSize4MobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-4-mobile') public set buIsSize4Mobile(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-4-mobile') public set buIsSize4Mobile(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -821,9 +783,7 @@ export class BulmaIsSize4MobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-4-touch]'
 })
 export class BulmaIsSize4TouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-4-touch') public set buIsSize4Touch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-4-touch') public set buIsSize4Touch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -864,9 +824,7 @@ export class BulmaIsSize4TouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-4-tablet]'
 })
 export class BulmaIsSize4TabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-4-tablet') public set buIsSize4Tablet(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-4-tablet') public set buIsSize4Tablet(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -907,9 +865,7 @@ export class BulmaIsSize4TabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-4-desktop]'
 })
 export class BulmaIsSize4DesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-4-desktop') public set buIsSize4Desktop(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-4-desktop') public set buIsSize4Desktop(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -950,9 +906,7 @@ export class BulmaIsSize4DesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-4-widescreen]'
 })
 export class BulmaIsSize4WidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-4-widescreen') public set buIsSize4Widescreen(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-4-widescreen') public set buIsSize4Widescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -993,9 +947,7 @@ export class BulmaIsSize4WidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-4-fullhd]'
 })
 export class BulmaIsSize4FullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-4-fullhd') public set buIsSize4Fullhd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-4-fullhd') public set buIsSize4Fullhd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1036,9 +988,7 @@ export class BulmaIsSize4FullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-5-mobile]'
 })
 export class BulmaIsSize5MobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-5-mobile') public set buIsSize5Mobile(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-5-mobile') public set buIsSize5Mobile(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1079,9 +1029,7 @@ export class BulmaIsSize5MobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-5-touch]'
 })
 export class BulmaIsSize5TouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-5-touch') public set buIsSize5Touch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-5-touch') public set buIsSize5Touch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1122,9 +1070,7 @@ export class BulmaIsSize5TouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-5-tablet]'
 })
 export class BulmaIsSize5TabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-5-tablet') public set buIsSize5Tablet(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-5-tablet') public set buIsSize5Tablet(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1165,9 +1111,7 @@ export class BulmaIsSize5TabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-5-desktop]'
 })
 export class BulmaIsSize5DesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-5-desktop') public set buIsSize5Desktop(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-5-desktop') public set buIsSize5Desktop(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1208,9 +1152,7 @@ export class BulmaIsSize5DesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-5-widescreen]'
 })
 export class BulmaIsSize5WidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-5-widescreen') public set buIsSize5Widescreen(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-5-widescreen') public set buIsSize5Widescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1251,9 +1193,7 @@ export class BulmaIsSize5WidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-5-fullhd]'
 })
 export class BulmaIsSize5FullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-5-fullhd') public set buIsSize5Fullhd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-5-fullhd') public set buIsSize5Fullhd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1294,9 +1234,7 @@ export class BulmaIsSize5FullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-6-mobile]'
 })
 export class BulmaIsSize6MobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-6-mobile') public set buIsSize6Mobile(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-6-mobile') public set buIsSize6Mobile(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1337,9 +1275,7 @@ export class BulmaIsSize6MobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-6-touch]'
 })
 export class BulmaIsSize6TouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-6-touch') public set buIsSize6Touch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-6-touch') public set buIsSize6Touch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1380,9 +1316,7 @@ export class BulmaIsSize6TouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-6-tablet]'
 })
 export class BulmaIsSize6TabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-6-tablet') public set buIsSize6Tablet(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-6-tablet') public set buIsSize6Tablet(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1423,9 +1357,7 @@ export class BulmaIsSize6TabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-6-desktop]'
 })
 export class BulmaIsSize6DesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-6-desktop') public set buIsSize6Desktop(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-6-desktop') public set buIsSize6Desktop(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1466,9 +1398,7 @@ export class BulmaIsSize6DesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-6-widescreen]'
 })
 export class BulmaIsSize6WidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-6-widescreen') public set buIsSize6Widescreen(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-6-widescreen') public set buIsSize6Widescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1509,9 +1439,7 @@ export class BulmaIsSize6WidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-6-fullhd]'
 })
 export class BulmaIsSize6FullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-6-fullhd') public set buIsSize6Fullhd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-6-fullhd') public set buIsSize6Fullhd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1552,9 +1480,7 @@ export class BulmaIsSize6FullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-7-mobile]'
 })
 export class BulmaIsSize7MobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-7-mobile') public set buIsSize7Mobile(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-7-mobile') public set buIsSize7Mobile(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1595,9 +1521,7 @@ export class BulmaIsSize7MobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-7-touch]'
 })
 export class BulmaIsSize7TouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-7-touch') public set buIsSize7Touch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-7-touch') public set buIsSize7Touch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1638,9 +1562,7 @@ export class BulmaIsSize7TouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-7-tablet]'
 })
 export class BulmaIsSize7TabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-7-tablet') public set buIsSize7Tablet(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-7-tablet') public set buIsSize7Tablet(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1681,9 +1603,7 @@ export class BulmaIsSize7TabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-7-desktop]'
 })
 export class BulmaIsSize7DesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-7-desktop') public set buIsSize7Desktop(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-7-desktop') public set buIsSize7Desktop(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1724,9 +1644,7 @@ export class BulmaIsSize7DesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-7-widescreen]'
 })
 export class BulmaIsSize7WidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-7-widescreen') public set buIsSize7Widescreen(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-7-widescreen') public set buIsSize7Widescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1767,9 +1685,7 @@ export class BulmaIsSize7WidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-size-7-fullhd]'
 })
 export class BulmaIsSize7FullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-size-7-fullhd') public set buIsSize7Fullhd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-size-7-fullhd') public set buIsSize7Fullhd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

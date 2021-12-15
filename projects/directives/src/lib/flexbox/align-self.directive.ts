@@ -4,9 +4,7 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-is-align-self-auto]'
 })
 export class BulmaIsAlignSelfAutoDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-self-auto') public set buIsAlignSelfAuto(
-    val: string | boolean
-  ) {
+  @Input('bu-is-align-self-auto') public set buIsAlignSelfAuto(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -47,9 +45,7 @@ export class BulmaIsAlignSelfAutoDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-self-flex-start]'
 })
 export class BulmaIsAlignSelfFlexStartDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-self-flex-start') public set buIsAlignSelfFlexStart(
-    val: string | boolean
-  ) {
+  @Input('bu-is-align-self-flex-start') public set buIsAlignSelfFlexStart(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -73,9 +69,7 @@ export class BulmaIsAlignSelfFlexStartDirective implements OnChanges, OnInit {
     if (this.buIsAlignSelfFlexStart) {
       this.elementRef.nativeElement.classList.add('is-align-self-flex-start');
     } else {
-      this.elementRef.nativeElement.classList.remove(
-        'is-align-self-flex-start'
-      );
+      this.elementRef.nativeElement.classList.remove('is-align-self-flex-start');
     }
   }
 
@@ -83,9 +77,7 @@ export class BulmaIsAlignSelfFlexStartDirective implements OnChanges, OnInit {
     if (this.buIsAlignSelfFlexStart) {
       this.elementRef.nativeElement.classList.add('is-align-self-flex-start');
     } else {
-      this.elementRef.nativeElement.classList.remove(
-        'is-align-self-flex-start'
-      );
+      this.elementRef.nativeElement.classList.remove('is-align-self-flex-start');
     }
   }
 }
@@ -94,9 +86,7 @@ export class BulmaIsAlignSelfFlexStartDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-self-flex-end]'
 })
 export class BulmaIsAlignSelfFlexEndDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-self-flex-end') public set buIsAlignSelfFlexEnd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-align-self-flex-end') public set buIsAlignSelfFlexEnd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -137,9 +127,7 @@ export class BulmaIsAlignSelfFlexEndDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-self-center]'
 })
 export class BulmaIsAlignSelfCenterDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-self-center') public set buIsAlignSelfCenter(
-    val: string | boolean
-  ) {
+  @Input('bu-is-align-self-center') public set buIsAlignSelfCenter(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -180,9 +168,7 @@ export class BulmaIsAlignSelfCenterDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-self-baseline]'
 })
 export class BulmaIsAlignSelfBaselineDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-self-baseline') public set buIsAlignSelfBaseline(
-    val: string | boolean
-  ) {
+  @Input('bu-is-align-self-baseline') public set buIsAlignSelfBaseline(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -223,9 +209,7 @@ export class BulmaIsAlignSelfBaselineDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-self-stretch]'
 })
 export class BulmaIsAlignSelfStretchDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-self-stretch') public set buIsAlignSelfStretch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-align-self-stretch') public set buIsAlignSelfStretch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

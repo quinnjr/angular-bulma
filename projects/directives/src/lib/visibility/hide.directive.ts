@@ -4,9 +4,7 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-is-hidden-mobile]'
 })
 export class BulmaIsHiddenMobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-mobile') public set buIsHiddenMobile(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-mobile') public set buIsHiddenMobile(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -47,9 +45,7 @@ export class BulmaIsHiddenMobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-hidden-tablet-only]'
 })
 export class BulmaIsHiddenTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-tablet-only') public set buIsHiddenTabletOnly(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-tablet-only') public set buIsHiddenTabletOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -90,9 +86,7 @@ export class BulmaIsHiddenTabletOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-hidden-desktop-only]'
 })
 export class BulmaIsHiddenDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-desktop-only') public set buIsHiddenDesktopOnly(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-desktop-only') public set buIsHiddenDesktopOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -133,9 +127,7 @@ export class BulmaIsHiddenDesktopOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-hidden-widescreen-only]'
 })
 export class BulmaIsHiddenWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-widescreen-only') public set buIsHiddenWidescreenOnly(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-widescreen-only') public set buIsHiddenWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -159,9 +151,7 @@ export class BulmaIsHiddenWidescreenOnlyDirective implements OnChanges, OnInit {
     if (this.buIsHiddenWidescreenOnly) {
       this.elementRef.nativeElement.classList.add('is-hidden-widescreen-only');
     } else {
-      this.elementRef.nativeElement.classList.remove(
-        'is-hidden-widescreen-only'
-      );
+      this.elementRef.nativeElement.classList.remove('is-hidden-widescreen-only');
     }
   }
 
@@ -169,9 +159,7 @@ export class BulmaIsHiddenWidescreenOnlyDirective implements OnChanges, OnInit {
     if (this.buIsHiddenWidescreenOnly) {
       this.elementRef.nativeElement.classList.add('is-hidden-widescreen-only');
     } else {
-      this.elementRef.nativeElement.classList.remove(
-        'is-hidden-widescreen-only'
-      );
+      this.elementRef.nativeElement.classList.remove('is-hidden-widescreen-only');
     }
   }
 }
@@ -180,9 +168,7 @@ export class BulmaIsHiddenWidescreenOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-hidden-touch]'
 })
 export class BulmaIsHiddenTouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-touch') public set buIsHiddenTouch(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-touch') public set buIsHiddenTouch(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -223,9 +209,7 @@ export class BulmaIsHiddenTouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-hidden-tablet]'
 })
 export class BulmaIsHiddenTabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-tablet') public set buIsHiddenTablet(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-tablet') public set buIsHiddenTablet(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -266,9 +250,7 @@ export class BulmaIsHiddenTabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-hidden-desktop]'
 })
 export class BulmaIsHiddenDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-desktop') public set buIsHiddenDesktop(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-desktop') public set buIsHiddenDesktop(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -309,9 +291,7 @@ export class BulmaIsHiddenDesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-hidden-widescreen]'
 })
 export class BulmaIsHiddenWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-widescreen') public set buIsHiddenWidescreen(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-widescreen') public set buIsHiddenWidescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -352,9 +332,7 @@ export class BulmaIsHiddenWidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-hidden-fullhd]'
 })
 export class BulmaIsHiddenFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-hidden-fullhd') public set buIsHiddenFullhd(
-    val: string | boolean
-  ) {
+  @Input('bu-is-hidden-fullhd') public set buIsHiddenFullhd(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

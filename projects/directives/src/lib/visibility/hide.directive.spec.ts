@@ -7,7 +7,7 @@ import {
   BulmaIsHiddenTabletDirective,
   BulmaIsHiddenDesktopDirective,
   BulmaIsHiddenWidescreenDirective,
-  BulmaIsHiddenFullhdDirective
+  BulmaIsHiddenFullhdDirective,
 } from './hide.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -50,9 +50,7 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenMobileDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenMobileDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden-mobile')).toBeTruthy();
@@ -107,9 +105,7 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenTabletOnlyDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenTabletOnlyDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden-tablet-only')).toBeTruthy();
@@ -164,9 +160,7 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenDesktopOnlyDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenDesktopOnlyDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden-desktop-only')).toBeTruthy();
@@ -221,25 +215,17 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenWidescreenOnlyDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenWidescreenOnlyDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-hidden-widescreen-only')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-hidden-widescreen-only')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-hidden-widescreen-only')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-hidden-widescreen-only')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-hidden-widescreen-only')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-hidden-widescreen-only')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -284,9 +270,7 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenTouchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenTouchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden-touch')).toBeTruthy();
@@ -341,9 +325,7 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenTabletDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenTabletDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden-tablet')).toBeTruthy();
@@ -398,9 +380,7 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenDesktopDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenDesktopDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden-desktop')).toBeTruthy();
@@ -455,9 +435,7 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenWidescreenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenWidescreenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden-widescreen')).toBeTruthy();
@@ -512,9 +490,7 @@ describe('Hide Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsHiddenFullhdDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenFullhdDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden-fullhd')).toBeTruthy();

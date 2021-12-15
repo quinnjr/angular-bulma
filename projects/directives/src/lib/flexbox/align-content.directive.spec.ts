@@ -8,7 +8,7 @@ import {
   BulmaIsAlignContentStretchDirective,
   BulmaIsAlignContentStartDirective,
   BulmaIsAlignContentEndDirective,
-  BulmaIsAlignContentBaselineDirective
+  BulmaIsAlignContentBaselineDirective,
 } from './align-content.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -51,36 +51,24 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentFlexStartDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentFlexStartDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-align-content-flex-start')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-align-content-flex-start')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-align-content-flex-start')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-align-content-flex-start')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-align-content-flex-start')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-align-content-flex-start')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(
-        test3.classList.contains('is-align-content-flex-start')
-      ).toBeFalsy();
+      expect(test3.classList.contains('is-align-content-flex-start')).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(
-        test5.classList.contains('is-align-content-flex-start')
-      ).toBeFalsy();
+      expect(test5.classList.contains('is-align-content-flex-start')).toBeFalsy();
     });
   });
 
@@ -118,25 +106,17 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentFlexEndDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentFlexEndDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-align-content-flex-end')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-align-content-flex-end')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-align-content-flex-end')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-align-content-flex-end')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-align-content-flex-end')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-align-content-flex-end')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -181,9 +161,7 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentCenterDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentCenterDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-content-center')).toBeTruthy();
@@ -210,14 +188,8 @@ describe('AlignContent Directives', () => {
         <div bu-is-align-content-space-between id="test1"></div>
         <div [bu-is-align-content-space-between]="true" id="test2"></div>
         <div [bu-is-align-content-space-between]="false" id="test3"></div>
-        <div
-          [bu-is-align-content-space-between]="testMeTrue()"
-          id="test4"
-        ></div>
-        <div
-          [bu-is-align-content-space-between]="testMeFalse()"
-          id="test5"
-        ></div>
+        <div [bu-is-align-content-space-between]="testMeTrue()" id="test4"></div>
+        <div [bu-is-align-content-space-between]="testMeFalse()" id="test5"></div>
       `
     })
     class TestComponent {
@@ -244,36 +216,24 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentSpaceBetweenDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentSpaceBetweenDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-align-content-space-between')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-align-content-space-between')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-align-content-space-between')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-align-content-space-between')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-align-content-space-between')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-align-content-space-between')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(
-        test3.classList.contains('is-align-content-space-between')
-      ).toBeFalsy();
+      expect(test3.classList.contains('is-align-content-space-between')).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(
-        test5.classList.contains('is-align-content-space-between')
-      ).toBeFalsy();
+      expect(test5.classList.contains('is-align-content-space-between')).toBeFalsy();
     });
   });
 
@@ -284,10 +244,7 @@ describe('AlignContent Directives', () => {
         <div [bu-is-align-content-space-around]="true" id="test2"></div>
         <div [bu-is-align-content-space-around]="false" id="test3"></div>
         <div [bu-is-align-content-space-around]="testMeTrue()" id="test4"></div>
-        <div
-          [bu-is-align-content-space-around]="testMeFalse()"
-          id="test5"
-        ></div>
+        <div [bu-is-align-content-space-around]="testMeFalse()" id="test5"></div>
       `
     })
     class TestComponent {
@@ -314,36 +271,24 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentSpaceAroundDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentSpaceAroundDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-align-content-space-around')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-align-content-space-around')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-align-content-space-around')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-align-content-space-around')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-align-content-space-around')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-align-content-space-around')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(
-        test3.classList.contains('is-align-content-space-around')
-      ).toBeFalsy();
+      expect(test3.classList.contains('is-align-content-space-around')).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(
-        test5.classList.contains('is-align-content-space-around')
-      ).toBeFalsy();
+      expect(test5.classList.contains('is-align-content-space-around')).toBeFalsy();
     });
   });
 
@@ -354,10 +299,7 @@ describe('AlignContent Directives', () => {
         <div [bu-is-align-content-space-evenly]="true" id="test2"></div>
         <div [bu-is-align-content-space-evenly]="false" id="test3"></div>
         <div [bu-is-align-content-space-evenly]="testMeTrue()" id="test4"></div>
-        <div
-          [bu-is-align-content-space-evenly]="testMeFalse()"
-          id="test5"
-        ></div>
+        <div [bu-is-align-content-space-evenly]="testMeFalse()" id="test5"></div>
       `
     })
     class TestComponent {
@@ -384,36 +326,24 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentSpaceEvenlyDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentSpaceEvenlyDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-align-content-space-evenly')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-align-content-space-evenly')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-align-content-space-evenly')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-align-content-space-evenly')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-align-content-space-evenly')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-align-content-space-evenly')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(
-        test3.classList.contains('is-align-content-space-evenly')
-      ).toBeFalsy();
+      expect(test3.classList.contains('is-align-content-space-evenly')).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(
-        test5.classList.contains('is-align-content-space-evenly')
-      ).toBeFalsy();
+      expect(test5.classList.contains('is-align-content-space-evenly')).toBeFalsy();
     });
   });
 
@@ -451,9 +381,7 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentStretchDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentStretchDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-content-stretch')).toBeTruthy();
@@ -508,9 +436,7 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentStartDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentStartDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-content-start')).toBeTruthy();
@@ -565,9 +491,7 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentEndDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentEndDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-content-end')).toBeTruthy();
@@ -622,25 +546,17 @@ describe('AlignContent Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(
-        By.directive(BulmaIsAlignContentBaselineDirective)
-      );
+      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignContentBaselineDirective));
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(
-        test1.classList.contains('is-align-content-baseline')
-      ).toBeTruthy();
+      expect(test1.classList.contains('is-align-content-baseline')).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(
-        test2.classList.contains('is-align-content-baseline')
-      ).toBeTruthy();
+      expect(test2.classList.contains('is-align-content-baseline')).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(
-        test4.classList.contains('is-align-content-baseline')
-      ).toBeTruthy();
+      expect(test4.classList.contains('is-align-content-baseline')).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {

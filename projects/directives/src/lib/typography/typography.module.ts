@@ -8,7 +8,7 @@ import {
   BulmaIsSize4Directive,
   BulmaIsSize5Directive,
   BulmaIsSize6Directive,
-  BulmaIsSize7Directive
+  BulmaIsSize7Directive,
 } from './size.directive';
 
 import {
@@ -53,14 +53,14 @@ import {
   BulmaIsSize7TabletDirective,
   BulmaIsSize7DesktopDirective,
   BulmaIsSize7WidescreenDirective,
-  BulmaIsSize7FullhdDirective
+  BulmaIsSize7FullhdDirective,
 } from './responsive-size.directive';
 
 import {
   BulmaHasTextCenteredDirective,
   BulmaHasTextJustifiedDirective,
   BulmaHasTextLeftDirective,
-  BulmaHasTextRightDirective
+  BulmaHasTextRightDirective,
 } from './alignment.directive';
 
 import {
@@ -99,7 +99,7 @@ import {
   BulmaHasTextRightDesktopDirective,
   BulmaHasTextRightWidescreenOnlyDirective,
   BulmaHasTextRightWidescreenDirective,
-  BulmaHasTextRightFullhdDirective
+  BulmaHasTextRightFullhdDirective,
 } from './responsive-alignment.directive';
 
 import {
@@ -107,7 +107,7 @@ import {
   BulmaIsLowercaseDirective,
   BulmaIsUppercaseDirective,
   BulmaIsItalicDirective,
-  BulmaIsUnderlinedDirective
+  BulmaIsUnderlinedDirective,
 } from './text-transformation.directive';
 
 import {
@@ -115,7 +115,7 @@ import {
   BulmaHasTextWeightNormalDirective,
   BulmaHasTextWeightMediumDirective,
   BulmaHasTextWeightSemiboldDirective,
-  BulmaHasTextWeightBoldDirective
+  BulmaHasTextWeightBoldDirective,
 } from './text-weight.directive';
 
 import {
@@ -123,7 +123,7 @@ import {
   BulmaIsFamilyMonospaceDirective,
   BulmaIsFamilyPrimaryDirective,
   BulmaIsFamilySecondaryDirective,
-  BulmaIsFamilyCodeDirective
+  BulmaIsFamilyCodeDirective,
 } from './font-family.directive';
 
 @NgModule({
@@ -232,7 +232,7 @@ import {
     BulmaIsFamilyMonospaceDirective,
     BulmaIsFamilyPrimaryDirective,
     BulmaIsFamilySecondaryDirective,
-    BulmaIsFamilyCodeDirective
+    BulmaIsFamilyCodeDirective,
   ],
   exports: [
     BulmaIsSize1Directive,
@@ -338,7 +338,7 @@ import {
     BulmaIsFamilyMonospaceDirective,
     BulmaIsFamilyPrimaryDirective,
     BulmaIsFamilySecondaryDirective,
-    BulmaIsFamilyCodeDirective
+    BulmaIsFamilyCodeDirective,
   ]
 })
 export class BulmaTypographyDirectivesModule {}
