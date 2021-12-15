@@ -1,6 +1,6 @@
 {
   "name": "@angular-bulma/directives",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
     "generate": "pnpm ts-node ./bin/generate-directives.ts",
@@ -9,12 +9,14 @@
   },
   "peerDependencies": {
     "@angular/common": "^13.0.0",
-    "@angular/core": "^13.0.0"
-  },
-  "dependencies": {
+    "@angular/core": "^13.0.0",
     "tslib": "^2.3.0"
   },
+  "dependencies": {
+    "lodash.isboolean": "^3.0.3"
+  },
   "devDependencies": {
+    "@types/lodash.isboolean": "^3.0.6",
     "@types/lodash.startcase": "^4.4.6",
     "@types/lodash.upperfirst": "^4.3.6",
     "lodash.startcase": "^4.4.0",

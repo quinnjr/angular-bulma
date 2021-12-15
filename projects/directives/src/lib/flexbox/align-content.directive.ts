@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-align-content-flex-start]'
@@ -10,10 +11,10 @@ export class BulmaIsAlignContentFlexStartDirective
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -61,10 +62,10 @@ export class BulmaIsAlignContentFlexEndDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -108,10 +109,10 @@ export class BulmaIsAlignContentCenterDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -152,10 +153,10 @@ export class BulmaIsAlignContentSpaceBetweenDirective
   @Input('bu-is-align-content-space-between')
   public set buIsAlignContentSpaceBetween(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -204,10 +205,10 @@ export class BulmaIsAlignContentSpaceAroundDirective
   @Input('bu-is-align-content-space-around')
   public set buIsAlignContentSpaceAround(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -256,10 +257,10 @@ export class BulmaIsAlignContentSpaceEvenlyDirective
   @Input('bu-is-align-content-space-evenly')
   public set buIsAlignContentSpaceEvenly(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -307,10 +308,10 @@ export class BulmaIsAlignContentStretchDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -354,10 +355,10 @@ export class BulmaIsAlignContentStartDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -397,10 +398,10 @@ export class BulmaIsAlignContentEndDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -440,10 +441,10 @@ export class BulmaIsAlignContentBaselineDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

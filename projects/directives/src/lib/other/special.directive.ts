@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-active]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaIsActiveDirective implements OnChanges, OnInit {
   @Input('bu-is-active') public set buIsActive(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

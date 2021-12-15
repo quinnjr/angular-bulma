@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-justify-content-flex-start]'
@@ -9,10 +10,10 @@ export class BulmaIsJustifyContentFlexStartDirective
   @Input('bu-is-justify-content-flex-start')
   public set buIsJustifyContentFlexStart(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -62,10 +63,10 @@ export class BulmaIsJustifyContentFlexEndDirective
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -113,10 +114,10 @@ export class BulmaIsJustifyContentCenterDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -161,10 +162,10 @@ export class BulmaIsJustifyContentSpaceBetweenDirective
   @Input('bu-is-justify-content-space-between')
   public set buIsJustifyContentSpaceBetween(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -213,10 +214,10 @@ export class BulmaIsJustifyContentSpaceAroundDirective
   @Input('bu-is-justify-content-space-around')
   public set buIsJustifyContentSpaceAround(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -265,10 +266,10 @@ export class BulmaIsJustifyContentSpaceEvenlyDirective
   @Input('bu-is-justify-content-space-evenly')
   public set buIsJustifyContentSpaceEvenly(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -316,10 +317,10 @@ export class BulmaIsJustifyContentStartDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -363,10 +364,10 @@ export class BulmaIsJustifyContentEndDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -406,10 +407,10 @@ export class BulmaIsJustifyContentLeftDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -449,10 +450,10 @@ export class BulmaIsJustifyContentRightDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

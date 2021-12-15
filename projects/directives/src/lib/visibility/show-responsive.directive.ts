@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-block-mobile]'
@@ -8,10 +9,10 @@ export class BulmaIsBlockMobileDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -51,10 +52,10 @@ export class BulmaIsBlockTabletOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -94,10 +95,10 @@ export class BulmaIsBlockDesktopOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -137,10 +138,10 @@ export class BulmaIsBlockWidescreenOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -182,10 +183,10 @@ export class BulmaIsBlockWidescreenOnlyDirective implements OnChanges, OnInit {
 export class BulmaIsBlockTouchDirective implements OnChanges, OnInit {
   @Input('bu-is-block-touch') public set buIsBlockTouch(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -225,10 +226,10 @@ export class BulmaIsBlockTabletDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -268,10 +269,10 @@ export class BulmaIsBlockDesktopDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -311,10 +312,10 @@ export class BulmaIsBlockWidescreenDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -354,10 +355,10 @@ export class BulmaIsBlockFullhdDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -395,10 +396,10 @@ export class BulmaIsBlockFullhdDirective implements OnChanges, OnInit {
 export class BulmaIsFlexMobileDirective implements OnChanges, OnInit {
   @Input('bu-is-flex-mobile') public set buIsFlexMobile(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -438,10 +439,10 @@ export class BulmaIsFlexTabletOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -481,10 +482,10 @@ export class BulmaIsFlexDesktopOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -524,10 +525,10 @@ export class BulmaIsFlexWidescreenOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -565,10 +566,10 @@ export class BulmaIsFlexWidescreenOnlyDirective implements OnChanges, OnInit {
 export class BulmaIsFlexTouchDirective implements OnChanges, OnInit {
   @Input('bu-is-flex-touch') public set buIsFlexTouch(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -606,10 +607,10 @@ export class BulmaIsFlexTouchDirective implements OnChanges, OnInit {
 export class BulmaIsFlexTabletDirective implements OnChanges, OnInit {
   @Input('bu-is-flex-tablet') public set buIsFlexTablet(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -649,10 +650,10 @@ export class BulmaIsFlexDesktopDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -692,10 +693,10 @@ export class BulmaIsFlexWidescreenDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -733,10 +734,10 @@ export class BulmaIsFlexWidescreenDirective implements OnChanges, OnInit {
 export class BulmaIsFlexFullhdDirective implements OnChanges, OnInit {
   @Input('bu-is-flex-fullhd') public set buIsFlexFullhd(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -776,10 +777,10 @@ export class BulmaIsInlineMobileDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -819,10 +820,10 @@ export class BulmaIsInlineTabletOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -862,10 +863,10 @@ export class BulmaIsInlineDesktopOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -905,10 +906,10 @@ export class BulmaIsInlineWidescreenOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -952,10 +953,10 @@ export class BulmaIsInlineTouchDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -995,10 +996,10 @@ export class BulmaIsInlineTabletDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1038,10 +1039,10 @@ export class BulmaIsInlineDesktopDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1081,10 +1082,10 @@ export class BulmaIsInlineWidescreenDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1124,10 +1125,10 @@ export class BulmaIsInlineFullhdDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1167,10 +1168,10 @@ export class BulmaIsInlineBlockMobileDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1212,10 +1213,10 @@ export class BulmaIsInlineBlockTabletOnlyDirective
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1264,10 +1265,10 @@ export class BulmaIsInlineBlockDesktopOnlyDirective
   @Input('bu-is-inline-block-desktop-only')
   public set buIsInlineBlockDesktopOnly(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1316,10 +1317,10 @@ export class BulmaIsInlineBlockWidescreenOnlyDirective
   @Input('bu-is-inline-block-widescreen-only')
   public set buIsInlineBlockWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1367,10 +1368,10 @@ export class BulmaIsInlineBlockTouchDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1410,10 +1411,10 @@ export class BulmaIsInlineBlockTabletDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1453,10 +1454,10 @@ export class BulmaIsInlineBlockDesktopDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1498,10 +1499,10 @@ export class BulmaIsInlineBlockWidescreenDirective
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1545,10 +1546,10 @@ export class BulmaIsInlineBlockFullhdDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1588,10 +1589,10 @@ export class BulmaIsInlineFlexMobileDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1631,10 +1632,10 @@ export class BulmaIsInlineFlexTabletOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1680,10 +1681,10 @@ export class BulmaIsInlineFlexDesktopOnlyDirective
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1732,10 +1733,10 @@ export class BulmaIsInlineFlexWidescreenOnlyDirective
   @Input('bu-is-inline-flex-widescreen-only')
   public set buIsInlineFlexWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1783,10 +1784,10 @@ export class BulmaIsInlineFlexTouchDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1826,10 +1827,10 @@ export class BulmaIsInlineFlexTabletDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1869,10 +1870,10 @@ export class BulmaIsInlineFlexDesktopDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1912,10 +1913,10 @@ export class BulmaIsInlineFlexWidescreenDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -1959,10 +1960,10 @@ export class BulmaIsInlineFlexFullhdDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

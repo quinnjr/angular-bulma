@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-hidden-mobile]'
@@ -8,10 +9,10 @@ export class BulmaIsHiddenMobileDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -51,10 +52,10 @@ export class BulmaIsHiddenTabletOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -94,10 +95,10 @@ export class BulmaIsHiddenDesktopOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -137,10 +138,10 @@ export class BulmaIsHiddenWidescreenOnlyDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -184,10 +185,10 @@ export class BulmaIsHiddenTouchDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -227,10 +228,10 @@ export class BulmaIsHiddenTabletDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -270,10 +271,10 @@ export class BulmaIsHiddenDesktopDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -313,10 +314,10 @@ export class BulmaIsHiddenWidescreenDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -356,10 +357,10 @@ export class BulmaIsHiddenFullhdDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

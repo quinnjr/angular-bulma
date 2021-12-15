@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-align-self-auto]'
@@ -8,10 +9,10 @@ export class BulmaIsAlignSelfAutoDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -51,10 +52,10 @@ export class BulmaIsAlignSelfFlexStartDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -98,10 +99,10 @@ export class BulmaIsAlignSelfFlexEndDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -141,10 +142,10 @@ export class BulmaIsAlignSelfCenterDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -184,10 +185,10 @@ export class BulmaIsAlignSelfBaselineDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -227,10 +228,10 @@ export class BulmaIsAlignSelfStretchDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

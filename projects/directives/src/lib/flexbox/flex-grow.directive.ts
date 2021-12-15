@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-flex-grow-0]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaIsFlexGrow0Directive implements OnChanges, OnInit {
   @Input('bu-is-flex-grow-0') public set buIsFlexGrow0(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaIsFlexGrow0Directive implements OnChanges, OnInit {
 export class BulmaIsFlexGrow1Directive implements OnChanges, OnInit {
   @Input('bu-is-flex-grow-1') public set buIsFlexGrow1(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaIsFlexGrow1Directive implements OnChanges, OnInit {
 export class BulmaIsFlexGrow2Directive implements OnChanges, OnInit {
   @Input('bu-is-flex-grow-2') public set buIsFlexGrow2(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -129,10 +130,10 @@ export class BulmaIsFlexGrow2Directive implements OnChanges, OnInit {
 export class BulmaIsFlexGrow3Directive implements OnChanges, OnInit {
   @Input('bu-is-flex-grow-3') public set buIsFlexGrow3(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -170,10 +171,10 @@ export class BulmaIsFlexGrow3Directive implements OnChanges, OnInit {
 export class BulmaIsFlexGrow4Directive implements OnChanges, OnInit {
   @Input('bu-is-flex-grow-4') public set buIsFlexGrow4(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -211,10 +212,10 @@ export class BulmaIsFlexGrow4Directive implements OnChanges, OnInit {
 export class BulmaIsFlexGrow5Directive implements OnChanges, OnInit {
   @Input('bu-is-flex-grow-5') public set buIsFlexGrow5(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
