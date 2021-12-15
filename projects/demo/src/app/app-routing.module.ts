@@ -11,6 +11,13 @@ const routes: Routes = [
         (m) => m.ComponentsRoutingModule
       )
   },
+  {
+    path: 'directives',
+    loadChildren: () =>
+      import('./directives/directives-routing.module').then(
+        (m) => m.DirectivesRoutingModule
+      )
+  },
   { path: '', component: HomeComponent, pathMatch: 'full' }
 ];
 

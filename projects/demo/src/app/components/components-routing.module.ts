@@ -5,12 +5,14 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { MenuComponent } from './menu/menu.component';
+import { MessageComponent } from './message/message.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
   { path: 'breadcrumbs', component: BreadcrumbsComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'message', component: MessageComponent },
   { path: 'carousel', component: CarouselComponent },
   { path: 'dropdown', component: DropdownComponent }
 ];

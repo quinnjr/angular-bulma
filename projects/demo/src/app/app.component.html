@@ -38,22 +38,28 @@
   <div class="column is-2">
     <bu-menu>
       <bu-menu-label>Concepts</bu-menu-label>
+      <bu-menu-list>
+        <ng-container *ngFor="let concept of concepts">
+          <a [routerLink]="[concept]">{{ capitalizeFirstLetter(concept) }}</a>
+        </ng-container>
+      </bu-menu-list>
       <bu-menu-label>Elements</bu-menu-label>
       <bu-menu-list>
-        <a>Button</a>
-        <a>Delete</a>
-        <a>Icon</a>
-        <a>Image</a>
-        <a>Notification</a>
-        <a>Tag</a>
+        <ng-container *ngFor="let element of elements">
+          <a [routerLink]="['elements', element]">{{ capitalizeFirstLetter(element) }}</a>
+        </ng-container>
       </bu-menu-list>
       <bu-menu-label>Components</bu-menu-label>
       <bu-menu-list>
-        <a [routerLink]="['components', 'breadcrumbs']">Breadcrumbs</a>
-        <a [routerLink]="['components', 'carousel']">Carousel</a>
-        <a [routerLink]="['components', 'dropdown']">Dropdown</a>
-        <a [routerLink]="['components', 'menu']">Menu</a>
-        <a [routerLink]="['components', 'navbar']">Navbar</a>
+        <ng-container *ngFor="let component of components">
+          <a [routerLink]="['components', component]">{{ capitalizeFirstLetter(component) }}</a>
+        </ng-container>
+      </bu-menu-list>
+      <bu-menu-label>Directives</bu-menu-label>
+      <bu-menu-list>
+        <ng-container *ngFor="let directive of directives">
+          <a [routerLink]="['directives', directive]">{{ capitalizeFirstLetter(directive) }}</a>
+        </ng-container>
       </bu-menu-list>
     </bu-menu>
   </div>

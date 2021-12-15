@@ -1,24 +1,68 @@
-# Directives
+# @angular-bulma/directives
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
+![npm](https://img.shields.io/npm/v/@angular-bulma/directives)
 
-## Code scaffolding
+[![Angular-Bulma Testing Directives](https://github.com/quinnjr/angular-bulma/actions/workflows/testing-directives.yml/badge.svg?branch=main)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing-directives.yml)[![CodeQL](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml)
 
-Run `ng generate component component-name --project directives` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project directives`.
-> Note: Don't forget to add `--project directives` or else it will be added to the default project in your `angular.json` file. 
+## Available Directives
 
-## Build
+### Color Helpers
 
-Run `ng build directives` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `is-{color}` statements
+- `has-text-{color}` statements
+- `has-background-{color}` statements
 
-## Publishing
+### Flexbox
 
-After building your library with `ng build directives`, go to the dist folder `cd dist/directives` and run `npm publish`.
+All Bulma flexbox classes are supported.
 
-## Running unit tests
+### Other Helpers
 
-Run `ng test directives` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`is-clearfix`, `is-pulled-left`, `is-pulled-right`, `is-overlay`, `is-clipped`, `is-radiusless`, `is-shadowless`, `is-unselectable`, `is-clickable`, `is-relative`, `is-active`
 
-## Further help
+### Spacing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+All margin and padding spacing classes are supported.
+
+### Typography
+
+- Sizing
+- Responsive sizing
+- Alignment
+- Responsive alignment
+- Text transformations
+- Text weight
+- Font families
+
+### Visibility
+
+- Show
+- Show responsive
+- Hide
+- `is-invisible`, `is-hidden`, `is-sr-only`
+
+## Installation Instructions
+
+`@angular-bulma/directives` does not come with the `bulma` styles compiled with the project to allow for use of other styles like those defined in [`bulmaswatch`](https://jenil.github.io/bulmaswatch/).
+
+`bulma` must be added to your `styles.scss` file:
+
+```scss
+@import '~bulma';
+```
+
+Then import the library module or per-component module into your application:
+
+```typescript
+import { BulmaDirectivesModule } from '@angular-bulma/directives';
+
+@NgModule({
+  imports: [
+    ...
+    BulmaDirectivesModule
+    ...
+  ],
+  ...
+})
+export class AppModule {  }
+```

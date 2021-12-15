@@ -2,17 +2,19 @@
 
 ![GitHub](https://img.shields.io/github/license/quinnjr/angular-bulma)
 
-[![Angular-Bulma Testing](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml) [![CodeQL](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml)
 
 Monorepo for the @angular-bulma projects.
 
+## [Demo](https://quinnjr.github.io/angular-bulma/)
+
 ## Current Projects
 
-- @angular-bulma/components ![npm](https://img.shields.io/npm/v/@angular-bulma/components)
+- @angular-bulma/components ![npm](https://img.shields.io/npm/v/@angular-bulma/components) [![Angular-Bulma Testing Components](https://github.com/quinnjr/angular-bulma/actions/workflows/testing-components.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing-components.yml)
+- @angular-bulma/directives ![npm](https://img.shields.io/npm/v/@angular-bulma/directives) [![Angular-Bulma Testing Directives](https://github.com/quinnjr/angular-bulma/actions/workflows/testing-directives.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing-directives.yml)
 
 ## Future Projects
 
-- @angular-bulma/directives
 - @angular-bulma/elements
 
 ## License

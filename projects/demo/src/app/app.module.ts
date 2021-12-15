@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Directive, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,12 +14,14 @@ import { HomeComponent } from './home/home.component';
 import { CodeSnippetComponent } from './code-snippet/code-snippet.component';
 import { ComponentsRoutingModule } from './components/components-routing.module';
 import { ComponentsModule } from './components/components.module';
+import { DirectivesModule } from './directives/directives.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     ComponentsModule,
+    DirectivesModule,
     // Angular-Bulma modules
     BulmaNavbarModule,
     BulmaMenuModule,

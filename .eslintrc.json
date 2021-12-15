@@ -13,7 +13,8 @@
         "createDefaultProgram": true
       },
       "env": {
-        "browser": true
+        "browser": true,
+        "jest": true
       },
       "parser": "@typescript-eslint/parser",
       "extends": [
@@ -37,7 +38,9 @@
             "allowExplicitAny": true
           }
         ],
-        "rxjs/no-nested-subscribe": ["error"]
+        "rxjs/no-nested-subscribe": ["error"],
+        "no-underscore-dangle": ["off"],
+        "@typescript-eslint/member-ordering": ["off"]
       }
     },
     {

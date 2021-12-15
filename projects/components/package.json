@@ -9,12 +9,17 @@
     "tslib": "^2.3.0",
     "lodash.mergewith": "^4.6.2"
   },
+  "optionalDependencies": {
+    "@angular-bulma/directives": "^1.0.0"
+  },
   "keywords": [
     "angular",
     "ngx",
     "bulma",
     "styles",
-    "sass"
+    "sass",
+    "component",
+    "components"
   ],
   "homepage": "http://quinnjr.github.io/angular-bulma",
   "bugs": {

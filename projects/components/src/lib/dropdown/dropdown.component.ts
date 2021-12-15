@@ -39,15 +39,67 @@ import {
   `
 })
 export class BulmaDropdownComponent implements AfterContentInit {
-  @Input() title = '';
-  @Input('chevron-class') chevronClass = 'fas fa-angle-down';
-  @Input('is-hoverable') isHoverable = false;
-  @Input('is-right') isRight = false;
-  @Input('is-up') isUp = false;
+  @Input() public title = '';
+  @Input('chevron-class') public chevronClass = 'fas fa-angle-down';
 
   public isActive = false;
 
+  private _isHoverable = false;
+  private _isRight = false;
+  private _isUp = false;
+
   constructor(private readonly cdr: ChangeDetectorRef) {}
+
+  public get isHoverable(): boolean {
+    return this._isHoverable;
+  }
+
+  @Input('is-hoverable')
+  public set isHoverable(input: string | boolean) {
+    if (typeof input === 'string') {
+      if (input.toLocaleLowerCase() === 'true') {
+        this._isHoverable = true;
+      } else {
+        this._isHoverable = false;
+      }
+    } else {
+      this._isHoverable = input;
+    }
+  }
+
+  public get isRight(): boolean {
+    return this._isRight;
+  }
+
+  @Input('is-right')
+  public set isRight(input: string | boolean) {
+    if (typeof input === 'string') {
+      if (input.toLowerCase() === 'true') {
+        this._isRight = true;
+      } else {
+        this._isRight = false;
+      }
+    } else {
+      this._isRight = input;
+    }
+  }
+
+  public get isUp(): boolean {
+    return this._isUp;
+  }
+
+  @Input('is-up')
+  public set isUp(input: string | boolean) {
+    if (typeof input === 'string') {
+      if (input.toLowerCase() === 'true') {
+        this._isUp = true;
+      } else {
+        this._isUp = false;
+      }
+    } else {
+      this._isUp = input;
+    }
+  }
 
   public ngAfterContentInit() {
     this.cdr.detectChanges();

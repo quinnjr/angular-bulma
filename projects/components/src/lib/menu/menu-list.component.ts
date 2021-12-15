@@ -1,4 +1,9 @@
-import { ChangeDetectorRef, Component, ElementRef } from '@angular/core';
+import {
+  AfterContentInit,
+  ChangeDetectorRef,
+  Component,
+  ElementRef
+} from '@angular/core';
 
 @Component({
   selector: 'bu-menu-list',
@@ -10,7 +15,7 @@ import { ChangeDetectorRef, Component, ElementRef } from '@angular/core';
     </ul>
   `
 })
-export class BulmaMenuListComponent {
+export class BulmaMenuListComponent implements AfterContentInit {
   constructor(
     private readonly cdr: ChangeDetectorRef,
     private readonly elementRef: ElementRef
@@ -21,5 +26,9 @@ export class BulmaMenuListComponent {
       this.elementRef.nativeElement.parentElement?.parentElement?.tagName !==
       'BU-MENU'
     );
+  }
+
+  public ngAfterContentInit() {
+    this.cdr.detectChanges();
   }
 }

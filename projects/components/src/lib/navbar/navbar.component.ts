@@ -58,17 +58,87 @@ import {
   `
 })
 export class BulmaNavbarComponent implements AfterContentInit, AfterViewInit {
-  @Input('label') ariaLabel = '';
-  @Input('has-burger') hasBurger = true;
-  @Input('transparent') isTransparent = false;
-  @Input('fixed') isFixed = '';
-  @Input('spaced') isSpaced = false;
-  @Input('shadow') hasShadow = false;
-  @Input() color = 'white';
+  @Input('label') public ariaLabel = '';
+  @Input('fixed') public isFixed = '';
+  @Input() public color = 'white';
 
   public isActive = false;
 
+  private _hasBurger = true;
+  private _isTransparent = false;
+  private _isFixed = '';
+  private _isSpaced = false;
+  private _hasShadow = false;
+
   constructor(private readonly cdr: ChangeDetectorRef) {}
+
+  public get hasBurger(): boolean {
+    return this._hasBurger;
+  }
+
+  @Input('has-burger')
+  public set hasBurger(input: string | boolean) {
+    if (typeof input === 'string') {
+      if (input.toLowerCase() === 'true') {
+        this.hasBurger = true;
+      } else {
+        this.hasBurger = false;
+      }
+    } else {
+      this.hasBurger = input;
+    }
+  }
+
+  public get isTransparent(): boolean {
+    return this._isTransparent;
+  }
+
+  @Input('transparent')
+  public set isTransparent(input: string | boolean) {
+    if (typeof input === 'string') {
+      if (input.toLowerCase() === 'true') {
+        this._isTransparent = true;
+      } else {
+        this._isTransparent = false;
+      }
+    } else {
+      this._isTransparent = input;
+    }
+  }
+
+  public get isSpaced(): boolean {
+    return this._isSpaced;
+  }
+
+  @Input('spaced')
+  public set isSpaced(input: string | boolean) {
+    if (typeof input === 'string') {
+      if (input.toLowerCase() === 'true') {
+        this._isSpaced = true;
+      } else {
+        this._isSpaced = false;
+      }
+    } else {
+      this._isSpaced = input;
+    }
+  }
+
+  public get hasShadow(): boolean {
+    return this._hasShadow;
+  }
+
+  @Input('shadow')
+  public set hasShadow(input: string | boolean) {
+    if (typeof input === 'string') {
+      if (input.toLowerCase() === 'true') {
+        this._hasShadow = true;
+      } else {
+        this._hasShadow = false;
+      }
+    } else {
+      this._hasShadow = input;
+    }
+  }
 
   public ngAfterContentInit() {
     this.cdr.detectChanges();

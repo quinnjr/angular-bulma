@@ -1,6 +1,7 @@
 /*
  * Public API Surface of components
  */
+export * from './lib/alert';
 export * from './lib/breadcrumbs';
 export * from './lib/card';
 export * from './lib/carousel';
