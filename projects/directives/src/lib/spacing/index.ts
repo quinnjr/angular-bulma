@@ -12,3 +12,4 @@ export * from './padding-bottom.directive';
 export * from './padding-left.directive';
 export * from './padding-left-right.directive';
 export * from './padding-top-bottom.directive';
+export * from './spacing.module';

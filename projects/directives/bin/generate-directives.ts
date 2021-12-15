@@ -177,6 +177,8 @@ export class Bulma${directiveName}Directive implements OnChanges, OnInit {
 export class Bulma${upperFirst(type)}DirectivesModule {}
 `);
 
+    indexContent += `export * from './${type}.module';\n`;
+
     await fs.writeFile(realPath(type, type.concat('.module.ts')), moduleFile);
 
     await fs.writeFile(realPath(type, 'index.ts'), indexContent);

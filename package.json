@@ -29,14 +29,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "NODE_OPTIONS=--max-old-space-size=2048 ng run components:build:production && ng run directives:build:production && ng run demo:build:production",
+    "build": "NODE_OPTIONS=--max-old-space-size=2048 ng run components:build:production && ng run directives:build:production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --pass-with-no-tests",
     "test:ci": "ng test --ci --coverage=false --pass-with-no-tests",
     "lint": "ng lint",
     "postinstall": "husky install",
     "sync-packages": "pnpm run ts-node scripts/sync-package-files.ts",
-    "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
+    "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
+    "generate": "pnpm run ts-node ./projects/directives/bin/generate-directives.ts && pnpm run ng run directives:lint -- --fix"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^13.0.0",
