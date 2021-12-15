@@ -168,7 +168,9 @@ export class BulmaHasTextDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-primary]'
 })
 export class BulmaHasTextPrimaryDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-primary') public set buHasTextPrimary(val: string | boolean) {
+  @Input('bu-has-text-primary') public set buHasTextPrimary(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -291,7 +293,9 @@ export class BulmaHasTextInfoDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-success]'
 })
 export class BulmaHasTextSuccessDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-success') public set buHasTextSuccess(val: string | boolean) {
+  @Input('bu-has-text-success') public set buHasTextSuccess(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -332,7 +336,9 @@ export class BulmaHasTextSuccessDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-warning]'
 })
 export class BulmaHasTextWarningDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-warning') public set buHasTextWarning(val: string | boolean) {
+  @Input('bu-has-text-warning') public set buHasTextWarning(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -373,7 +379,9 @@ export class BulmaHasTextWarningDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-danger]'
 })
 export class BulmaHasTextDangerDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-danger') public set buHasTextDanger(val: string | boolean) {
+  @Input('bu-has-text-danger') public set buHasTextDanger(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -414,7 +422,9 @@ export class BulmaHasTextDangerDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-black-bis]'
 })
 export class BulmaHasTextBlackBisDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-black-bis') public set buHasTextBlackBis(val: string | boolean) {
+  @Input('bu-has-text-black-bis') public set buHasTextBlackBis(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -455,7 +465,9 @@ export class BulmaHasTextBlackBisDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-black-ter]'
 })
 export class BulmaHasTextBlackTerDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-black-ter') public set buHasTextBlackTer(val: string | boolean) {
+  @Input('bu-has-text-black-ter') public set buHasTextBlackTer(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -496,7 +508,9 @@ export class BulmaHasTextBlackTerDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-grey-darker]'
 })
 export class BulmaHasTextGreyDarkerDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-grey-darker') public set buHasTextGreyDarker(val: string | boolean) {
+  @Input('bu-has-text-grey-darker') public set buHasTextGreyDarker(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -537,7 +551,9 @@ export class BulmaHasTextGreyDarkerDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-grey-dark]'
 })
 export class BulmaHasTextGreyDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-grey-dark') public set buHasTextGreyDark(val: string | boolean) {
+  @Input('bu-has-text-grey-dark') public set buHasTextGreyDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -619,7 +635,9 @@ export class BulmaHasTextGreyDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-grey-light]'
 })
 export class BulmaHasTextGreyLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-grey-light') public set buHasTextGreyLight(val: string | boolean) {
+  @Input('bu-has-text-grey-light') public set buHasTextGreyLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -660,7 +678,9 @@ export class BulmaHasTextGreyLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-grey-lighter]'
 })
 export class BulmaHasTextGreyLighterDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-grey-lighter') public set buHasTextGreyLighter(val: string | boolean) {
+  @Input('bu-has-text-grey-lighter') public set buHasTextGreyLighter(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -701,7 +721,9 @@ export class BulmaHasTextGreyLighterDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-white-ter]'
 })
 export class BulmaHasTextWhiteTerDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-white-ter') public set buHasTextWhiteTer(val: string | boolean) {
+  @Input('bu-has-text-white-ter') public set buHasTextWhiteTer(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -742,7 +764,9 @@ export class BulmaHasTextWhiteTerDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-white-bis]'
 })
 export class BulmaHasTextWhiteBisDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-white-bis') public set buHasTextWhiteBis(val: string | boolean) {
+  @Input('bu-has-text-white-bis') public set buHasTextWhiteBis(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -783,7 +807,9 @@ export class BulmaHasTextWhiteBisDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-primary-light]'
 })
 export class BulmaHasTextPrimaryLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-primary-light') public set buHasTextPrimaryLight(val: string | boolean) {
+  @Input('bu-has-text-primary-light') public set buHasTextPrimaryLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -824,7 +850,9 @@ export class BulmaHasTextPrimaryLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-link-light]'
 })
 export class BulmaHasTextLinkLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-link-light') public set buHasTextLinkLight(val: string | boolean) {
+  @Input('bu-has-text-link-light') public set buHasTextLinkLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -865,7 +893,9 @@ export class BulmaHasTextLinkLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-info-light]'
 })
 export class BulmaHasTextInfoLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-info-light') public set buHasTextInfoLight(val: string | boolean) {
+  @Input('bu-has-text-info-light') public set buHasTextInfoLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -906,7 +936,9 @@ export class BulmaHasTextInfoLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-success-light]'
 })
 export class BulmaHasTextSuccessLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-success-light') public set buHasTextSuccessLight(val: string | boolean) {
+  @Input('bu-has-text-success-light') public set buHasTextSuccessLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -947,7 +979,9 @@ export class BulmaHasTextSuccessLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-warning-light]'
 })
 export class BulmaHasTextWarningLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-warning-light') public set buHasTextWarningLight(val: string | boolean) {
+  @Input('bu-has-text-warning-light') public set buHasTextWarningLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -988,7 +1022,9 @@ export class BulmaHasTextWarningLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-danger-light]'
 })
 export class BulmaHasTextDangerLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-danger-light') public set buHasTextDangerLight(val: string | boolean) {
+  @Input('bu-has-text-danger-light') public set buHasTextDangerLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1029,7 +1065,9 @@ export class BulmaHasTextDangerLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-primary-dark]'
 })
 export class BulmaHasTextPrimaryDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-primary-dark') public set buHasTextPrimaryDark(val: string | boolean) {
+  @Input('bu-has-text-primary-dark') public set buHasTextPrimaryDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1070,7 +1108,9 @@ export class BulmaHasTextPrimaryDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-link-dark]'
 })
 export class BulmaHasTextLinkDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-link-dark') public set buHasTextLinkDark(val: string | boolean) {
+  @Input('bu-has-text-link-dark') public set buHasTextLinkDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1111,7 +1151,9 @@ export class BulmaHasTextLinkDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-info-dark]'
 })
 export class BulmaHasTextInfoDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-info-dark') public set buHasTextInfoDark(val: string | boolean) {
+  @Input('bu-has-text-info-dark') public set buHasTextInfoDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1152,7 +1194,9 @@ export class BulmaHasTextInfoDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-success-dark]'
 })
 export class BulmaHasTextSuccessDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-success-dark') public set buHasTextSuccessDark(val: string | boolean) {
+  @Input('bu-has-text-success-dark') public set buHasTextSuccessDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1193,7 +1237,9 @@ export class BulmaHasTextSuccessDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-warning-dark]'
 })
 export class BulmaHasTextWarningDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-warning-dark') public set buHasTextWarningDark(val: string | boolean) {
+  @Input('bu-has-text-warning-dark') public set buHasTextWarningDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1234,7 +1280,9 @@ export class BulmaHasTextWarningDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-danger-dark]'
 })
 export class BulmaHasTextDangerDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-danger-dark') public set buHasTextDangerDark(val: string | boolean) {
+  @Input('bu-has-text-danger-dark') public set buHasTextDangerDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

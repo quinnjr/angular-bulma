@@ -37,7 +37,7 @@
     "postinstall": "husky install",
     "sync-packages": "pnpm run ts-node scripts/sync-package-files.ts",
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
-    "generate": "pnpm run ts-node ./projects/directives/bin/generate-directives.ts"
+    "generate": "pnpm run ts-node ./projects/directives/bin/generate-directives.ts && pnpm run ng run directives:lint -- --fix"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^13.0.0",

@@ -4,7 +4,9 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-has-text-centered-mobile]'
 })
 export class BulmaHasTextCenteredMobileDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-mobile') public set buHasTextCenteredMobile(val: string | boolean) {
+  @Input('bu-has-text-centered-mobile') public set buHasTextCenteredMobile(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -28,7 +30,9 @@ export class BulmaHasTextCenteredMobileDirective implements OnChanges, OnInit {
     if (this.buHasTextCenteredMobile) {
       this.elementRef.nativeElement.classList.add('has-text-centered-mobile');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-mobile');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-mobile'
+      );
     }
   }
 
@@ -36,7 +40,9 @@ export class BulmaHasTextCenteredMobileDirective implements OnChanges, OnInit {
     if (this.buHasTextCenteredMobile) {
       this.elementRef.nativeElement.classList.add('has-text-centered-mobile');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-mobile');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-mobile'
+      );
     }
   }
 }
@@ -45,7 +51,9 @@ export class BulmaHasTextCenteredMobileDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-centered-touch]'
 })
 export class BulmaHasTextCenteredTouchDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-touch') public set buHasTextCenteredTouch(val: string | boolean) {
+  @Input('bu-has-text-centered-touch') public set buHasTextCenteredTouch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -85,8 +93,11 @@ export class BulmaHasTextCenteredTouchDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-text-centered-tablet-only]'
 })
-export class BulmaHasTextCenteredTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-tablet-only') public set buHasTextCenteredTabletOnly(val: string | boolean) {
+export class BulmaHasTextCenteredTabletOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-centered-tablet-only')
+  public set buHasTextCenteredTabletOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -108,17 +119,25 @@ export class BulmaHasTextCenteredTabletOnlyDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buHasTextCenteredTabletOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-centered-tablet-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-centered-tablet-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-tablet-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextCenteredTabletOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-centered-tablet-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-centered-tablet-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-tablet-only'
+      );
     }
   }
 }
@@ -127,7 +146,9 @@ export class BulmaHasTextCenteredTabletOnlyDirective implements OnChanges, OnIni
   selector: '[bu-has-text-centered-tablet]'
 })
 export class BulmaHasTextCenteredTabletDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-tablet') public set buHasTextCenteredTablet(val: string | boolean) {
+  @Input('bu-has-text-centered-tablet') public set buHasTextCenteredTablet(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -151,7 +172,9 @@ export class BulmaHasTextCenteredTabletDirective implements OnChanges, OnInit {
     if (this.buHasTextCenteredTablet) {
       this.elementRef.nativeElement.classList.add('has-text-centered-tablet');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-tablet');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-tablet'
+      );
     }
   }
 
@@ -159,7 +182,9 @@ export class BulmaHasTextCenteredTabletDirective implements OnChanges, OnInit {
     if (this.buHasTextCenteredTablet) {
       this.elementRef.nativeElement.classList.add('has-text-centered-tablet');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-tablet');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-tablet'
+      );
     }
   }
 }
@@ -167,8 +192,11 @@ export class BulmaHasTextCenteredTabletDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-text-centered-desktop-only]'
 })
-export class BulmaHasTextCenteredDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-desktop-only') public set buHasTextCenteredDesktopOnly(val: string | boolean) {
+export class BulmaHasTextCenteredDesktopOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-centered-desktop-only')
+  public set buHasTextCenteredDesktopOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -190,17 +218,25 @@ export class BulmaHasTextCenteredDesktopOnlyDirective implements OnChanges, OnIn
 
   public ngOnInit() {
     if (this.buHasTextCenteredDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-centered-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-centered-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-desktop-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextCenteredDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-centered-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-centered-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-desktop-only'
+      );
     }
   }
 }
@@ -209,7 +245,9 @@ export class BulmaHasTextCenteredDesktopOnlyDirective implements OnChanges, OnIn
   selector: '[bu-has-text-centered-desktop]'
 })
 export class BulmaHasTextCenteredDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-desktop') public set buHasTextCenteredDesktop(val: string | boolean) {
+  @Input('bu-has-text-centered-desktop') public set buHasTextCenteredDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -233,7 +271,9 @@ export class BulmaHasTextCenteredDesktopDirective implements OnChanges, OnInit {
     if (this.buHasTextCenteredDesktop) {
       this.elementRef.nativeElement.classList.add('has-text-centered-desktop');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-desktop');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-desktop'
+      );
     }
   }
 
@@ -241,7 +281,9 @@ export class BulmaHasTextCenteredDesktopDirective implements OnChanges, OnInit {
     if (this.buHasTextCenteredDesktop) {
       this.elementRef.nativeElement.classList.add('has-text-centered-desktop');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-desktop');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-desktop'
+      );
     }
   }
 }
@@ -249,8 +291,11 @@ export class BulmaHasTextCenteredDesktopDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-text-centered-widescreen-only]'
 })
-export class BulmaHasTextCenteredWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-widescreen-only') public set buHasTextCenteredWidescreenOnly(val: string | boolean) {
+export class BulmaHasTextCenteredWidescreenOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-centered-widescreen-only')
+  public set buHasTextCenteredWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -272,17 +317,25 @@ export class BulmaHasTextCenteredWidescreenOnlyDirective implements OnChanges, O
 
   public ngOnInit() {
     if (this.buHasTextCenteredWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-centered-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-centered-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-widescreen-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextCenteredWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-centered-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-centered-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-widescreen-only'
+      );
     }
   }
 }
@@ -290,8 +343,11 @@ export class BulmaHasTextCenteredWidescreenOnlyDirective implements OnChanges, O
 @Directive({
   selector: '[bu-has-text-centered-widescreen]'
 })
-export class BulmaHasTextCenteredWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-widescreen') public set buHasTextCenteredWidescreen(val: string | boolean) {
+export class BulmaHasTextCenteredWidescreenDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-centered-widescreen')
+  public set buHasTextCenteredWidescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -313,17 +369,25 @@ export class BulmaHasTextCenteredWidescreenDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buHasTextCenteredWidescreen) {
-      this.elementRef.nativeElement.classList.add('has-text-centered-widescreen');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-centered-widescreen'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-widescreen'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextCenteredWidescreen) {
-      this.elementRef.nativeElement.classList.add('has-text-centered-widescreen');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-centered-widescreen'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-widescreen'
+      );
     }
   }
 }
@@ -332,7 +396,9 @@ export class BulmaHasTextCenteredWidescreenDirective implements OnChanges, OnIni
   selector: '[bu-has-text-centered-fullhd]'
 })
 export class BulmaHasTextCenteredFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-centered-fullhd') public set buHasTextCenteredFullhd(val: string | boolean) {
+  @Input('bu-has-text-centered-fullhd') public set buHasTextCenteredFullhd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -356,7 +422,9 @@ export class BulmaHasTextCenteredFullhdDirective implements OnChanges, OnInit {
     if (this.buHasTextCenteredFullhd) {
       this.elementRef.nativeElement.classList.add('has-text-centered-fullhd');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-fullhd');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-fullhd'
+      );
     }
   }
 
@@ -364,7 +432,9 @@ export class BulmaHasTextCenteredFullhdDirective implements OnChanges, OnInit {
     if (this.buHasTextCenteredFullhd) {
       this.elementRef.nativeElement.classList.add('has-text-centered-fullhd');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-centered-fullhd');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-centered-fullhd'
+      );
     }
   }
 }
@@ -373,7 +443,9 @@ export class BulmaHasTextCenteredFullhdDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-justified-mobile]'
 })
 export class BulmaHasTextJustifiedMobileDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-mobile') public set buHasTextJustifiedMobile(val: string | boolean) {
+  @Input('bu-has-text-justified-mobile') public set buHasTextJustifiedMobile(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -397,7 +469,9 @@ export class BulmaHasTextJustifiedMobileDirective implements OnChanges, OnInit {
     if (this.buHasTextJustifiedMobile) {
       this.elementRef.nativeElement.classList.add('has-text-justified-mobile');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-mobile');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-mobile'
+      );
     }
   }
 
@@ -405,7 +479,9 @@ export class BulmaHasTextJustifiedMobileDirective implements OnChanges, OnInit {
     if (this.buHasTextJustifiedMobile) {
       this.elementRef.nativeElement.classList.add('has-text-justified-mobile');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-mobile');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-mobile'
+      );
     }
   }
 }
@@ -414,7 +490,9 @@ export class BulmaHasTextJustifiedMobileDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-justified-touch]'
 })
 export class BulmaHasTextJustifiedTouchDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-touch') public set buHasTextJustifiedTouch(val: string | boolean) {
+  @Input('bu-has-text-justified-touch') public set buHasTextJustifiedTouch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -438,7 +516,9 @@ export class BulmaHasTextJustifiedTouchDirective implements OnChanges, OnInit {
     if (this.buHasTextJustifiedTouch) {
       this.elementRef.nativeElement.classList.add('has-text-justified-touch');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-touch');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-touch'
+      );
     }
   }
 
@@ -446,7 +526,9 @@ export class BulmaHasTextJustifiedTouchDirective implements OnChanges, OnInit {
     if (this.buHasTextJustifiedTouch) {
       this.elementRef.nativeElement.classList.add('has-text-justified-touch');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-touch');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-touch'
+      );
     }
   }
 }
@@ -454,8 +536,11 @@ export class BulmaHasTextJustifiedTouchDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-text-justified-tablet-only]'
 })
-export class BulmaHasTextJustifiedTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-tablet-only') public set buHasTextJustifiedTabletOnly(val: string | boolean) {
+export class BulmaHasTextJustifiedTabletOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-justified-tablet-only')
+  public set buHasTextJustifiedTabletOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -477,17 +562,25 @@ export class BulmaHasTextJustifiedTabletOnlyDirective implements OnChanges, OnIn
 
   public ngOnInit() {
     if (this.buHasTextJustifiedTabletOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-justified-tablet-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-justified-tablet-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-tablet-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextJustifiedTabletOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-justified-tablet-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-justified-tablet-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-tablet-only'
+      );
     }
   }
 }
@@ -496,7 +589,9 @@ export class BulmaHasTextJustifiedTabletOnlyDirective implements OnChanges, OnIn
   selector: '[bu-has-text-justified-tablet]'
 })
 export class BulmaHasTextJustifiedTabletDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-tablet') public set buHasTextJustifiedTablet(val: string | boolean) {
+  @Input('bu-has-text-justified-tablet') public set buHasTextJustifiedTablet(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -520,7 +615,9 @@ export class BulmaHasTextJustifiedTabletDirective implements OnChanges, OnInit {
     if (this.buHasTextJustifiedTablet) {
       this.elementRef.nativeElement.classList.add('has-text-justified-tablet');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-tablet');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-tablet'
+      );
     }
   }
 
@@ -528,7 +625,9 @@ export class BulmaHasTextJustifiedTabletDirective implements OnChanges, OnInit {
     if (this.buHasTextJustifiedTablet) {
       this.elementRef.nativeElement.classList.add('has-text-justified-tablet');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-tablet');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-tablet'
+      );
     }
   }
 }
@@ -536,8 +635,11 @@ export class BulmaHasTextJustifiedTabletDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-text-justified-desktop-only]'
 })
-export class BulmaHasTextJustifiedDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-desktop-only') public set buHasTextJustifiedDesktopOnly(val: string | boolean) {
+export class BulmaHasTextJustifiedDesktopOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-justified-desktop-only')
+  public set buHasTextJustifiedDesktopOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -559,17 +661,25 @@ export class BulmaHasTextJustifiedDesktopOnlyDirective implements OnChanges, OnI
 
   public ngOnInit() {
     if (this.buHasTextJustifiedDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-justified-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-justified-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-desktop-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextJustifiedDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-justified-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-justified-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-desktop-only'
+      );
     }
   }
 }
@@ -577,8 +687,12 @@ export class BulmaHasTextJustifiedDesktopOnlyDirective implements OnChanges, OnI
 @Directive({
   selector: '[bu-has-text-justified-desktop]'
 })
-export class BulmaHasTextJustifiedDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-desktop') public set buHasTextJustifiedDesktop(val: string | boolean) {
+export class BulmaHasTextJustifiedDesktopDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-justified-desktop') public set buHasTextJustifiedDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -602,7 +716,9 @@ export class BulmaHasTextJustifiedDesktopDirective implements OnChanges, OnInit 
     if (this.buHasTextJustifiedDesktop) {
       this.elementRef.nativeElement.classList.add('has-text-justified-desktop');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-desktop');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-desktop'
+      );
     }
   }
 
@@ -610,7 +726,9 @@ export class BulmaHasTextJustifiedDesktopDirective implements OnChanges, OnInit 
     if (this.buHasTextJustifiedDesktop) {
       this.elementRef.nativeElement.classList.add('has-text-justified-desktop');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-desktop');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-desktop'
+      );
     }
   }
 }
@@ -618,8 +736,11 @@ export class BulmaHasTextJustifiedDesktopDirective implements OnChanges, OnInit 
 @Directive({
   selector: '[bu-has-text-justified-widescreen-only]'
 })
-export class BulmaHasTextJustifiedWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-widescreen-only') public set buHasTextJustifiedWidescreenOnly(val: string | boolean) {
+export class BulmaHasTextJustifiedWidescreenOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-justified-widescreen-only')
+  public set buHasTextJustifiedWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -641,17 +762,25 @@ export class BulmaHasTextJustifiedWidescreenOnlyDirective implements OnChanges, 
 
   public ngOnInit() {
     if (this.buHasTextJustifiedWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-justified-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-justified-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-widescreen-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextJustifiedWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-justified-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-justified-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-widescreen-only'
+      );
     }
   }
 }
@@ -659,8 +788,11 @@ export class BulmaHasTextJustifiedWidescreenOnlyDirective implements OnChanges, 
 @Directive({
   selector: '[bu-has-text-justified-widescreen]'
 })
-export class BulmaHasTextJustifiedWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-widescreen') public set buHasTextJustifiedWidescreen(val: string | boolean) {
+export class BulmaHasTextJustifiedWidescreenDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-justified-widescreen')
+  public set buHasTextJustifiedWidescreen(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -682,17 +814,25 @@ export class BulmaHasTextJustifiedWidescreenDirective implements OnChanges, OnIn
 
   public ngOnInit() {
     if (this.buHasTextJustifiedWidescreen) {
-      this.elementRef.nativeElement.classList.add('has-text-justified-widescreen');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-justified-widescreen'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-widescreen'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextJustifiedWidescreen) {
-      this.elementRef.nativeElement.classList.add('has-text-justified-widescreen');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-justified-widescreen'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-widescreen'
+      );
     }
   }
 }
@@ -701,7 +841,9 @@ export class BulmaHasTextJustifiedWidescreenDirective implements OnChanges, OnIn
   selector: '[bu-has-text-justified-fullhd]'
 })
 export class BulmaHasTextJustifiedFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-justified-fullhd') public set buHasTextJustifiedFullhd(val: string | boolean) {
+  @Input('bu-has-text-justified-fullhd') public set buHasTextJustifiedFullhd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -725,7 +867,9 @@ export class BulmaHasTextJustifiedFullhdDirective implements OnChanges, OnInit {
     if (this.buHasTextJustifiedFullhd) {
       this.elementRef.nativeElement.classList.add('has-text-justified-fullhd');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-fullhd');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-fullhd'
+      );
     }
   }
 
@@ -733,7 +877,9 @@ export class BulmaHasTextJustifiedFullhdDirective implements OnChanges, OnInit {
     if (this.buHasTextJustifiedFullhd) {
       this.elementRef.nativeElement.classList.add('has-text-justified-fullhd');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-justified-fullhd');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-justified-fullhd'
+      );
     }
   }
 }
@@ -742,7 +888,9 @@ export class BulmaHasTextJustifiedFullhdDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-left-mobile]'
 })
 export class BulmaHasTextLeftMobileDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-mobile') public set buHasTextLeftMobile(val: string | boolean) {
+  @Input('bu-has-text-left-mobile') public set buHasTextLeftMobile(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -783,7 +931,9 @@ export class BulmaHasTextLeftMobileDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-left-touch]'
 })
 export class BulmaHasTextLeftTouchDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-touch') public set buHasTextLeftTouch(val: string | boolean) {
+  @Input('bu-has-text-left-touch') public set buHasTextLeftTouch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -824,7 +974,9 @@ export class BulmaHasTextLeftTouchDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-left-tablet-only]'
 })
 export class BulmaHasTextLeftTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-tablet-only') public set buHasTextLeftTabletOnly(val: string | boolean) {
+  @Input('bu-has-text-left-tablet-only') public set buHasTextLeftTabletOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -848,7 +1000,9 @@ export class BulmaHasTextLeftTabletOnlyDirective implements OnChanges, OnInit {
     if (this.buHasTextLeftTabletOnly) {
       this.elementRef.nativeElement.classList.add('has-text-left-tablet-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-left-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-left-tablet-only'
+      );
     }
   }
 
@@ -856,7 +1010,9 @@ export class BulmaHasTextLeftTabletOnlyDirective implements OnChanges, OnInit {
     if (this.buHasTextLeftTabletOnly) {
       this.elementRef.nativeElement.classList.add('has-text-left-tablet-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-left-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-left-tablet-only'
+      );
     }
   }
 }
@@ -865,7 +1021,9 @@ export class BulmaHasTextLeftTabletOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-left-tablet]'
 })
 export class BulmaHasTextLeftTabletDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-tablet') public set buHasTextLeftTablet(val: string | boolean) {
+  @Input('bu-has-text-left-tablet') public set buHasTextLeftTablet(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -906,7 +1064,9 @@ export class BulmaHasTextLeftTabletDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-left-desktop-only]'
 })
 export class BulmaHasTextLeftDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-desktop-only') public set buHasTextLeftDesktopOnly(val: string | boolean) {
+  @Input('bu-has-text-left-desktop-only') public set buHasTextLeftDesktopOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -930,7 +1090,9 @@ export class BulmaHasTextLeftDesktopOnlyDirective implements OnChanges, OnInit {
     if (this.buHasTextLeftDesktopOnly) {
       this.elementRef.nativeElement.classList.add('has-text-left-desktop-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-left-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-left-desktop-only'
+      );
     }
   }
 
@@ -938,7 +1100,9 @@ export class BulmaHasTextLeftDesktopOnlyDirective implements OnChanges, OnInit {
     if (this.buHasTextLeftDesktopOnly) {
       this.elementRef.nativeElement.classList.add('has-text-left-desktop-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-left-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-left-desktop-only'
+      );
     }
   }
 }
@@ -947,7 +1111,9 @@ export class BulmaHasTextLeftDesktopOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-left-desktop]'
 })
 export class BulmaHasTextLeftDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-desktop') public set buHasTextLeftDesktop(val: string | boolean) {
+  @Input('bu-has-text-left-desktop') public set buHasTextLeftDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -987,8 +1153,11 @@ export class BulmaHasTextLeftDesktopDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-text-left-widescreen-only]'
 })
-export class BulmaHasTextLeftWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-widescreen-only') public set buHasTextLeftWidescreenOnly(val: string | boolean) {
+export class BulmaHasTextLeftWidescreenOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-left-widescreen-only')
+  public set buHasTextLeftWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1010,17 +1179,25 @@ export class BulmaHasTextLeftWidescreenOnlyDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buHasTextLeftWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-left-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-left-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-left-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-left-widescreen-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextLeftWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-left-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-left-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-left-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-left-widescreen-only'
+      );
     }
   }
 }
@@ -1029,7 +1206,9 @@ export class BulmaHasTextLeftWidescreenOnlyDirective implements OnChanges, OnIni
   selector: '[bu-has-text-left-widescreen]'
 })
 export class BulmaHasTextLeftWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-widescreen') public set buHasTextLeftWidescreen(val: string | boolean) {
+  @Input('bu-has-text-left-widescreen') public set buHasTextLeftWidescreen(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1053,7 +1232,9 @@ export class BulmaHasTextLeftWidescreenDirective implements OnChanges, OnInit {
     if (this.buHasTextLeftWidescreen) {
       this.elementRef.nativeElement.classList.add('has-text-left-widescreen');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-left-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-left-widescreen'
+      );
     }
   }
 
@@ -1061,7 +1242,9 @@ export class BulmaHasTextLeftWidescreenDirective implements OnChanges, OnInit {
     if (this.buHasTextLeftWidescreen) {
       this.elementRef.nativeElement.classList.add('has-text-left-widescreen');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-left-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-left-widescreen'
+      );
     }
   }
 }
@@ -1070,7 +1253,9 @@ export class BulmaHasTextLeftWidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-left-fullhd]'
 })
 export class BulmaHasTextLeftFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-left-fullhd') public set buHasTextLeftFullhd(val: string | boolean) {
+  @Input('bu-has-text-left-fullhd') public set buHasTextLeftFullhd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1111,7 +1296,9 @@ export class BulmaHasTextLeftFullhdDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-right-mobile]'
 })
 export class BulmaHasTextRightMobileDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-mobile') public set buHasTextRightMobile(val: string | boolean) {
+  @Input('bu-has-text-right-mobile') public set buHasTextRightMobile(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1152,7 +1339,9 @@ export class BulmaHasTextRightMobileDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-right-touch]'
 })
 export class BulmaHasTextRightTouchDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-touch') public set buHasTextRightTouch(val: string | boolean) {
+  @Input('bu-has-text-right-touch') public set buHasTextRightTouch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1193,7 +1382,9 @@ export class BulmaHasTextRightTouchDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-right-tablet-only]'
 })
 export class BulmaHasTextRightTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-tablet-only') public set buHasTextRightTabletOnly(val: string | boolean) {
+  @Input('bu-has-text-right-tablet-only') public set buHasTextRightTabletOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1217,7 +1408,9 @@ export class BulmaHasTextRightTabletOnlyDirective implements OnChanges, OnInit {
     if (this.buHasTextRightTabletOnly) {
       this.elementRef.nativeElement.classList.add('has-text-right-tablet-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-right-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-right-tablet-only'
+      );
     }
   }
 
@@ -1225,7 +1418,9 @@ export class BulmaHasTextRightTabletOnlyDirective implements OnChanges, OnInit {
     if (this.buHasTextRightTabletOnly) {
       this.elementRef.nativeElement.classList.add('has-text-right-tablet-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-right-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-right-tablet-only'
+      );
     }
   }
 }
@@ -1234,7 +1429,9 @@ export class BulmaHasTextRightTabletOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-right-tablet]'
 })
 export class BulmaHasTextRightTabletDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-tablet') public set buHasTextRightTablet(val: string | boolean) {
+  @Input('bu-has-text-right-tablet') public set buHasTextRightTablet(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1274,8 +1471,12 @@ export class BulmaHasTextRightTabletDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-text-right-desktop-only]'
 })
-export class BulmaHasTextRightDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-desktop-only') public set buHasTextRightDesktopOnly(val: string | boolean) {
+export class BulmaHasTextRightDesktopOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-right-desktop-only') public set buHasTextRightDesktopOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1297,17 +1498,25 @@ export class BulmaHasTextRightDesktopOnlyDirective implements OnChanges, OnInit 
 
   public ngOnInit() {
     if (this.buHasTextRightDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-right-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-right-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-right-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-right-desktop-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextRightDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-right-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-right-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-right-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-right-desktop-only'
+      );
     }
   }
 }
@@ -1316,7 +1525,9 @@ export class BulmaHasTextRightDesktopOnlyDirective implements OnChanges, OnInit 
   selector: '[bu-has-text-right-desktop]'
 })
 export class BulmaHasTextRightDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-desktop') public set buHasTextRightDesktop(val: string | boolean) {
+  @Input('bu-has-text-right-desktop') public set buHasTextRightDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1356,8 +1567,11 @@ export class BulmaHasTextRightDesktopDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-text-right-widescreen-only]'
 })
-export class BulmaHasTextRightWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-widescreen-only') public set buHasTextRightWidescreenOnly(val: string | boolean) {
+export class BulmaHasTextRightWidescreenOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-text-right-widescreen-only')
+  public set buHasTextRightWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1379,17 +1593,25 @@ export class BulmaHasTextRightWidescreenOnlyDirective implements OnChanges, OnIn
 
   public ngOnInit() {
     if (this.buHasTextRightWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-right-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-right-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-right-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-right-widescreen-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasTextRightWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('has-text-right-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'has-text-right-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-right-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-right-widescreen-only'
+      );
     }
   }
 }
@@ -1398,7 +1620,9 @@ export class BulmaHasTextRightWidescreenOnlyDirective implements OnChanges, OnIn
   selector: '[bu-has-text-right-widescreen]'
 })
 export class BulmaHasTextRightWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-widescreen') public set buHasTextRightWidescreen(val: string | boolean) {
+  @Input('bu-has-text-right-widescreen') public set buHasTextRightWidescreen(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1422,7 +1646,9 @@ export class BulmaHasTextRightWidescreenDirective implements OnChanges, OnInit {
     if (this.buHasTextRightWidescreen) {
       this.elementRef.nativeElement.classList.add('has-text-right-widescreen');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-right-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-right-widescreen'
+      );
     }
   }
 
@@ -1430,7 +1656,9 @@ export class BulmaHasTextRightWidescreenDirective implements OnChanges, OnInit {
     if (this.buHasTextRightWidescreen) {
       this.elementRef.nativeElement.classList.add('has-text-right-widescreen');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-right-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-right-widescreen'
+      );
     }
   }
 }
@@ -1439,7 +1667,9 @@ export class BulmaHasTextRightWidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-right-fullhd]'
 })
 export class BulmaHasTextRightFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-right-fullhd') public set buHasTextRightFullhd(val: string | boolean) {
+  @Input('bu-has-text-right-fullhd') public set buHasTextRightFullhd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

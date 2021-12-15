@@ -127,7 +127,9 @@ export class BulmaIsInlineDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-block]'
 })
 export class BulmaIsInlineBlockDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block') public set buIsInlineBlock(val: string | boolean) {
+  @Input('bu-is-inline-block') public set buIsInlineBlock(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

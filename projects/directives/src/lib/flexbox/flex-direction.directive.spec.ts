@@ -2,7 +2,7 @@ import {
   BulmaIsFlexDirectionRowDirective,
   BulmaIsFlexDirectionRowReverseDirective,
   BulmaIsFlexDirectionColumnDirective,
-  BulmaIsFlexDirectionColumnReverseDirective,
+  BulmaIsFlexDirectionColumnReverseDirective
 } from './flex-direction.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -45,7 +45,9 @@ describe('FlexDirection Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexDirectionRowDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexDirectionRowDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-direction-row')).toBeTruthy();
@@ -73,7 +75,10 @@ describe('FlexDirection Directives', () => {
         <div [bu-is-flex-direction-row-reverse]="true" id="test2"></div>
         <div [bu-is-flex-direction-row-reverse]="false" id="test3"></div>
         <div [bu-is-flex-direction-row-reverse]="testMeTrue()" id="test4"></div>
-        <div [bu-is-flex-direction-row-reverse]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-is-flex-direction-row-reverse]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -100,24 +105,36 @@ describe('FlexDirection Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexDirectionRowReverseDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexDirectionRowReverseDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-flex-direction-row-reverse')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-flex-direction-row-reverse')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-flex-direction-row-reverse')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-flex-direction-row-reverse')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-flex-direction-row-reverse')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-flex-direction-row-reverse')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-flex-direction-row-reverse')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-flex-direction-row-reverse')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-flex-direction-row-reverse')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-flex-direction-row-reverse')
+      ).toBeFalsy();
     });
   });
 
@@ -155,7 +172,9 @@ describe('FlexDirection Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexDirectionColumnDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexDirectionColumnDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-direction-column')).toBeTruthy();
@@ -182,8 +201,14 @@ describe('FlexDirection Directives', () => {
         <div bu-is-flex-direction-column-reverse id="test1"></div>
         <div [bu-is-flex-direction-column-reverse]="true" id="test2"></div>
         <div [bu-is-flex-direction-column-reverse]="false" id="test3"></div>
-        <div [bu-is-flex-direction-column-reverse]="testMeTrue()" id="test4"></div>
-        <div [bu-is-flex-direction-column-reverse]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-is-flex-direction-column-reverse]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-is-flex-direction-column-reverse]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -201,7 +226,10 @@ describe('FlexDirection Directives', () => {
     beforeAll(() => {
       fixture = TestBed.configureTestingModule({
         imports: [CommonModule],
-        declarations: [TestComponent, BulmaIsFlexDirectionColumnReverseDirective],
+        declarations: [
+          TestComponent,
+          BulmaIsFlexDirectionColumnReverseDirective
+        ],
         schemas: [CUSTOM_ELEMENTS_SCHEMA]
       }).createComponent(TestComponent);
 
@@ -210,24 +238,36 @@ describe('FlexDirection Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexDirectionColumnReverseDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexDirectionColumnReverseDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-flex-direction-column-reverse')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-flex-direction-column-reverse')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-flex-direction-column-reverse')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-flex-direction-column-reverse')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-flex-direction-column-reverse')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-flex-direction-column-reverse')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-flex-direction-column-reverse')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-flex-direction-column-reverse')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-flex-direction-column-reverse')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-flex-direction-column-reverse')
+      ).toBeFalsy();
     });
   });
 });

@@ -4,7 +4,9 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-is-capitalized]'
 })
 export class BulmaIsCapitalizedDirective implements OnChanges, OnInit {
-  @Input('bu-is-capitalized') public set buIsCapitalized(val: string | boolean) {
+  @Input('bu-is-capitalized') public set buIsCapitalized(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

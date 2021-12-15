@@ -11,12 +11,10 @@ import {
   BulmaIsShadowlessDirective,
   BulmaIsUnselectableDirective,
   BulmaIsClickableDirective,
-  BulmaIsRelativeDirective,
+  BulmaIsRelativeDirective
 } from './helpers.directive';
 
-import {
-  BulmaIsActiveDirective,
-} from './special.directive';
+import { BulmaIsActiveDirective } from './special.directive';
 
 @NgModule({
   imports: [CommonModule],
@@ -31,7 +29,7 @@ import {
     BulmaIsUnselectableDirective,
     BulmaIsClickableDirective,
     BulmaIsRelativeDirective,
-    BulmaIsActiveDirective,
+    BulmaIsActiveDirective
   ],
   exports: [
     BulmaIsClearfixDirective,
@@ -44,7 +42,7 @@ import {
     BulmaIsUnselectableDirective,
     BulmaIsClickableDirective,
     BulmaIsRelativeDirective,
-    BulmaIsActiveDirective,
+    BulmaIsActiveDirective
   ]
 })
 export class BulmaOtherDirectivesModule {}

@@ -4,7 +4,9 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-has-text-weight-light]'
 })
 export class BulmaHasTextWeightLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-weight-light') public set buHasTextWeightLight(val: string | boolean) {
+  @Input('bu-has-text-weight-light') public set buHasTextWeightLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -45,7 +47,9 @@ export class BulmaHasTextWeightLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-weight-normal]'
 })
 export class BulmaHasTextWeightNormalDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-weight-normal') public set buHasTextWeightNormal(val: string | boolean) {
+  @Input('bu-has-text-weight-normal') public set buHasTextWeightNormal(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -86,7 +90,9 @@ export class BulmaHasTextWeightNormalDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-weight-medium]'
 })
 export class BulmaHasTextWeightMediumDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-weight-medium') public set buHasTextWeightMedium(val: string | boolean) {
+  @Input('bu-has-text-weight-medium') public set buHasTextWeightMedium(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -127,7 +133,9 @@ export class BulmaHasTextWeightMediumDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-weight-semibold]'
 })
 export class BulmaHasTextWeightSemiboldDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-weight-semibold') public set buHasTextWeightSemibold(val: string | boolean) {
+  @Input('bu-has-text-weight-semibold') public set buHasTextWeightSemibold(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -151,7 +159,9 @@ export class BulmaHasTextWeightSemiboldDirective implements OnChanges, OnInit {
     if (this.buHasTextWeightSemibold) {
       this.elementRef.nativeElement.classList.add('has-text-weight-semibold');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-weight-semibold');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-weight-semibold'
+      );
     }
   }
 
@@ -159,7 +169,9 @@ export class BulmaHasTextWeightSemiboldDirective implements OnChanges, OnInit {
     if (this.buHasTextWeightSemibold) {
       this.elementRef.nativeElement.classList.add('has-text-weight-semibold');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-text-weight-semibold');
+      this.elementRef.nativeElement.classList.remove(
+        'has-text-weight-semibold'
+      );
     }
   }
 }
@@ -168,7 +180,9 @@ export class BulmaHasTextWeightSemiboldDirective implements OnChanges, OnInit {
   selector: '[bu-has-text-weight-bold]'
 })
 export class BulmaHasTextWeightBoldDirective implements OnChanges, OnInit {
-  @Input('bu-has-text-weight-bold') public set buHasTextWeightBold(val: string | boolean) {
+  @Input('bu-has-text-weight-bold') public set buHasTextWeightBold(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

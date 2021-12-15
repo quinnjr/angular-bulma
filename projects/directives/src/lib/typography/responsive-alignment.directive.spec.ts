@@ -34,7 +34,7 @@ import {
   BulmaHasTextRightDesktopDirective,
   BulmaHasTextRightWidescreenOnlyDirective,
   BulmaHasTextRightWidescreenDirective,
-  BulmaHasTextRightFullhdDirective,
+  BulmaHasTextRightFullhdDirective
 } from './responsive-alignment.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -77,7 +77,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-centered-mobile')).toBeTruthy();
@@ -132,7 +134,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-centered-touch')).toBeTruthy();
@@ -160,7 +164,10 @@ describe('ResponsiveAlignment Directives', () => {
         <div [bu-has-text-centered-tablet-only]="true" id="test2"></div>
         <div [bu-has-text-centered-tablet-only]="false" id="test3"></div>
         <div [bu-has-text-centered-tablet-only]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-centered-tablet-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-centered-tablet-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -187,24 +194,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-centered-tablet-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-centered-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-centered-tablet-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-centered-tablet-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-centered-tablet-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-centered-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-centered-tablet-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-centered-tablet-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-centered-tablet-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-centered-tablet-only')
+      ).toBeFalsy();
     });
   });
 
@@ -242,7 +261,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-centered-tablet')).toBeTruthy();
@@ -269,8 +290,14 @@ describe('ResponsiveAlignment Directives', () => {
         <div bu-has-text-centered-desktop-only id="test1"></div>
         <div [bu-has-text-centered-desktop-only]="true" id="test2"></div>
         <div [bu-has-text-centered-desktop-only]="false" id="test3"></div>
-        <div [bu-has-text-centered-desktop-only]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-centered-desktop-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-centered-desktop-only]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-has-text-centered-desktop-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -297,24 +324,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-centered-desktop-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-centered-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-centered-desktop-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-centered-desktop-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-centered-desktop-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-centered-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-centered-desktop-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-centered-desktop-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-centered-desktop-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-centered-desktop-only')
+      ).toBeFalsy();
     });
   });
 
@@ -352,17 +391,25 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-centered-desktop')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-centered-desktop')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-centered-desktop')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-centered-desktop')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-centered-desktop')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-centered-desktop')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -379,8 +426,14 @@ describe('ResponsiveAlignment Directives', () => {
         <div bu-has-text-centered-widescreen-only id="test1"></div>
         <div [bu-has-text-centered-widescreen-only]="true" id="test2"></div>
         <div [bu-has-text-centered-widescreen-only]="false" id="test3"></div>
-        <div [bu-has-text-centered-widescreen-only]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-centered-widescreen-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-centered-widescreen-only]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-has-text-centered-widescreen-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -398,7 +451,10 @@ describe('ResponsiveAlignment Directives', () => {
     beforeAll(() => {
       fixture = TestBed.configureTestingModule({
         imports: [CommonModule],
-        declarations: [TestComponent, BulmaHasTextCenteredWidescreenOnlyDirective],
+        declarations: [
+          TestComponent,
+          BulmaHasTextCenteredWidescreenOnlyDirective
+        ],
         schemas: [CUSTOM_ELEMENTS_SCHEMA]
       }).createComponent(TestComponent);
 
@@ -407,24 +463,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-centered-widescreen-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-centered-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-centered-widescreen-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-centered-widescreen-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-centered-widescreen-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-centered-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-centered-widescreen-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-centered-widescreen-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-centered-widescreen-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-centered-widescreen-only')
+      ).toBeFalsy();
     });
   });
 
@@ -462,24 +530,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-centered-widescreen')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-centered-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-centered-widescreen')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-centered-widescreen')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-centered-widescreen')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-centered-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-centered-widescreen')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-centered-widescreen')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-centered-widescreen')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-centered-widescreen')
+      ).toBeFalsy();
     });
   });
 
@@ -517,7 +597,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextCenteredFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextCenteredFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-centered-fullhd')).toBeTruthy();
@@ -572,17 +654,25 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-justified-mobile')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-justified-mobile')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-justified-mobile')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-justified-mobile')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-justified-mobile')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-justified-mobile')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -627,7 +717,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-justified-touch')).toBeTruthy();
@@ -654,8 +746,14 @@ describe('ResponsiveAlignment Directives', () => {
         <div bu-has-text-justified-tablet-only id="test1"></div>
         <div [bu-has-text-justified-tablet-only]="true" id="test2"></div>
         <div [bu-has-text-justified-tablet-only]="false" id="test3"></div>
-        <div [bu-has-text-justified-tablet-only]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-justified-tablet-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-justified-tablet-only]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-has-text-justified-tablet-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -682,24 +780,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-justified-tablet-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-justified-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-justified-tablet-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-justified-tablet-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-justified-tablet-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-justified-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-justified-tablet-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-justified-tablet-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-justified-tablet-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-justified-tablet-only')
+      ).toBeFalsy();
     });
   });
 
@@ -737,17 +847,25 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-justified-tablet')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-justified-tablet')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-justified-tablet')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-justified-tablet')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-justified-tablet')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-justified-tablet')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -764,8 +882,14 @@ describe('ResponsiveAlignment Directives', () => {
         <div bu-has-text-justified-desktop-only id="test1"></div>
         <div [bu-has-text-justified-desktop-only]="true" id="test2"></div>
         <div [bu-has-text-justified-desktop-only]="false" id="test3"></div>
-        <div [bu-has-text-justified-desktop-only]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-justified-desktop-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-justified-desktop-only]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-has-text-justified-desktop-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -783,7 +907,10 @@ describe('ResponsiveAlignment Directives', () => {
     beforeAll(() => {
       fixture = TestBed.configureTestingModule({
         imports: [CommonModule],
-        declarations: [TestComponent, BulmaHasTextJustifiedDesktopOnlyDirective],
+        declarations: [
+          TestComponent,
+          BulmaHasTextJustifiedDesktopOnlyDirective
+        ],
         schemas: [CUSTOM_ELEMENTS_SCHEMA]
       }).createComponent(TestComponent);
 
@@ -792,24 +919,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-justified-desktop-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-justified-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-justified-desktop-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-justified-desktop-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-justified-desktop-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-justified-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-justified-desktop-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-justified-desktop-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-justified-desktop-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-justified-desktop-only')
+      ).toBeFalsy();
     });
   });
 
@@ -847,24 +986,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-justified-desktop')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-justified-desktop')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-justified-desktop')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-justified-desktop')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-justified-desktop')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-justified-desktop')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-justified-desktop')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-justified-desktop')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-justified-desktop')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-justified-desktop')
+      ).toBeFalsy();
     });
   });
 
@@ -874,8 +1025,14 @@ describe('ResponsiveAlignment Directives', () => {
         <div bu-has-text-justified-widescreen-only id="test1"></div>
         <div [bu-has-text-justified-widescreen-only]="true" id="test2"></div>
         <div [bu-has-text-justified-widescreen-only]="false" id="test3"></div>
-        <div [bu-has-text-justified-widescreen-only]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-justified-widescreen-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-justified-widescreen-only]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-has-text-justified-widescreen-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -893,7 +1050,10 @@ describe('ResponsiveAlignment Directives', () => {
     beforeAll(() => {
       fixture = TestBed.configureTestingModule({
         imports: [CommonModule],
-        declarations: [TestComponent, BulmaHasTextJustifiedWidescreenOnlyDirective],
+        declarations: [
+          TestComponent,
+          BulmaHasTextJustifiedWidescreenOnlyDirective
+        ],
         schemas: [CUSTOM_ELEMENTS_SCHEMA]
       }).createComponent(TestComponent);
 
@@ -902,24 +1062,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-justified-widescreen-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-justified-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-justified-widescreen-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-justified-widescreen-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-justified-widescreen-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-justified-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-justified-widescreen-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-justified-widescreen-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-justified-widescreen-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-justified-widescreen-only')
+      ).toBeFalsy();
     });
   });
 
@@ -930,7 +1102,10 @@ describe('ResponsiveAlignment Directives', () => {
         <div [bu-has-text-justified-widescreen]="true" id="test2"></div>
         <div [bu-has-text-justified-widescreen]="false" id="test3"></div>
         <div [bu-has-text-justified-widescreen]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-justified-widescreen]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-justified-widescreen]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -957,24 +1132,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-justified-widescreen')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-justified-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-justified-widescreen')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-justified-widescreen')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-justified-widescreen')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-justified-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-justified-widescreen')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-justified-widescreen')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-justified-widescreen')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-justified-widescreen')
+      ).toBeFalsy();
     });
   });
 
@@ -1012,17 +1199,25 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextJustifiedFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextJustifiedFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-justified-fullhd')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-justified-fullhd')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-justified-fullhd')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-justified-fullhd')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-justified-fullhd')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-justified-fullhd')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -1067,7 +1262,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-left-mobile')).toBeTruthy();
@@ -1122,7 +1319,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-left-touch')).toBeTruthy();
@@ -1177,17 +1376,25 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-left-tablet-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-left-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-left-tablet-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-left-tablet-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-left-tablet-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-left-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -1232,7 +1439,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-left-tablet')).toBeTruthy();
@@ -1287,24 +1496,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-left-desktop-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-left-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-left-desktop-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-left-desktop-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-left-desktop-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-left-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-left-desktop-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-left-desktop-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-left-desktop-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-left-desktop-only')
+      ).toBeFalsy();
     });
   });
 
@@ -1342,7 +1563,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-left-desktop')).toBeTruthy();
@@ -1370,7 +1593,10 @@ describe('ResponsiveAlignment Directives', () => {
         <div [bu-has-text-left-widescreen-only]="true" id="test2"></div>
         <div [bu-has-text-left-widescreen-only]="false" id="test3"></div>
         <div [bu-has-text-left-widescreen-only]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-left-widescreen-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-left-widescreen-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -1397,24 +1623,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-left-widescreen-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-left-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-left-widescreen-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-left-widescreen-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-left-widescreen-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-left-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-left-widescreen-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-left-widescreen-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-left-widescreen-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-left-widescreen-only')
+      ).toBeFalsy();
     });
   });
 
@@ -1452,7 +1690,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-left-widescreen')).toBeTruthy();
@@ -1507,7 +1747,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLeftFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLeftFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-left-fullhd')).toBeTruthy();
@@ -1562,7 +1804,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-right-mobile')).toBeTruthy();
@@ -1617,7 +1861,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-right-touch')).toBeTruthy();
@@ -1672,24 +1918,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-right-tablet-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-right-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-right-tablet-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-right-tablet-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-right-tablet-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-right-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-right-tablet-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-right-tablet-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-right-tablet-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-right-tablet-only')
+      ).toBeFalsy();
     });
   });
 
@@ -1727,7 +1985,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-right-tablet')).toBeTruthy();
@@ -1782,24 +2042,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-right-desktop-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-right-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-right-desktop-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-right-desktop-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-right-desktop-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-right-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-right-desktop-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-right-desktop-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-right-desktop-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-right-desktop-only')
+      ).toBeFalsy();
     });
   });
 
@@ -1837,7 +2109,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-right-desktop')).toBeTruthy();
@@ -1864,8 +2138,14 @@ describe('ResponsiveAlignment Directives', () => {
         <div bu-has-text-right-widescreen-only id="test1"></div>
         <div [bu-has-text-right-widescreen-only]="true" id="test2"></div>
         <div [bu-has-text-right-widescreen-only]="false" id="test3"></div>
-        <div [bu-has-text-right-widescreen-only]="testMeTrue()" id="test4"></div>
-        <div [bu-has-text-right-widescreen-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-has-text-right-widescreen-only]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-has-text-right-widescreen-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -1892,24 +2172,36 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-right-widescreen-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-right-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-right-widescreen-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-right-widescreen-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-right-widescreen-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-right-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-text-right-widescreen-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-text-right-widescreen-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-text-right-widescreen-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-text-right-widescreen-only')
+      ).toBeFalsy();
     });
   });
 
@@ -1947,17 +2239,25 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-text-right-widescreen')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-text-right-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-text-right-widescreen')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-text-right-widescreen')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-text-right-widescreen')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-text-right-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -2002,7 +2302,9 @@ describe('ResponsiveAlignment Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextRightFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextRightFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-right-fullhd')).toBeTruthy();

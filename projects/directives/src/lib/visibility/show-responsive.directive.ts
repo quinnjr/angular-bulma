@@ -4,7 +4,9 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-is-block-mobile]'
 })
 export class BulmaIsBlockMobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-block-mobile') public set buIsBlockMobile(val: string | boolean) {
+  @Input('bu-is-block-mobile') public set buIsBlockMobile(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -45,7 +47,9 @@ export class BulmaIsBlockMobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-block-tablet-only]'
 })
 export class BulmaIsBlockTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-block-tablet-only') public set buIsBlockTabletOnly(val: string | boolean) {
+  @Input('bu-is-block-tablet-only') public set buIsBlockTabletOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -86,7 +90,9 @@ export class BulmaIsBlockTabletOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-block-desktop-only]'
 })
 export class BulmaIsBlockDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-block-desktop-only') public set buIsBlockDesktopOnly(val: string | boolean) {
+  @Input('bu-is-block-desktop-only') public set buIsBlockDesktopOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -127,7 +133,9 @@ export class BulmaIsBlockDesktopOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-block-widescreen-only]'
 })
 export class BulmaIsBlockWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-block-widescreen-only') public set buIsBlockWidescreenOnly(val: string | boolean) {
+  @Input('bu-is-block-widescreen-only') public set buIsBlockWidescreenOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -151,7 +159,9 @@ export class BulmaIsBlockWidescreenOnlyDirective implements OnChanges, OnInit {
     if (this.buIsBlockWidescreenOnly) {
       this.elementRef.nativeElement.classList.add('is-block-widescreen-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-block-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-block-widescreen-only'
+      );
     }
   }
 
@@ -159,7 +169,9 @@ export class BulmaIsBlockWidescreenOnlyDirective implements OnChanges, OnInit {
     if (this.buIsBlockWidescreenOnly) {
       this.elementRef.nativeElement.classList.add('is-block-widescreen-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-block-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-block-widescreen-only'
+      );
     }
   }
 }
@@ -209,7 +221,9 @@ export class BulmaIsBlockTouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-block-tablet]'
 })
 export class BulmaIsBlockTabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-block-tablet') public set buIsBlockTablet(val: string | boolean) {
+  @Input('bu-is-block-tablet') public set buIsBlockTablet(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -250,7 +264,9 @@ export class BulmaIsBlockTabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-block-desktop]'
 })
 export class BulmaIsBlockDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-block-desktop') public set buIsBlockDesktop(val: string | boolean) {
+  @Input('bu-is-block-desktop') public set buIsBlockDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -291,7 +307,9 @@ export class BulmaIsBlockDesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-block-widescreen]'
 })
 export class BulmaIsBlockWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-block-widescreen') public set buIsBlockWidescreen(val: string | boolean) {
+  @Input('bu-is-block-widescreen') public set buIsBlockWidescreen(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -332,7 +350,9 @@ export class BulmaIsBlockWidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-block-fullhd]'
 })
 export class BulmaIsBlockFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-block-fullhd') public set buIsBlockFullhd(val: string | boolean) {
+  @Input('bu-is-block-fullhd') public set buIsBlockFullhd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -414,7 +434,9 @@ export class BulmaIsFlexMobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-flex-tablet-only]'
 })
 export class BulmaIsFlexTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-flex-tablet-only') public set buIsFlexTabletOnly(val: string | boolean) {
+  @Input('bu-is-flex-tablet-only') public set buIsFlexTabletOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -455,7 +477,9 @@ export class BulmaIsFlexTabletOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-flex-desktop-only]'
 })
 export class BulmaIsFlexDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-flex-desktop-only') public set buIsFlexDesktopOnly(val: string | boolean) {
+  @Input('bu-is-flex-desktop-only') public set buIsFlexDesktopOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -496,7 +520,9 @@ export class BulmaIsFlexDesktopOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-flex-widescreen-only]'
 })
 export class BulmaIsFlexWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-flex-widescreen-only') public set buIsFlexWidescreenOnly(val: string | boolean) {
+  @Input('bu-is-flex-widescreen-only') public set buIsFlexWidescreenOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -619,7 +645,9 @@ export class BulmaIsFlexTabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-flex-desktop]'
 })
 export class BulmaIsFlexDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-flex-desktop') public set buIsFlexDesktop(val: string | boolean) {
+  @Input('bu-is-flex-desktop') public set buIsFlexDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -660,7 +688,9 @@ export class BulmaIsFlexDesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-flex-widescreen]'
 })
 export class BulmaIsFlexWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-flex-widescreen') public set buIsFlexWidescreen(val: string | boolean) {
+  @Input('bu-is-flex-widescreen') public set buIsFlexWidescreen(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -742,7 +772,9 @@ export class BulmaIsFlexFullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-mobile]'
 })
 export class BulmaIsInlineMobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-mobile') public set buIsInlineMobile(val: string | boolean) {
+  @Input('bu-is-inline-mobile') public set buIsInlineMobile(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -783,7 +815,9 @@ export class BulmaIsInlineMobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-tablet-only]'
 })
 export class BulmaIsInlineTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-tablet-only') public set buIsInlineTabletOnly(val: string | boolean) {
+  @Input('bu-is-inline-tablet-only') public set buIsInlineTabletOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -824,7 +858,9 @@ export class BulmaIsInlineTabletOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-desktop-only]'
 })
 export class BulmaIsInlineDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-desktop-only') public set buIsInlineDesktopOnly(val: string | boolean) {
+  @Input('bu-is-inline-desktop-only') public set buIsInlineDesktopOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -865,7 +901,9 @@ export class BulmaIsInlineDesktopOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-widescreen-only]'
 })
 export class BulmaIsInlineWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-widescreen-only') public set buIsInlineWidescreenOnly(val: string | boolean) {
+  @Input('bu-is-inline-widescreen-only') public set buIsInlineWidescreenOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -889,7 +927,9 @@ export class BulmaIsInlineWidescreenOnlyDirective implements OnChanges, OnInit {
     if (this.buIsInlineWidescreenOnly) {
       this.elementRef.nativeElement.classList.add('is-inline-widescreen-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-widescreen-only'
+      );
     }
   }
 
@@ -897,7 +937,9 @@ export class BulmaIsInlineWidescreenOnlyDirective implements OnChanges, OnInit {
     if (this.buIsInlineWidescreenOnly) {
       this.elementRef.nativeElement.classList.add('is-inline-widescreen-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-widescreen-only'
+      );
     }
   }
 }
@@ -906,7 +948,9 @@ export class BulmaIsInlineWidescreenOnlyDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-touch]'
 })
 export class BulmaIsInlineTouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-touch') public set buIsInlineTouch(val: string | boolean) {
+  @Input('bu-is-inline-touch') public set buIsInlineTouch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -947,7 +991,9 @@ export class BulmaIsInlineTouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-tablet]'
 })
 export class BulmaIsInlineTabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-tablet') public set buIsInlineTablet(val: string | boolean) {
+  @Input('bu-is-inline-tablet') public set buIsInlineTablet(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -988,7 +1034,9 @@ export class BulmaIsInlineTabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-desktop]'
 })
 export class BulmaIsInlineDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-desktop') public set buIsInlineDesktop(val: string | boolean) {
+  @Input('bu-is-inline-desktop') public set buIsInlineDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1029,7 +1077,9 @@ export class BulmaIsInlineDesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-widescreen]'
 })
 export class BulmaIsInlineWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-widescreen') public set buIsInlineWidescreen(val: string | boolean) {
+  @Input('bu-is-inline-widescreen') public set buIsInlineWidescreen(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1070,7 +1120,9 @@ export class BulmaIsInlineWidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-fullhd]'
 })
 export class BulmaIsInlineFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-fullhd') public set buIsInlineFullhd(val: string | boolean) {
+  @Input('bu-is-inline-fullhd') public set buIsInlineFullhd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1111,7 +1163,9 @@ export class BulmaIsInlineFullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-block-mobile]'
 })
 export class BulmaIsInlineBlockMobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-mobile') public set buIsInlineBlockMobile(val: string | boolean) {
+  @Input('bu-is-inline-block-mobile') public set buIsInlineBlockMobile(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1151,8 +1205,12 @@ export class BulmaIsInlineBlockMobileDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-is-inline-block-tablet-only]'
 })
-export class BulmaIsInlineBlockTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-tablet-only') public set buIsInlineBlockTabletOnly(val: string | boolean) {
+export class BulmaIsInlineBlockTabletOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-inline-block-tablet-only') public set buIsInlineBlockTabletOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1174,17 +1232,25 @@ export class BulmaIsInlineBlockTabletOnlyDirective implements OnChanges, OnInit 
 
   public ngOnInit() {
     if (this.buIsInlineBlockTabletOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-block-tablet-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-block-tablet-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-block-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-block-tablet-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsInlineBlockTabletOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-block-tablet-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-block-tablet-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-block-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-block-tablet-only'
+      );
     }
   }
 }
@@ -1192,8 +1258,11 @@ export class BulmaIsInlineBlockTabletOnlyDirective implements OnChanges, OnInit 
 @Directive({
   selector: '[bu-is-inline-block-desktop-only]'
 })
-export class BulmaIsInlineBlockDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-desktop-only') public set buIsInlineBlockDesktopOnly(val: string | boolean) {
+export class BulmaIsInlineBlockDesktopOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-inline-block-desktop-only')
+  public set buIsInlineBlockDesktopOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1215,17 +1284,25 @@ export class BulmaIsInlineBlockDesktopOnlyDirective implements OnChanges, OnInit
 
   public ngOnInit() {
     if (this.buIsInlineBlockDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-block-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-block-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-block-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-block-desktop-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsInlineBlockDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-block-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-block-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-block-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-block-desktop-only'
+      );
     }
   }
 }
@@ -1233,8 +1310,11 @@ export class BulmaIsInlineBlockDesktopOnlyDirective implements OnChanges, OnInit
 @Directive({
   selector: '[bu-is-inline-block-widescreen-only]'
 })
-export class BulmaIsInlineBlockWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-widescreen-only') public set buIsInlineBlockWidescreenOnly(val: string | boolean) {
+export class BulmaIsInlineBlockWidescreenOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-inline-block-widescreen-only')
+  public set buIsInlineBlockWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1256,17 +1336,25 @@ export class BulmaIsInlineBlockWidescreenOnlyDirective implements OnChanges, OnI
 
   public ngOnInit() {
     if (this.buIsInlineBlockWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-block-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-block-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-block-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-block-widescreen-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsInlineBlockWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-block-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-block-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-block-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-block-widescreen-only'
+      );
     }
   }
 }
@@ -1275,7 +1363,9 @@ export class BulmaIsInlineBlockWidescreenOnlyDirective implements OnChanges, OnI
   selector: '[bu-is-inline-block-touch]'
 })
 export class BulmaIsInlineBlockTouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-touch') public set buIsInlineBlockTouch(val: string | boolean) {
+  @Input('bu-is-inline-block-touch') public set buIsInlineBlockTouch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1316,7 +1406,9 @@ export class BulmaIsInlineBlockTouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-block-tablet]'
 })
 export class BulmaIsInlineBlockTabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-tablet') public set buIsInlineBlockTablet(val: string | boolean) {
+  @Input('bu-is-inline-block-tablet') public set buIsInlineBlockTablet(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1357,7 +1449,9 @@ export class BulmaIsInlineBlockTabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-block-desktop]'
 })
 export class BulmaIsInlineBlockDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-desktop') public set buIsInlineBlockDesktop(val: string | boolean) {
+  @Input('bu-is-inline-block-desktop') public set buIsInlineBlockDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1397,8 +1491,12 @@ export class BulmaIsInlineBlockDesktopDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-is-inline-block-widescreen]'
 })
-export class BulmaIsInlineBlockWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-widescreen') public set buIsInlineBlockWidescreen(val: string | boolean) {
+export class BulmaIsInlineBlockWidescreenDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-inline-block-widescreen') public set buIsInlineBlockWidescreen(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1422,7 +1520,9 @@ export class BulmaIsInlineBlockWidescreenDirective implements OnChanges, OnInit 
     if (this.buIsInlineBlockWidescreen) {
       this.elementRef.nativeElement.classList.add('is-inline-block-widescreen');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-block-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-block-widescreen'
+      );
     }
   }
 
@@ -1430,7 +1530,9 @@ export class BulmaIsInlineBlockWidescreenDirective implements OnChanges, OnInit 
     if (this.buIsInlineBlockWidescreen) {
       this.elementRef.nativeElement.classList.add('is-inline-block-widescreen');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-block-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-block-widescreen'
+      );
     }
   }
 }
@@ -1439,7 +1541,9 @@ export class BulmaIsInlineBlockWidescreenDirective implements OnChanges, OnInit 
   selector: '[bu-is-inline-block-fullhd]'
 })
 export class BulmaIsInlineBlockFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-block-fullhd') public set buIsInlineBlockFullhd(val: string | boolean) {
+  @Input('bu-is-inline-block-fullhd') public set buIsInlineBlockFullhd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1480,7 +1584,9 @@ export class BulmaIsInlineBlockFullhdDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-flex-mobile]'
 })
 export class BulmaIsInlineFlexMobileDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-mobile') public set buIsInlineFlexMobile(val: string | boolean) {
+  @Input('bu-is-inline-flex-mobile') public set buIsInlineFlexMobile(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1521,7 +1627,9 @@ export class BulmaIsInlineFlexMobileDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-flex-tablet-only]'
 })
 export class BulmaIsInlineFlexTabletOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-tablet-only') public set buIsInlineFlexTabletOnly(val: string | boolean) {
+  @Input('bu-is-inline-flex-tablet-only') public set buIsInlineFlexTabletOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1545,7 +1653,9 @@ export class BulmaIsInlineFlexTabletOnlyDirective implements OnChanges, OnInit {
     if (this.buIsInlineFlexTabletOnly) {
       this.elementRef.nativeElement.classList.add('is-inline-flex-tablet-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-flex-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-flex-tablet-only'
+      );
     }
   }
 
@@ -1553,7 +1663,9 @@ export class BulmaIsInlineFlexTabletOnlyDirective implements OnChanges, OnInit {
     if (this.buIsInlineFlexTabletOnly) {
       this.elementRef.nativeElement.classList.add('is-inline-flex-tablet-only');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-flex-tablet-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-flex-tablet-only'
+      );
     }
   }
 }
@@ -1561,8 +1673,12 @@ export class BulmaIsInlineFlexTabletOnlyDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-is-inline-flex-desktop-only]'
 })
-export class BulmaIsInlineFlexDesktopOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-desktop-only') public set buIsInlineFlexDesktopOnly(val: string | boolean) {
+export class BulmaIsInlineFlexDesktopOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-inline-flex-desktop-only') public set buIsInlineFlexDesktopOnly(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1584,17 +1700,25 @@ export class BulmaIsInlineFlexDesktopOnlyDirective implements OnChanges, OnInit 
 
   public ngOnInit() {
     if (this.buIsInlineFlexDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-flex-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-flex-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-flex-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-flex-desktop-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsInlineFlexDesktopOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-flex-desktop-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-flex-desktop-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-flex-desktop-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-flex-desktop-only'
+      );
     }
   }
 }
@@ -1602,8 +1726,11 @@ export class BulmaIsInlineFlexDesktopOnlyDirective implements OnChanges, OnInit 
 @Directive({
   selector: '[bu-is-inline-flex-widescreen-only]'
 })
-export class BulmaIsInlineFlexWidescreenOnlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-widescreen-only') public set buIsInlineFlexWidescreenOnly(val: string | boolean) {
+export class BulmaIsInlineFlexWidescreenOnlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-inline-flex-widescreen-only')
+  public set buIsInlineFlexWidescreenOnly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1625,17 +1752,25 @@ export class BulmaIsInlineFlexWidescreenOnlyDirective implements OnChanges, OnIn
 
   public ngOnInit() {
     if (this.buIsInlineFlexWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-flex-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-flex-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-flex-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-flex-widescreen-only'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsInlineFlexWidescreenOnly) {
-      this.elementRef.nativeElement.classList.add('is-inline-flex-widescreen-only');
+      this.elementRef.nativeElement.classList.add(
+        'is-inline-flex-widescreen-only'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-flex-widescreen-only');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-flex-widescreen-only'
+      );
     }
   }
 }
@@ -1644,7 +1779,9 @@ export class BulmaIsInlineFlexWidescreenOnlyDirective implements OnChanges, OnIn
   selector: '[bu-is-inline-flex-touch]'
 })
 export class BulmaIsInlineFlexTouchDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-touch') public set buIsInlineFlexTouch(val: string | boolean) {
+  @Input('bu-is-inline-flex-touch') public set buIsInlineFlexTouch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1685,7 +1822,9 @@ export class BulmaIsInlineFlexTouchDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-flex-tablet]'
 })
 export class BulmaIsInlineFlexTabletDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-tablet') public set buIsInlineFlexTablet(val: string | boolean) {
+  @Input('bu-is-inline-flex-tablet') public set buIsInlineFlexTablet(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1726,7 +1865,9 @@ export class BulmaIsInlineFlexTabletDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-flex-desktop]'
 })
 export class BulmaIsInlineFlexDesktopDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-desktop') public set buIsInlineFlexDesktop(val: string | boolean) {
+  @Input('bu-is-inline-flex-desktop') public set buIsInlineFlexDesktop(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1767,7 +1908,9 @@ export class BulmaIsInlineFlexDesktopDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-flex-widescreen]'
 })
 export class BulmaIsInlineFlexWidescreenDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-widescreen') public set buIsInlineFlexWidescreen(val: string | boolean) {
+  @Input('bu-is-inline-flex-widescreen') public set buIsInlineFlexWidescreen(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1791,7 +1934,9 @@ export class BulmaIsInlineFlexWidescreenDirective implements OnChanges, OnInit {
     if (this.buIsInlineFlexWidescreen) {
       this.elementRef.nativeElement.classList.add('is-inline-flex-widescreen');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-flex-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-flex-widescreen'
+      );
     }
   }
 
@@ -1799,7 +1944,9 @@ export class BulmaIsInlineFlexWidescreenDirective implements OnChanges, OnInit {
     if (this.buIsInlineFlexWidescreen) {
       this.elementRef.nativeElement.classList.add('is-inline-flex-widescreen');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-inline-flex-widescreen');
+      this.elementRef.nativeElement.classList.remove(
+        'is-inline-flex-widescreen'
+      );
     }
   }
 }
@@ -1808,7 +1955,9 @@ export class BulmaIsInlineFlexWidescreenDirective implements OnChanges, OnInit {
   selector: '[bu-is-inline-flex-fullhd]'
 })
 export class BulmaIsInlineFlexFullhdDirective implements OnChanges, OnInit {
-  @Input('bu-is-inline-flex-fullhd') public set buIsInlineFlexFullhd(val: string | boolean) {
+  @Input('bu-is-inline-flex-fullhd') public set buIsInlineFlexFullhd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

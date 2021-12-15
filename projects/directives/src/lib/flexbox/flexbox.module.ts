@@ -5,13 +5,13 @@ import {
   BulmaIsFlexDirectionRowDirective,
   BulmaIsFlexDirectionRowReverseDirective,
   BulmaIsFlexDirectionColumnDirective,
-  BulmaIsFlexDirectionColumnReverseDirective,
+  BulmaIsFlexDirectionColumnReverseDirective
 } from './flex-direction.directive';
 
 import {
   BulmaIsFlexNowrapDirective,
   BulmaIsFlexWrapWrapDirective,
-  BulmaIsFlexWrapWrapReverseDirective,
+  BulmaIsFlexWrapWrapReverseDirective
 } from './flex-wrap.directive';
 
 import {
@@ -24,7 +24,7 @@ import {
   BulmaIsJustifyContentStartDirective,
   BulmaIsJustifyContentEndDirective,
   BulmaIsJustifyContentLeftDirective,
-  BulmaIsJustifyContentRightDirective,
+  BulmaIsJustifyContentRightDirective
 } from './justify-content.directive';
 
 import {
@@ -37,7 +37,7 @@ import {
   BulmaIsAlignContentStretchDirective,
   BulmaIsAlignContentStartDirective,
   BulmaIsAlignContentEndDirective,
-  BulmaIsAlignContentBaselineDirective,
+  BulmaIsAlignContentBaselineDirective
 } from './align-content.directive';
 
 import {
@@ -49,7 +49,7 @@ import {
   BulmaIsAlignItemsStartDirective,
   BulmaIsAlignItemsEndDirective,
   BulmaIsAlignItemsSelfStartDirective,
-  BulmaIsAlignItemsSelfEndDirective,
+  BulmaIsAlignItemsSelfEndDirective
 } from './align-items.directive';
 
 import {
@@ -58,7 +58,7 @@ import {
   BulmaIsAlignSelfFlexEndDirective,
   BulmaIsAlignSelfCenterDirective,
   BulmaIsAlignSelfBaselineDirective,
-  BulmaIsAlignSelfStretchDirective,
+  BulmaIsAlignSelfStretchDirective
 } from './align-self.directive';
 
 import {
@@ -67,7 +67,7 @@ import {
   BulmaIsFlexGrow2Directive,
   BulmaIsFlexGrow3Directive,
   BulmaIsFlexGrow4Directive,
-  BulmaIsFlexGrow5Directive,
+  BulmaIsFlexGrow5Directive
 } from './flex-grow.directive';
 
 import {
@@ -76,7 +76,7 @@ import {
   BulmaIsFlexShrink2Directive,
   BulmaIsFlexShrink3Directive,
   BulmaIsFlexShrink4Directive,
-  BulmaIsFlexShrink5Directive,
+  BulmaIsFlexShrink5Directive
 } from './flex-shrink.directive';
 
 @NgModule({
@@ -135,7 +135,7 @@ import {
     BulmaIsFlexShrink2Directive,
     BulmaIsFlexShrink3Directive,
     BulmaIsFlexShrink4Directive,
-    BulmaIsFlexShrink5Directive,
+    BulmaIsFlexShrink5Directive
   ],
   exports: [
     BulmaIsFlexDirectionRowDirective,
@@ -191,7 +191,7 @@ import {
     BulmaIsFlexShrink2Directive,
     BulmaIsFlexShrink3Directive,
     BulmaIsFlexShrink4Directive,
-    BulmaIsFlexShrink5Directive,
+    BulmaIsFlexShrink5Directive
   ]
 })
 export class BulmaFlexboxDirectivesModule {}

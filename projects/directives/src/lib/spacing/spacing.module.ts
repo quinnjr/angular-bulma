@@ -8,7 +8,7 @@ import {
   BulmaM3Directive,
   BulmaM4Directive,
   BulmaM5Directive,
-  BulmaM6Directive,
+  BulmaM6Directive
 } from './margin.directive';
 
 import {
@@ -18,7 +18,7 @@ import {
   BulmaMt3Directive,
   BulmaMt4Directive,
   BulmaMt5Directive,
-  BulmaMt6Directive,
+  BulmaMt6Directive
 } from './margin-top.directive';
 
 import {
@@ -28,7 +28,7 @@ import {
   BulmaMr3Directive,
   BulmaMr4Directive,
   BulmaMr5Directive,
-  BulmaMr6Directive,
+  BulmaMr6Directive
 } from './margin-right.directive';
 
 import {
@@ -38,7 +38,7 @@ import {
   BulmaMb3Directive,
   BulmaMb4Directive,
   BulmaMb5Directive,
-  BulmaMb6Directive,
+  BulmaMb6Directive
 } from './margin-bottom.directive';
 
 import {
@@ -48,7 +48,7 @@ import {
   BulmaMl3Directive,
   BulmaMl4Directive,
   BulmaMl5Directive,
-  BulmaMl6Directive,
+  BulmaMl6Directive
 } from './margin-left.directive';
 
 import {
@@ -58,7 +58,7 @@ import {
   BulmaMx3Directive,
   BulmaMx4Directive,
   BulmaMx5Directive,
-  BulmaMx6Directive,
+  BulmaMx6Directive
 } from './margin-left-right.directive';
 
 import {
@@ -68,7 +68,7 @@ import {
   BulmaMy3Directive,
   BulmaMy4Directive,
   BulmaMy5Directive,
-  BulmaMy6Directive,
+  BulmaMy6Directive
 } from './margin-top-bottom.directive';
 
 import {
@@ -78,7 +78,7 @@ import {
   BulmaP3Directive,
   BulmaP4Directive,
   BulmaP5Directive,
-  BulmaP6Directive,
+  BulmaP6Directive
 } from './padding.directive';
 
 import {
@@ -88,7 +88,7 @@ import {
   BulmaPt3Directive,
   BulmaPt4Directive,
   BulmaPt5Directive,
-  BulmaPt6Directive,
+  BulmaPt6Directive
 } from './padding-top.directive';
 
 import {
@@ -98,7 +98,7 @@ import {
   BulmaPr3Directive,
   BulmaPr4Directive,
   BulmaPr5Directive,
-  BulmaPr6Directive,
+  BulmaPr6Directive
 } from './padding-right.directive';
 
 import {
@@ -108,7 +108,7 @@ import {
   BulmaPb3Directive,
   BulmaPb4Directive,
   BulmaPb5Directive,
-  BulmaPb6Directive,
+  BulmaPb6Directive
 } from './padding-bottom.directive';
 
 import {
@@ -118,7 +118,7 @@ import {
   BulmaPl3Directive,
   BulmaPl4Directive,
   BulmaPl5Directive,
-  BulmaPl6Directive,
+  BulmaPl6Directive
 } from './padding-left.directive';
 
 import {
@@ -128,7 +128,7 @@ import {
   BulmaPx3Directive,
   BulmaPx4Directive,
   BulmaPx5Directive,
-  BulmaPx6Directive,
+  BulmaPx6Directive
 } from './padding-left-right.directive';
 
 import {
@@ -138,7 +138,7 @@ import {
   BulmaPy3Directive,
   BulmaPy4Directive,
   BulmaPy5Directive,
-  BulmaPy6Directive,
+  BulmaPy6Directive
 } from './padding-top-bottom.directive';
 
 @NgModule({
@@ -241,7 +241,7 @@ import {
     BulmaPy3Directive,
     BulmaPy4Directive,
     BulmaPy5Directive,
-    BulmaPy6Directive,
+    BulmaPy6Directive
   ],
   exports: [
     BulmaM0Directive,
@@ -341,7 +341,7 @@ import {
     BulmaPy3Directive,
     BulmaPy4Directive,
     BulmaPy5Directive,
-    BulmaPy6Directive,
+    BulmaPy6Directive
   ]
 })
 export class BulmaSpacingDirectivesModule {}

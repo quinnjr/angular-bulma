@@ -4,7 +4,7 @@ import {
   BulmaIsFlexShrink2Directive,
   BulmaIsFlexShrink3Directive,
   BulmaIsFlexShrink4Directive,
-  BulmaIsFlexShrink5Directive,
+  BulmaIsFlexShrink5Directive
 } from './flex-shrink.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -47,7 +47,9 @@ describe('FlexShrink Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexShrink0Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexShrink0Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-shrink-0')).toBeTruthy();
@@ -102,7 +104,9 @@ describe('FlexShrink Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexShrink1Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexShrink1Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-shrink-1')).toBeTruthy();
@@ -157,7 +161,9 @@ describe('FlexShrink Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexShrink2Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexShrink2Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-shrink-2')).toBeTruthy();
@@ -212,7 +218,9 @@ describe('FlexShrink Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexShrink3Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexShrink3Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-shrink-3')).toBeTruthy();
@@ -267,7 +275,9 @@ describe('FlexShrink Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexShrink4Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexShrink4Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-shrink-4')).toBeTruthy();
@@ -322,7 +332,9 @@ describe('FlexShrink Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexShrink5Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexShrink5Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-shrink-5')).toBeTruthy();

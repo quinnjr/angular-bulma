@@ -29,7 +29,7 @@ import {
   BulmaHasTextInfoDarkDirective,
   BulmaHasTextSuccessDarkDirective,
   BulmaHasTextWarningDarkDirective,
-  BulmaHasTextDangerDarkDirective,
+  BulmaHasTextDangerDarkDirective
 } from './text-color.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -72,7 +72,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWhiteDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWhiteDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-white')).toBeTruthy();
@@ -127,7 +129,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextBlackDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextBlackDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-black')).toBeTruthy();
@@ -182,7 +186,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-light')).toBeTruthy();
@@ -237,7 +243,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-dark')).toBeTruthy();
@@ -292,7 +300,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextPrimaryDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextPrimaryDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-primary')).toBeTruthy();
@@ -347,7 +357,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLinkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLinkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-link')).toBeTruthy();
@@ -402,7 +414,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextInfoDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextInfoDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-info')).toBeTruthy();
@@ -457,7 +471,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextSuccessDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextSuccessDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-success')).toBeTruthy();
@@ -512,7 +528,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWarningDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWarningDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-warning')).toBeTruthy();
@@ -567,7 +585,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextDangerDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextDangerDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-danger')).toBeTruthy();
@@ -622,7 +642,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextBlackBisDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextBlackBisDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-black-bis')).toBeTruthy();
@@ -677,7 +699,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextBlackTerDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextBlackTerDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-black-ter')).toBeTruthy();
@@ -732,7 +756,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextGreyDarkerDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextGreyDarkerDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-grey-darker')).toBeTruthy();
@@ -787,7 +813,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextGreyDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextGreyDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-grey-dark')).toBeTruthy();
@@ -842,7 +870,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextGreyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextGreyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-grey')).toBeTruthy();
@@ -897,7 +927,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextGreyLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextGreyLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-grey-light')).toBeTruthy();
@@ -952,7 +984,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextGreyLighterDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextGreyLighterDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-grey-lighter')).toBeTruthy();
@@ -1007,7 +1041,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWhiteTerDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWhiteTerDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-white-ter')).toBeTruthy();
@@ -1062,7 +1098,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWhiteBisDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWhiteBisDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-white-bis')).toBeTruthy();
@@ -1117,7 +1155,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextPrimaryLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextPrimaryLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-primary-light')).toBeTruthy();
@@ -1172,7 +1212,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLinkLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLinkLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-link-light')).toBeTruthy();
@@ -1227,7 +1269,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextInfoLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextInfoLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-info-light')).toBeTruthy();
@@ -1282,7 +1326,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextSuccessLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextSuccessLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-success-light')).toBeTruthy();
@@ -1337,7 +1383,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWarningLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWarningLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-warning-light')).toBeTruthy();
@@ -1392,7 +1440,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextDangerLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextDangerLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-danger-light')).toBeTruthy();
@@ -1447,7 +1497,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextPrimaryDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextPrimaryDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-primary-dark')).toBeTruthy();
@@ -1502,7 +1554,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextLinkDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextLinkDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-link-dark')).toBeTruthy();
@@ -1557,7 +1611,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextInfoDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextInfoDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-info-dark')).toBeTruthy();
@@ -1612,7 +1668,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextSuccessDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextSuccessDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-success-dark')).toBeTruthy();
@@ -1667,7 +1725,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWarningDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWarningDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-warning-dark')).toBeTruthy();
@@ -1722,7 +1782,9 @@ describe('TextColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextDangerDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextDangerDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-danger-dark')).toBeTruthy();

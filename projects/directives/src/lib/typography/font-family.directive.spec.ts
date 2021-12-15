@@ -3,7 +3,7 @@ import {
   BulmaIsFamilyMonospaceDirective,
   BulmaIsFamilyPrimaryDirective,
   BulmaIsFamilySecondaryDirective,
-  BulmaIsFamilyCodeDirective,
+  BulmaIsFamilyCodeDirective
 } from './font-family.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -46,7 +46,9 @@ describe('FontFamily Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFamilySansSerifDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFamilySansSerifDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-family-sans-serif')).toBeTruthy();
@@ -101,7 +103,9 @@ describe('FontFamily Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFamilyMonospaceDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFamilyMonospaceDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-family-monospace')).toBeTruthy();
@@ -156,7 +160,9 @@ describe('FontFamily Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFamilyPrimaryDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFamilyPrimaryDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-family-primary')).toBeTruthy();
@@ -211,7 +217,9 @@ describe('FontFamily Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFamilySecondaryDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFamilySecondaryDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-family-secondary')).toBeTruthy();
@@ -266,7 +274,9 @@ describe('FontFamily Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFamilyCodeDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFamilyCodeDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-family-code')).toBeTruthy();

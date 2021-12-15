@@ -4,7 +4,7 @@ import {
   BulmaIsAlignSelfFlexEndDirective,
   BulmaIsAlignSelfCenterDirective,
   BulmaIsAlignSelfBaselineDirective,
-  BulmaIsAlignSelfStretchDirective,
+  BulmaIsAlignSelfStretchDirective
 } from './align-self.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -47,7 +47,9 @@ describe('AlignSelf Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignSelfAutoDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsAlignSelfAutoDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-self-auto')).toBeTruthy();
@@ -102,7 +104,9 @@ describe('AlignSelf Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignSelfFlexStartDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsAlignSelfFlexStartDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-self-flex-start')).toBeTruthy();
@@ -157,7 +161,9 @@ describe('AlignSelf Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignSelfFlexEndDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsAlignSelfFlexEndDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-self-flex-end')).toBeTruthy();
@@ -212,7 +218,9 @@ describe('AlignSelf Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignSelfCenterDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsAlignSelfCenterDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-self-center')).toBeTruthy();
@@ -267,7 +275,9 @@ describe('AlignSelf Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignSelfBaselineDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsAlignSelfBaselineDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-self-baseline')).toBeTruthy();
@@ -322,7 +332,9 @@ describe('AlignSelf Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsAlignSelfStretchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsAlignSelfStretchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-align-self-stretch')).toBeTruthy();

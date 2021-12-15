@@ -11,7 +11,7 @@ import {
   BulmaIsBlackDirective,
   BulmaIsDarkDirective,
   BulmaIsLightDirective,
-  BulmaIsWhiteDirective,
+  BulmaIsWhiteDirective
 } from './is-color.directive';
 
 import {
@@ -45,7 +45,7 @@ import {
   BulmaHasTextInfoDarkDirective,
   BulmaHasTextSuccessDarkDirective,
   BulmaHasTextWarningDarkDirective,
-  BulmaHasTextDangerDarkDirective,
+  BulmaHasTextDangerDarkDirective
 } from './text-color.directive';
 
 import {
@@ -79,7 +79,7 @@ import {
   BulmaHasBackgroundInfoDarkDirective,
   BulmaHasBackgroundSuccessDarkDirective,
   BulmaHasBackgroundWarningDarkDirective,
-  BulmaHasBackgroundDangerDarkDirective,
+  BulmaHasBackgroundDangerDarkDirective
 } from './background-color.directive';
 
 @NgModule({
@@ -156,7 +156,7 @@ import {
     BulmaHasBackgroundInfoDarkDirective,
     BulmaHasBackgroundSuccessDarkDirective,
     BulmaHasBackgroundWarningDarkDirective,
-    BulmaHasBackgroundDangerDarkDirective,
+    BulmaHasBackgroundDangerDarkDirective
   ],
   exports: [
     BulmaIsPrimaryDirective,
@@ -230,7 +230,7 @@ import {
     BulmaHasBackgroundInfoDarkDirective,
     BulmaHasBackgroundSuccessDarkDirective,
     BulmaHasBackgroundWarningDarkDirective,
-    BulmaHasBackgroundDangerDarkDirective,
+    BulmaHasBackgroundDangerDarkDirective
   ]
 })
 export class BulmaColorDirectivesModule {}

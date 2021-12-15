@@ -4,7 +4,9 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-has-background-white]'
 })
 export class BulmaHasBackgroundWhiteDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-white') public set buHasBackgroundWhite(val: string | boolean) {
+  @Input('bu-has-background-white') public set buHasBackgroundWhite(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -45,7 +47,9 @@ export class BulmaHasBackgroundWhiteDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-black]'
 })
 export class BulmaHasBackgroundBlackDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-black') public set buHasBackgroundBlack(val: string | boolean) {
+  @Input('bu-has-background-black') public set buHasBackgroundBlack(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -86,7 +90,9 @@ export class BulmaHasBackgroundBlackDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-light]'
 })
 export class BulmaHasBackgroundLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-light') public set buHasBackgroundLight(val: string | boolean) {
+  @Input('bu-has-background-light') public set buHasBackgroundLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -127,7 +133,9 @@ export class BulmaHasBackgroundLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-dark]'
 })
 export class BulmaHasBackgroundDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-dark') public set buHasBackgroundDark(val: string | boolean) {
+  @Input('bu-has-background-dark') public set buHasBackgroundDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -168,7 +176,9 @@ export class BulmaHasBackgroundDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-primary]'
 })
 export class BulmaHasBackgroundPrimaryDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-primary') public set buHasBackgroundPrimary(val: string | boolean) {
+  @Input('bu-has-background-primary') public set buHasBackgroundPrimary(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -209,7 +219,9 @@ export class BulmaHasBackgroundPrimaryDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-link]'
 })
 export class BulmaHasBackgroundLinkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-link') public set buHasBackgroundLink(val: string | boolean) {
+  @Input('bu-has-background-link') public set buHasBackgroundLink(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -250,7 +262,9 @@ export class BulmaHasBackgroundLinkDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-info]'
 })
 export class BulmaHasBackgroundInfoDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-info') public set buHasBackgroundInfo(val: string | boolean) {
+  @Input('bu-has-background-info') public set buHasBackgroundInfo(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -291,7 +305,9 @@ export class BulmaHasBackgroundInfoDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-success]'
 })
 export class BulmaHasBackgroundSuccessDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-success') public set buHasBackgroundSuccess(val: string | boolean) {
+  @Input('bu-has-background-success') public set buHasBackgroundSuccess(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -332,7 +348,9 @@ export class BulmaHasBackgroundSuccessDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-warning]'
 })
 export class BulmaHasBackgroundWarningDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-warning') public set buHasBackgroundWarning(val: string | boolean) {
+  @Input('bu-has-background-warning') public set buHasBackgroundWarning(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -373,7 +391,9 @@ export class BulmaHasBackgroundWarningDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-danger]'
 })
 export class BulmaHasBackgroundDangerDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-danger') public set buHasBackgroundDanger(val: string | boolean) {
+  @Input('bu-has-background-danger') public set buHasBackgroundDanger(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -414,7 +434,9 @@ export class BulmaHasBackgroundDangerDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-black-bis]'
 })
 export class BulmaHasBackgroundBlackBisDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-black-bis') public set buHasBackgroundBlackBis(val: string | boolean) {
+  @Input('bu-has-background-black-bis') public set buHasBackgroundBlackBis(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -438,7 +460,9 @@ export class BulmaHasBackgroundBlackBisDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundBlackBis) {
       this.elementRef.nativeElement.classList.add('has-background-black-bis');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-black-bis');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-black-bis'
+      );
     }
   }
 
@@ -446,7 +470,9 @@ export class BulmaHasBackgroundBlackBisDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundBlackBis) {
       this.elementRef.nativeElement.classList.add('has-background-black-bis');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-black-bis');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-black-bis'
+      );
     }
   }
 }
@@ -455,7 +481,9 @@ export class BulmaHasBackgroundBlackBisDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-black-ter]'
 })
 export class BulmaHasBackgroundBlackTerDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-black-ter') public set buHasBackgroundBlackTer(val: string | boolean) {
+  @Input('bu-has-background-black-ter') public set buHasBackgroundBlackTer(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -479,7 +507,9 @@ export class BulmaHasBackgroundBlackTerDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundBlackTer) {
       this.elementRef.nativeElement.classList.add('has-background-black-ter');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-black-ter');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-black-ter'
+      );
     }
   }
 
@@ -487,7 +517,9 @@ export class BulmaHasBackgroundBlackTerDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundBlackTer) {
       this.elementRef.nativeElement.classList.add('has-background-black-ter');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-black-ter');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-black-ter'
+      );
     }
   }
 }
@@ -495,8 +527,12 @@ export class BulmaHasBackgroundBlackTerDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-background-grey-darker]'
 })
-export class BulmaHasBackgroundGreyDarkerDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-grey-darker') public set buHasBackgroundGreyDarker(val: string | boolean) {
+export class BulmaHasBackgroundGreyDarkerDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-grey-darker') public set buHasBackgroundGreyDarker(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -520,7 +556,9 @@ export class BulmaHasBackgroundGreyDarkerDirective implements OnChanges, OnInit 
     if (this.buHasBackgroundGreyDarker) {
       this.elementRef.nativeElement.classList.add('has-background-grey-darker');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-grey-darker');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-grey-darker'
+      );
     }
   }
 
@@ -528,7 +566,9 @@ export class BulmaHasBackgroundGreyDarkerDirective implements OnChanges, OnInit 
     if (this.buHasBackgroundGreyDarker) {
       this.elementRef.nativeElement.classList.add('has-background-grey-darker');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-grey-darker');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-grey-darker'
+      );
     }
   }
 }
@@ -537,7 +577,9 @@ export class BulmaHasBackgroundGreyDarkerDirective implements OnChanges, OnInit 
   selector: '[bu-has-background-grey-dark]'
 })
 export class BulmaHasBackgroundGreyDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-grey-dark') public set buHasBackgroundGreyDark(val: string | boolean) {
+  @Input('bu-has-background-grey-dark') public set buHasBackgroundGreyDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -561,7 +603,9 @@ export class BulmaHasBackgroundGreyDarkDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundGreyDark) {
       this.elementRef.nativeElement.classList.add('has-background-grey-dark');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-grey-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-grey-dark'
+      );
     }
   }
 
@@ -569,7 +613,9 @@ export class BulmaHasBackgroundGreyDarkDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundGreyDark) {
       this.elementRef.nativeElement.classList.add('has-background-grey-dark');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-grey-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-grey-dark'
+      );
     }
   }
 }
@@ -578,7 +624,9 @@ export class BulmaHasBackgroundGreyDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-grey]'
 })
 export class BulmaHasBackgroundGreyDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-grey') public set buHasBackgroundGrey(val: string | boolean) {
+  @Input('bu-has-background-grey') public set buHasBackgroundGrey(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -619,7 +667,9 @@ export class BulmaHasBackgroundGreyDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-grey-light]'
 })
 export class BulmaHasBackgroundGreyLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-grey-light') public set buHasBackgroundGreyLight(val: string | boolean) {
+  @Input('bu-has-background-grey-light') public set buHasBackgroundGreyLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -643,7 +693,9 @@ export class BulmaHasBackgroundGreyLightDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundGreyLight) {
       this.elementRef.nativeElement.classList.add('has-background-grey-light');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-grey-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-grey-light'
+      );
     }
   }
 
@@ -651,7 +703,9 @@ export class BulmaHasBackgroundGreyLightDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundGreyLight) {
       this.elementRef.nativeElement.classList.add('has-background-grey-light');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-grey-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-grey-light'
+      );
     }
   }
 }
@@ -659,8 +713,11 @@ export class BulmaHasBackgroundGreyLightDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-background-grey-lighter]'
 })
-export class BulmaHasBackgroundGreyLighterDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-grey-lighter') public set buHasBackgroundGreyLighter(val: string | boolean) {
+export class BulmaHasBackgroundGreyLighterDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-grey-lighter')
+  public set buHasBackgroundGreyLighter(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -682,17 +739,25 @@ export class BulmaHasBackgroundGreyLighterDirective implements OnChanges, OnInit
 
   public ngOnInit() {
     if (this.buHasBackgroundGreyLighter) {
-      this.elementRef.nativeElement.classList.add('has-background-grey-lighter');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-grey-lighter'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-grey-lighter');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-grey-lighter'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasBackgroundGreyLighter) {
-      this.elementRef.nativeElement.classList.add('has-background-grey-lighter');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-grey-lighter'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-grey-lighter');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-grey-lighter'
+      );
     }
   }
 }
@@ -701,7 +766,9 @@ export class BulmaHasBackgroundGreyLighterDirective implements OnChanges, OnInit
   selector: '[bu-has-background-white-ter]'
 })
 export class BulmaHasBackgroundWhiteTerDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-white-ter') public set buHasBackgroundWhiteTer(val: string | boolean) {
+  @Input('bu-has-background-white-ter') public set buHasBackgroundWhiteTer(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -725,7 +792,9 @@ export class BulmaHasBackgroundWhiteTerDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundWhiteTer) {
       this.elementRef.nativeElement.classList.add('has-background-white-ter');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-white-ter');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-white-ter'
+      );
     }
   }
 
@@ -733,7 +802,9 @@ export class BulmaHasBackgroundWhiteTerDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundWhiteTer) {
       this.elementRef.nativeElement.classList.add('has-background-white-ter');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-white-ter');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-white-ter'
+      );
     }
   }
 }
@@ -742,7 +813,9 @@ export class BulmaHasBackgroundWhiteTerDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-white-bis]'
 })
 export class BulmaHasBackgroundWhiteBisDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-white-bis') public set buHasBackgroundWhiteBis(val: string | boolean) {
+  @Input('bu-has-background-white-bis') public set buHasBackgroundWhiteBis(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -766,7 +839,9 @@ export class BulmaHasBackgroundWhiteBisDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundWhiteBis) {
       this.elementRef.nativeElement.classList.add('has-background-white-bis');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-white-bis');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-white-bis'
+      );
     }
   }
 
@@ -774,7 +849,9 @@ export class BulmaHasBackgroundWhiteBisDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundWhiteBis) {
       this.elementRef.nativeElement.classList.add('has-background-white-bis');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-white-bis');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-white-bis'
+      );
     }
   }
 }
@@ -782,8 +859,11 @@ export class BulmaHasBackgroundWhiteBisDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-background-primary-light]'
 })
-export class BulmaHasBackgroundPrimaryLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-primary-light') public set buHasBackgroundPrimaryLight(val: string | boolean) {
+export class BulmaHasBackgroundPrimaryLightDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-primary-light')
+  public set buHasBackgroundPrimaryLight(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -805,17 +885,25 @@ export class BulmaHasBackgroundPrimaryLightDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buHasBackgroundPrimaryLight) {
-      this.elementRef.nativeElement.classList.add('has-background-primary-light');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-primary-light'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-primary-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-primary-light'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasBackgroundPrimaryLight) {
-      this.elementRef.nativeElement.classList.add('has-background-primary-light');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-primary-light'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-primary-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-primary-light'
+      );
     }
   }
 }
@@ -824,7 +912,9 @@ export class BulmaHasBackgroundPrimaryLightDirective implements OnChanges, OnIni
   selector: '[bu-has-background-link-light]'
 })
 export class BulmaHasBackgroundLinkLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-link-light') public set buHasBackgroundLinkLight(val: string | boolean) {
+  @Input('bu-has-background-link-light') public set buHasBackgroundLinkLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -848,7 +938,9 @@ export class BulmaHasBackgroundLinkLightDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundLinkLight) {
       this.elementRef.nativeElement.classList.add('has-background-link-light');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-link-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-link-light'
+      );
     }
   }
 
@@ -856,7 +948,9 @@ export class BulmaHasBackgroundLinkLightDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundLinkLight) {
       this.elementRef.nativeElement.classList.add('has-background-link-light');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-link-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-link-light'
+      );
     }
   }
 }
@@ -865,7 +959,9 @@ export class BulmaHasBackgroundLinkLightDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-info-light]'
 })
 export class BulmaHasBackgroundInfoLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-info-light') public set buHasBackgroundInfoLight(val: string | boolean) {
+  @Input('bu-has-background-info-light') public set buHasBackgroundInfoLight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -889,7 +985,9 @@ export class BulmaHasBackgroundInfoLightDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundInfoLight) {
       this.elementRef.nativeElement.classList.add('has-background-info-light');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-info-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-info-light'
+      );
     }
   }
 
@@ -897,7 +995,9 @@ export class BulmaHasBackgroundInfoLightDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundInfoLight) {
       this.elementRef.nativeElement.classList.add('has-background-info-light');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-info-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-info-light'
+      );
     }
   }
 }
@@ -905,8 +1005,11 @@ export class BulmaHasBackgroundInfoLightDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-background-success-light]'
 })
-export class BulmaHasBackgroundSuccessLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-success-light') public set buHasBackgroundSuccessLight(val: string | boolean) {
+export class BulmaHasBackgroundSuccessLightDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-success-light')
+  public set buHasBackgroundSuccessLight(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -928,17 +1031,25 @@ export class BulmaHasBackgroundSuccessLightDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buHasBackgroundSuccessLight) {
-      this.elementRef.nativeElement.classList.add('has-background-success-light');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-success-light'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-success-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-success-light'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasBackgroundSuccessLight) {
-      this.elementRef.nativeElement.classList.add('has-background-success-light');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-success-light'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-success-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-success-light'
+      );
     }
   }
 }
@@ -946,8 +1057,11 @@ export class BulmaHasBackgroundSuccessLightDirective implements OnChanges, OnIni
 @Directive({
   selector: '[bu-has-background-warning-light]'
 })
-export class BulmaHasBackgroundWarningLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-warning-light') public set buHasBackgroundWarningLight(val: string | boolean) {
+export class BulmaHasBackgroundWarningLightDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-warning-light')
+  public set buHasBackgroundWarningLight(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -969,17 +1083,25 @@ export class BulmaHasBackgroundWarningLightDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buHasBackgroundWarningLight) {
-      this.elementRef.nativeElement.classList.add('has-background-warning-light');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-warning-light'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-warning-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-warning-light'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasBackgroundWarningLight) {
-      this.elementRef.nativeElement.classList.add('has-background-warning-light');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-warning-light'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-warning-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-warning-light'
+      );
     }
   }
 }
@@ -987,8 +1109,11 @@ export class BulmaHasBackgroundWarningLightDirective implements OnChanges, OnIni
 @Directive({
   selector: '[bu-has-background-danger-light]'
 })
-export class BulmaHasBackgroundDangerLightDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-danger-light') public set buHasBackgroundDangerLight(val: string | boolean) {
+export class BulmaHasBackgroundDangerLightDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-danger-light')
+  public set buHasBackgroundDangerLight(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1010,17 +1135,25 @@ export class BulmaHasBackgroundDangerLightDirective implements OnChanges, OnInit
 
   public ngOnInit() {
     if (this.buHasBackgroundDangerLight) {
-      this.elementRef.nativeElement.classList.add('has-background-danger-light');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-danger-light'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-danger-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-danger-light'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasBackgroundDangerLight) {
-      this.elementRef.nativeElement.classList.add('has-background-danger-light');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-danger-light'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-danger-light');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-danger-light'
+      );
     }
   }
 }
@@ -1028,8 +1161,11 @@ export class BulmaHasBackgroundDangerLightDirective implements OnChanges, OnInit
 @Directive({
   selector: '[bu-has-background-primary-dark]'
 })
-export class BulmaHasBackgroundPrimaryDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-primary-dark') public set buHasBackgroundPrimaryDark(val: string | boolean) {
+export class BulmaHasBackgroundPrimaryDarkDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-primary-dark')
+  public set buHasBackgroundPrimaryDark(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1051,17 +1187,25 @@ export class BulmaHasBackgroundPrimaryDarkDirective implements OnChanges, OnInit
 
   public ngOnInit() {
     if (this.buHasBackgroundPrimaryDark) {
-      this.elementRef.nativeElement.classList.add('has-background-primary-dark');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-primary-dark'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-primary-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-primary-dark'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasBackgroundPrimaryDark) {
-      this.elementRef.nativeElement.classList.add('has-background-primary-dark');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-primary-dark'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-primary-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-primary-dark'
+      );
     }
   }
 }
@@ -1070,7 +1214,9 @@ export class BulmaHasBackgroundPrimaryDarkDirective implements OnChanges, OnInit
   selector: '[bu-has-background-link-dark]'
 })
 export class BulmaHasBackgroundLinkDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-link-dark') public set buHasBackgroundLinkDark(val: string | boolean) {
+  @Input('bu-has-background-link-dark') public set buHasBackgroundLinkDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1094,7 +1240,9 @@ export class BulmaHasBackgroundLinkDarkDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundLinkDark) {
       this.elementRef.nativeElement.classList.add('has-background-link-dark');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-link-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-link-dark'
+      );
     }
   }
 
@@ -1102,7 +1250,9 @@ export class BulmaHasBackgroundLinkDarkDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundLinkDark) {
       this.elementRef.nativeElement.classList.add('has-background-link-dark');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-link-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-link-dark'
+      );
     }
   }
 }
@@ -1111,7 +1261,9 @@ export class BulmaHasBackgroundLinkDarkDirective implements OnChanges, OnInit {
   selector: '[bu-has-background-info-dark]'
 })
 export class BulmaHasBackgroundInfoDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-info-dark') public set buHasBackgroundInfoDark(val: string | boolean) {
+  @Input('bu-has-background-info-dark') public set buHasBackgroundInfoDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1135,7 +1287,9 @@ export class BulmaHasBackgroundInfoDarkDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundInfoDark) {
       this.elementRef.nativeElement.classList.add('has-background-info-dark');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-info-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-info-dark'
+      );
     }
   }
 
@@ -1143,7 +1297,9 @@ export class BulmaHasBackgroundInfoDarkDirective implements OnChanges, OnInit {
     if (this.buHasBackgroundInfoDark) {
       this.elementRef.nativeElement.classList.add('has-background-info-dark');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-info-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-info-dark'
+      );
     }
   }
 }
@@ -1151,8 +1307,11 @@ export class BulmaHasBackgroundInfoDarkDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-has-background-success-dark]'
 })
-export class BulmaHasBackgroundSuccessDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-success-dark') public set buHasBackgroundSuccessDark(val: string | boolean) {
+export class BulmaHasBackgroundSuccessDarkDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-success-dark')
+  public set buHasBackgroundSuccessDark(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1174,17 +1333,25 @@ export class BulmaHasBackgroundSuccessDarkDirective implements OnChanges, OnInit
 
   public ngOnInit() {
     if (this.buHasBackgroundSuccessDark) {
-      this.elementRef.nativeElement.classList.add('has-background-success-dark');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-success-dark'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-success-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-success-dark'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasBackgroundSuccessDark) {
-      this.elementRef.nativeElement.classList.add('has-background-success-dark');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-success-dark'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-success-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-success-dark'
+      );
     }
   }
 }
@@ -1192,8 +1359,11 @@ export class BulmaHasBackgroundSuccessDarkDirective implements OnChanges, OnInit
 @Directive({
   selector: '[bu-has-background-warning-dark]'
 })
-export class BulmaHasBackgroundWarningDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-warning-dark') public set buHasBackgroundWarningDark(val: string | boolean) {
+export class BulmaHasBackgroundWarningDarkDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-warning-dark')
+  public set buHasBackgroundWarningDark(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1215,17 +1385,25 @@ export class BulmaHasBackgroundWarningDarkDirective implements OnChanges, OnInit
 
   public ngOnInit() {
     if (this.buHasBackgroundWarningDark) {
-      this.elementRef.nativeElement.classList.add('has-background-warning-dark');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-warning-dark'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-warning-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-warning-dark'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buHasBackgroundWarningDark) {
-      this.elementRef.nativeElement.classList.add('has-background-warning-dark');
+      this.elementRef.nativeElement.classList.add(
+        'has-background-warning-dark'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-warning-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-warning-dark'
+      );
     }
   }
 }
@@ -1233,8 +1411,12 @@ export class BulmaHasBackgroundWarningDarkDirective implements OnChanges, OnInit
 @Directive({
   selector: '[bu-has-background-danger-dark]'
 })
-export class BulmaHasBackgroundDangerDarkDirective implements OnChanges, OnInit {
-  @Input('bu-has-background-danger-dark') public set buHasBackgroundDangerDark(val: string | boolean) {
+export class BulmaHasBackgroundDangerDarkDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-has-background-danger-dark') public set buHasBackgroundDangerDark(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -1258,7 +1440,9 @@ export class BulmaHasBackgroundDangerDarkDirective implements OnChanges, OnInit 
     if (this.buHasBackgroundDangerDark) {
       this.elementRef.nativeElement.classList.add('has-background-danger-dark');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-danger-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-danger-dark'
+      );
     }
   }
 
@@ -1266,7 +1450,9 @@ export class BulmaHasBackgroundDangerDarkDirective implements OnChanges, OnInit 
     if (this.buHasBackgroundDangerDark) {
       this.elementRef.nativeElement.classList.add('has-background-danger-dark');
     } else {
-      this.elementRef.nativeElement.classList.remove('has-background-danger-dark');
+      this.elementRef.nativeElement.classList.remove(
+        'has-background-danger-dark'
+      );
     }
   }
 }

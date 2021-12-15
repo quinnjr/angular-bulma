@@ -4,7 +4,9 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-is-align-items-stretch]'
 })
 export class BulmaIsAlignItemsStretchDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-stretch') public set buIsAlignItemsStretch(val: string | boolean) {
+  @Input('bu-is-align-items-stretch') public set buIsAlignItemsStretch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -45,7 +47,9 @@ export class BulmaIsAlignItemsStretchDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-items-flex-start]'
 })
 export class BulmaIsAlignItemsFlexStartDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-flex-start') public set buIsAlignItemsFlexStart(val: string | boolean) {
+  @Input('bu-is-align-items-flex-start') public set buIsAlignItemsFlexStart(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -69,7 +73,9 @@ export class BulmaIsAlignItemsFlexStartDirective implements OnChanges, OnInit {
     if (this.buIsAlignItemsFlexStart) {
       this.elementRef.nativeElement.classList.add('is-align-items-flex-start');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-items-flex-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-items-flex-start'
+      );
     }
   }
 
@@ -77,7 +83,9 @@ export class BulmaIsAlignItemsFlexStartDirective implements OnChanges, OnInit {
     if (this.buIsAlignItemsFlexStart) {
       this.elementRef.nativeElement.classList.add('is-align-items-flex-start');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-items-flex-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-items-flex-start'
+      );
     }
   }
 }
@@ -86,7 +94,9 @@ export class BulmaIsAlignItemsFlexStartDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-items-flex-end]'
 })
 export class BulmaIsAlignItemsFlexEndDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-flex-end') public set buIsAlignItemsFlexEnd(val: string | boolean) {
+  @Input('bu-is-align-items-flex-end') public set buIsAlignItemsFlexEnd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -127,7 +137,9 @@ export class BulmaIsAlignItemsFlexEndDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-items-center]'
 })
 export class BulmaIsAlignItemsCenterDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-center') public set buIsAlignItemsCenter(val: string | boolean) {
+  @Input('bu-is-align-items-center') public set buIsAlignItemsCenter(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -168,7 +180,9 @@ export class BulmaIsAlignItemsCenterDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-items-baseline]'
 })
 export class BulmaIsAlignItemsBaselineDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-baseline') public set buIsAlignItemsBaseline(val: string | boolean) {
+  @Input('bu-is-align-items-baseline') public set buIsAlignItemsBaseline(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -209,7 +223,9 @@ export class BulmaIsAlignItemsBaselineDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-items-start]'
 })
 export class BulmaIsAlignItemsStartDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-start') public set buIsAlignItemsStart(val: string | boolean) {
+  @Input('bu-is-align-items-start') public set buIsAlignItemsStart(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -250,7 +266,9 @@ export class BulmaIsAlignItemsStartDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-items-end]'
 })
 export class BulmaIsAlignItemsEndDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-end') public set buIsAlignItemsEnd(val: string | boolean) {
+  @Input('bu-is-align-items-end') public set buIsAlignItemsEnd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -291,7 +309,9 @@ export class BulmaIsAlignItemsEndDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-items-self-start]'
 })
 export class BulmaIsAlignItemsSelfStartDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-self-start') public set buIsAlignItemsSelfStart(val: string | boolean) {
+  @Input('bu-is-align-items-self-start') public set buIsAlignItemsSelfStart(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -315,7 +335,9 @@ export class BulmaIsAlignItemsSelfStartDirective implements OnChanges, OnInit {
     if (this.buIsAlignItemsSelfStart) {
       this.elementRef.nativeElement.classList.add('is-align-items-self-start');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-items-self-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-items-self-start'
+      );
     }
   }
 
@@ -323,7 +345,9 @@ export class BulmaIsAlignItemsSelfStartDirective implements OnChanges, OnInit {
     if (this.buIsAlignItemsSelfStart) {
       this.elementRef.nativeElement.classList.add('is-align-items-self-start');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-items-self-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-items-self-start'
+      );
     }
   }
 }
@@ -332,7 +356,9 @@ export class BulmaIsAlignItemsSelfStartDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-items-self-end]'
 })
 export class BulmaIsAlignItemsSelfEndDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-items-self-end') public set buIsAlignItemsSelfEnd(val: string | boolean) {
+  @Input('bu-is-align-items-self-end') public set buIsAlignItemsSelfEnd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

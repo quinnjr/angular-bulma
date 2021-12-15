@@ -4,7 +4,9 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
   selector: '[bu-is-family-sans-serif]'
 })
 export class BulmaIsFamilySansSerifDirective implements OnChanges, OnInit {
-  @Input('bu-is-family-sans-serif') public set buIsFamilySansSerif(val: string | boolean) {
+  @Input('bu-is-family-sans-serif') public set buIsFamilySansSerif(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -45,7 +47,9 @@ export class BulmaIsFamilySansSerifDirective implements OnChanges, OnInit {
   selector: '[bu-is-family-monospace]'
 })
 export class BulmaIsFamilyMonospaceDirective implements OnChanges, OnInit {
-  @Input('bu-is-family-monospace') public set buIsFamilyMonospace(val: string | boolean) {
+  @Input('bu-is-family-monospace') public set buIsFamilyMonospace(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -86,7 +90,9 @@ export class BulmaIsFamilyMonospaceDirective implements OnChanges, OnInit {
   selector: '[bu-is-family-primary]'
 })
 export class BulmaIsFamilyPrimaryDirective implements OnChanges, OnInit {
-  @Input('bu-is-family-primary') public set buIsFamilyPrimary(val: string | boolean) {
+  @Input('bu-is-family-primary') public set buIsFamilyPrimary(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -127,7 +133,9 @@ export class BulmaIsFamilyPrimaryDirective implements OnChanges, OnInit {
   selector: '[bu-is-family-secondary]'
 })
 export class BulmaIsFamilySecondaryDirective implements OnChanges, OnInit {
-  @Input('bu-is-family-secondary') public set buIsFamilySecondary(val: string | boolean) {
+  @Input('bu-is-family-secondary') public set buIsFamilySecondary(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;

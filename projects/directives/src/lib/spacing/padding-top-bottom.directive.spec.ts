@@ -5,7 +5,7 @@ import {
   BulmaPy3Directive,
   BulmaPy4Directive,
   BulmaPy5Directive,
-  BulmaPy6Directive,
+  BulmaPy6Directive
 } from './padding-top-bottom.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -48,7 +48,9 @@ describe('PaddingTopBottom Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaPy0Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaPy0Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('py-0')).toBeTruthy();
@@ -103,7 +105,9 @@ describe('PaddingTopBottom Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaPy1Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaPy1Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('py-1')).toBeTruthy();
@@ -158,7 +162,9 @@ describe('PaddingTopBottom Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaPy2Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaPy2Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('py-2')).toBeTruthy();
@@ -213,7 +219,9 @@ describe('PaddingTopBottom Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaPy3Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaPy3Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('py-3')).toBeTruthy();
@@ -268,7 +276,9 @@ describe('PaddingTopBottom Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaPy4Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaPy4Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('py-4')).toBeTruthy();
@@ -323,7 +333,9 @@ describe('PaddingTopBottom Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaPy5Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaPy5Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('py-5')).toBeTruthy();
@@ -378,7 +390,9 @@ describe('PaddingTopBottom Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaPy6Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaPy6Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('py-6')).toBeTruthy();

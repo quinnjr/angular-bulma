@@ -3,8 +3,11 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 @Directive({
   selector: '[bu-is-justify-content-flex-start]'
 })
-export class BulmaIsJustifyContentFlexStartDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-flex-start') public set buIsJustifyContentFlexStart(val: string | boolean) {
+export class BulmaIsJustifyContentFlexStartDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-justify-content-flex-start')
+  public set buIsJustifyContentFlexStart(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -26,17 +29,25 @@ export class BulmaIsJustifyContentFlexStartDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buIsJustifyContentFlexStart) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-flex-start');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-flex-start'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-flex-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-flex-start'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsJustifyContentFlexStart) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-flex-start');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-flex-start'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-flex-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-flex-start'
+      );
     }
   }
 }
@@ -44,8 +55,12 @@ export class BulmaIsJustifyContentFlexStartDirective implements OnChanges, OnIni
 @Directive({
   selector: '[bu-is-justify-content-flex-end]'
 })
-export class BulmaIsJustifyContentFlexEndDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-flex-end') public set buIsJustifyContentFlexEnd(val: string | boolean) {
+export class BulmaIsJustifyContentFlexEndDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-justify-content-flex-end') public set buIsJustifyContentFlexEnd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -67,17 +82,25 @@ export class BulmaIsJustifyContentFlexEndDirective implements OnChanges, OnInit 
 
   public ngOnInit() {
     if (this.buIsJustifyContentFlexEnd) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-flex-end');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-flex-end'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-flex-end');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-flex-end'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsJustifyContentFlexEnd) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-flex-end');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-flex-end'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-flex-end');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-flex-end'
+      );
     }
   }
 }
@@ -86,7 +109,9 @@ export class BulmaIsJustifyContentFlexEndDirective implements OnChanges, OnInit 
   selector: '[bu-is-justify-content-center]'
 })
 export class BulmaIsJustifyContentCenterDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-center') public set buIsJustifyContentCenter(val: string | boolean) {
+  @Input('bu-is-justify-content-center') public set buIsJustifyContentCenter(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -110,7 +135,9 @@ export class BulmaIsJustifyContentCenterDirective implements OnChanges, OnInit {
     if (this.buIsJustifyContentCenter) {
       this.elementRef.nativeElement.classList.add('is-justify-content-center');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-center');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-center'
+      );
     }
   }
 
@@ -118,7 +145,9 @@ export class BulmaIsJustifyContentCenterDirective implements OnChanges, OnInit {
     if (this.buIsJustifyContentCenter) {
       this.elementRef.nativeElement.classList.add('is-justify-content-center');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-center');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-center'
+      );
     }
   }
 }
@@ -126,8 +155,11 @@ export class BulmaIsJustifyContentCenterDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-is-justify-content-space-between]'
 })
-export class BulmaIsJustifyContentSpaceBetweenDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-space-between') public set buIsJustifyContentSpaceBetween(val: string | boolean) {
+export class BulmaIsJustifyContentSpaceBetweenDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-justify-content-space-between')
+  public set buIsJustifyContentSpaceBetween(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -149,17 +181,25 @@ export class BulmaIsJustifyContentSpaceBetweenDirective implements OnChanges, On
 
   public ngOnInit() {
     if (this.buIsJustifyContentSpaceBetween) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-space-between');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-space-between'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-space-between');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-space-between'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsJustifyContentSpaceBetween) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-space-between');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-space-between'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-space-between');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-space-between'
+      );
     }
   }
 }
@@ -167,8 +207,11 @@ export class BulmaIsJustifyContentSpaceBetweenDirective implements OnChanges, On
 @Directive({
   selector: '[bu-is-justify-content-space-around]'
 })
-export class BulmaIsJustifyContentSpaceAroundDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-space-around') public set buIsJustifyContentSpaceAround(val: string | boolean) {
+export class BulmaIsJustifyContentSpaceAroundDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-justify-content-space-around')
+  public set buIsJustifyContentSpaceAround(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -190,17 +233,25 @@ export class BulmaIsJustifyContentSpaceAroundDirective implements OnChanges, OnI
 
   public ngOnInit() {
     if (this.buIsJustifyContentSpaceAround) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-space-around');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-space-around'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-space-around');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-space-around'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsJustifyContentSpaceAround) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-space-around');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-space-around'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-space-around');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-space-around'
+      );
     }
   }
 }
@@ -208,8 +259,11 @@ export class BulmaIsJustifyContentSpaceAroundDirective implements OnChanges, OnI
 @Directive({
   selector: '[bu-is-justify-content-space-evenly]'
 })
-export class BulmaIsJustifyContentSpaceEvenlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-space-evenly') public set buIsJustifyContentSpaceEvenly(val: string | boolean) {
+export class BulmaIsJustifyContentSpaceEvenlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-justify-content-space-evenly')
+  public set buIsJustifyContentSpaceEvenly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -231,17 +285,25 @@ export class BulmaIsJustifyContentSpaceEvenlyDirective implements OnChanges, OnI
 
   public ngOnInit() {
     if (this.buIsJustifyContentSpaceEvenly) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-space-evenly');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-space-evenly'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-space-evenly');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-space-evenly'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsJustifyContentSpaceEvenly) {
-      this.elementRef.nativeElement.classList.add('is-justify-content-space-evenly');
+      this.elementRef.nativeElement.classList.add(
+        'is-justify-content-space-evenly'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-space-evenly');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-space-evenly'
+      );
     }
   }
 }
@@ -250,7 +312,9 @@ export class BulmaIsJustifyContentSpaceEvenlyDirective implements OnChanges, OnI
   selector: '[bu-is-justify-content-start]'
 })
 export class BulmaIsJustifyContentStartDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-start') public set buIsJustifyContentStart(val: string | boolean) {
+  @Input('bu-is-justify-content-start') public set buIsJustifyContentStart(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -274,7 +338,9 @@ export class BulmaIsJustifyContentStartDirective implements OnChanges, OnInit {
     if (this.buIsJustifyContentStart) {
       this.elementRef.nativeElement.classList.add('is-justify-content-start');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-start'
+      );
     }
   }
 
@@ -282,7 +348,9 @@ export class BulmaIsJustifyContentStartDirective implements OnChanges, OnInit {
     if (this.buIsJustifyContentStart) {
       this.elementRef.nativeElement.classList.add('is-justify-content-start');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-start'
+      );
     }
   }
 }
@@ -291,7 +359,9 @@ export class BulmaIsJustifyContentStartDirective implements OnChanges, OnInit {
   selector: '[bu-is-justify-content-end]'
 })
 export class BulmaIsJustifyContentEndDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-end') public set buIsJustifyContentEnd(val: string | boolean) {
+  @Input('bu-is-justify-content-end') public set buIsJustifyContentEnd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -332,7 +402,9 @@ export class BulmaIsJustifyContentEndDirective implements OnChanges, OnInit {
   selector: '[bu-is-justify-content-left]'
 })
 export class BulmaIsJustifyContentLeftDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-left') public set buIsJustifyContentLeft(val: string | boolean) {
+  @Input('bu-is-justify-content-left') public set buIsJustifyContentLeft(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -373,7 +445,9 @@ export class BulmaIsJustifyContentLeftDirective implements OnChanges, OnInit {
   selector: '[bu-is-justify-content-right]'
 })
 export class BulmaIsJustifyContentRightDirective implements OnChanges, OnInit {
-  @Input('bu-is-justify-content-right') public set buIsJustifyContentRight(val: string | boolean) {
+  @Input('bu-is-justify-content-right') public set buIsJustifyContentRight(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -397,7 +471,9 @@ export class BulmaIsJustifyContentRightDirective implements OnChanges, OnInit {
     if (this.buIsJustifyContentRight) {
       this.elementRef.nativeElement.classList.add('is-justify-content-right');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-right');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-right'
+      );
     }
   }
 
@@ -405,7 +481,9 @@ export class BulmaIsJustifyContentRightDirective implements OnChanges, OnInit {
     if (this.buIsJustifyContentRight) {
       this.elementRef.nativeElement.classList.add('is-justify-content-right');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-justify-content-right');
+      this.elementRef.nativeElement.classList.remove(
+        'is-justify-content-right'
+      );
     }
   }
 }

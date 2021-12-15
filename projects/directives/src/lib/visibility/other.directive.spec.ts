@@ -1,7 +1,7 @@
 import {
   BulmaIsInvisibleDirective,
   BulmaIsHiddenDirective,
-  BulmaIsSrOnlyDirective,
+  BulmaIsSrOnlyDirective
 } from './other.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -44,7 +44,9 @@ describe('Other Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInvisibleDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInvisibleDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-invisible')).toBeTruthy();
@@ -99,7 +101,9 @@ describe('Other Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsHiddenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsHiddenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-hidden')).toBeTruthy();
@@ -154,7 +158,9 @@ describe('Other Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsSrOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsSrOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-sr-only')).toBeTruthy();

@@ -5,7 +5,7 @@ import {
   BulmaM3Directive,
   BulmaM4Directive,
   BulmaM5Directive,
-  BulmaM6Directive,
+  BulmaM6Directive
 } from './margin.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -48,7 +48,9 @@ describe('Margin Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaM0Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaM0Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('m-0')).toBeTruthy();
@@ -103,7 +105,9 @@ describe('Margin Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaM1Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaM1Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('m-1')).toBeTruthy();
@@ -158,7 +162,9 @@ describe('Margin Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaM2Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaM2Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('m-2')).toBeTruthy();
@@ -213,7 +219,9 @@ describe('Margin Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaM3Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaM3Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('m-3')).toBeTruthy();
@@ -268,7 +276,9 @@ describe('Margin Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaM4Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaM4Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('m-4')).toBeTruthy();
@@ -323,7 +333,9 @@ describe('Margin Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaM5Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaM5Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('m-5')).toBeTruthy();
@@ -378,7 +390,9 @@ describe('Margin Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaM6Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaM6Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('m-6')).toBeTruthy();

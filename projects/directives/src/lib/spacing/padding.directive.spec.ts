@@ -5,7 +5,7 @@ import {
   BulmaP3Directive,
   BulmaP4Directive,
   BulmaP5Directive,
-  BulmaP6Directive,
+  BulmaP6Directive
 } from './padding.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -48,7 +48,9 @@ describe('Padding Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaP0Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaP0Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('p-0')).toBeTruthy();
@@ -103,7 +105,9 @@ describe('Padding Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaP1Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaP1Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('p-1')).toBeTruthy();
@@ -158,7 +162,9 @@ describe('Padding Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaP2Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaP2Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('p-2')).toBeTruthy();
@@ -213,7 +219,9 @@ describe('Padding Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaP3Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaP3Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('p-3')).toBeTruthy();
@@ -268,7 +276,9 @@ describe('Padding Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaP4Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaP4Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('p-4')).toBeTruthy();
@@ -323,7 +333,9 @@ describe('Padding Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaP5Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaP5Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('p-5')).toBeTruthy();
@@ -378,7 +390,9 @@ describe('Padding Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaP6Directive));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaP6Directive)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('p-6')).toBeTruthy();

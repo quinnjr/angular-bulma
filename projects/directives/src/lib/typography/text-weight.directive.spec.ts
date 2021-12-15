@@ -3,7 +3,7 @@ import {
   BulmaHasTextWeightNormalDirective,
   BulmaHasTextWeightMediumDirective,
   BulmaHasTextWeightSemiboldDirective,
-  BulmaHasTextWeightBoldDirective,
+  BulmaHasTextWeightBoldDirective
 } from './text-weight.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -46,7 +46,9 @@ describe('TextWeight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWeightLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWeightLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-weight-light')).toBeTruthy();
@@ -101,7 +103,9 @@ describe('TextWeight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWeightNormalDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWeightNormalDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-weight-normal')).toBeTruthy();
@@ -156,7 +160,9 @@ describe('TextWeight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWeightMediumDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWeightMediumDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-weight-medium')).toBeTruthy();
@@ -211,7 +217,9 @@ describe('TextWeight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWeightSemiboldDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWeightSemiboldDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-weight-semibold')).toBeTruthy();
@@ -266,7 +274,9 @@ describe('TextWeight Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasTextWeightBoldDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasTextWeightBoldDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-text-weight-bold')).toBeTruthy();

@@ -43,7 +43,7 @@ import {
   BulmaIsInlineFlexTabletDirective,
   BulmaIsInlineFlexDesktopDirective,
   BulmaIsInlineFlexWidescreenDirective,
-  BulmaIsInlineFlexFullhdDirective,
+  BulmaIsInlineFlexFullhdDirective
 } from './show-responsive.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -86,7 +86,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-mobile')).toBeTruthy();
@@ -141,7 +143,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-tablet-only')).toBeTruthy();
@@ -196,7 +200,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-desktop-only')).toBeTruthy();
@@ -251,7 +257,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-widescreen-only')).toBeTruthy();
@@ -306,7 +314,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-touch')).toBeTruthy();
@@ -361,7 +371,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-tablet')).toBeTruthy();
@@ -416,7 +428,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-desktop')).toBeTruthy();
@@ -471,7 +485,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-widescreen')).toBeTruthy();
@@ -526,7 +542,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsBlockFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsBlockFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-block-fullhd')).toBeTruthy();
@@ -581,7 +599,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-mobile')).toBeTruthy();
@@ -636,7 +656,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-tablet-only')).toBeTruthy();
@@ -691,7 +713,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-desktop-only')).toBeTruthy();
@@ -746,7 +770,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-widescreen-only')).toBeTruthy();
@@ -801,7 +827,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-touch')).toBeTruthy();
@@ -856,7 +884,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-tablet')).toBeTruthy();
@@ -911,7 +941,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-desktop')).toBeTruthy();
@@ -966,7 +998,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-widescreen')).toBeTruthy();
@@ -1021,7 +1055,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsFlexFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsFlexFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-flex-fullhd')).toBeTruthy();
@@ -1076,7 +1112,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-mobile')).toBeTruthy();
@@ -1131,7 +1169,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-tablet-only')).toBeTruthy();
@@ -1186,7 +1226,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-desktop-only')).toBeTruthy();
@@ -1241,17 +1283,25 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-widescreen-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-widescreen-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-widescreen-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-widescreen-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -1296,7 +1346,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-touch')).toBeTruthy();
@@ -1351,7 +1403,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-tablet')).toBeTruthy();
@@ -1406,7 +1460,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-desktop')).toBeTruthy();
@@ -1461,7 +1517,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-widescreen')).toBeTruthy();
@@ -1516,7 +1574,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-fullhd')).toBeTruthy();
@@ -1571,7 +1631,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-block-mobile')).toBeTruthy();
@@ -1626,24 +1688,36 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-block-tablet-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-block-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-block-tablet-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-block-tablet-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-block-tablet-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-block-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-inline-block-tablet-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-inline-block-tablet-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-inline-block-tablet-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-inline-block-tablet-only')
+      ).toBeFalsy();
     });
   });
 
@@ -1681,24 +1755,36 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-block-desktop-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-block-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-block-desktop-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-block-desktop-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-block-desktop-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-block-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-inline-block-desktop-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-inline-block-desktop-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-inline-block-desktop-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-inline-block-desktop-only')
+      ).toBeFalsy();
     });
   });
 
@@ -1708,8 +1794,14 @@ describe('ShowResponsive Directives', () => {
         <div bu-is-inline-block-widescreen-only id="test1"></div>
         <div [bu-is-inline-block-widescreen-only]="true" id="test2"></div>
         <div [bu-is-inline-block-widescreen-only]="false" id="test3"></div>
-        <div [bu-is-inline-block-widescreen-only]="testMeTrue()" id="test4"></div>
-        <div [bu-is-inline-block-widescreen-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-is-inline-block-widescreen-only]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-is-inline-block-widescreen-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -1727,7 +1819,10 @@ describe('ShowResponsive Directives', () => {
     beforeAll(() => {
       fixture = TestBed.configureTestingModule({
         imports: [CommonModule],
-        declarations: [TestComponent, BulmaIsInlineBlockWidescreenOnlyDirective],
+        declarations: [
+          TestComponent,
+          BulmaIsInlineBlockWidescreenOnlyDirective
+        ],
         schemas: [CUSTOM_ELEMENTS_SCHEMA]
       }).createComponent(TestComponent);
 
@@ -1736,24 +1831,36 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-block-widescreen-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-block-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-block-widescreen-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-block-widescreen-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-block-widescreen-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-block-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-inline-block-widescreen-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-inline-block-widescreen-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-inline-block-widescreen-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-inline-block-widescreen-only')
+      ).toBeFalsy();
     });
   });
 
@@ -1791,7 +1898,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-block-touch')).toBeTruthy();
@@ -1846,7 +1955,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-block-tablet')).toBeTruthy();
@@ -1901,7 +2012,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-block-desktop')).toBeTruthy();
@@ -1956,24 +2069,36 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-block-widescreen')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-block-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-block-widescreen')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-block-widescreen')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-block-widescreen')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-block-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-inline-block-widescreen')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-inline-block-widescreen')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-inline-block-widescreen')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-inline-block-widescreen')
+      ).toBeFalsy();
     });
   });
 
@@ -2011,7 +2136,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineBlockFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineBlockFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-block-fullhd')).toBeTruthy();
@@ -2066,7 +2193,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexMobileDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexMobileDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-flex-mobile')).toBeTruthy();
@@ -2121,24 +2250,36 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexTabletOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexTabletOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-flex-tablet-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-flex-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-flex-tablet-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-flex-tablet-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-flex-tablet-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-flex-tablet-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-inline-flex-tablet-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-inline-flex-tablet-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-inline-flex-tablet-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-inline-flex-tablet-only')
+      ).toBeFalsy();
     });
   });
 
@@ -2176,24 +2317,36 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexDesktopOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexDesktopOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-flex-desktop-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-flex-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-flex-desktop-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-flex-desktop-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-flex-desktop-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-flex-desktop-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-inline-flex-desktop-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-inline-flex-desktop-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-inline-flex-desktop-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-inline-flex-desktop-only')
+      ).toBeFalsy();
     });
   });
 
@@ -2203,8 +2356,14 @@ describe('ShowResponsive Directives', () => {
         <div bu-is-inline-flex-widescreen-only id="test1"></div>
         <div [bu-is-inline-flex-widescreen-only]="true" id="test2"></div>
         <div [bu-is-inline-flex-widescreen-only]="false" id="test3"></div>
-        <div [bu-is-inline-flex-widescreen-only]="testMeTrue()" id="test4"></div>
-        <div [bu-is-inline-flex-widescreen-only]="testMeFalse()" id="test5"></div>
+        <div
+          [bu-is-inline-flex-widescreen-only]="testMeTrue()"
+          id="test4"
+        ></div>
+        <div
+          [bu-is-inline-flex-widescreen-only]="testMeFalse()"
+          id="test5"
+        ></div>
       `
     })
     class TestComponent {
@@ -2231,24 +2390,36 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexWidescreenOnlyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexWidescreenOnlyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-flex-widescreen-only')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-flex-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-flex-widescreen-only')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-flex-widescreen-only')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-flex-widescreen-only')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-flex-widescreen-only')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('is-inline-flex-widescreen-only')).toBeFalsy();
+      expect(
+        test3.classList.contains('is-inline-flex-widescreen-only')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('is-inline-flex-widescreen-only')).toBeFalsy();
+      expect(
+        test5.classList.contains('is-inline-flex-widescreen-only')
+      ).toBeFalsy();
     });
   });
 
@@ -2286,7 +2457,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexTouchDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexTouchDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-flex-touch')).toBeTruthy();
@@ -2341,7 +2514,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexTabletDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexTabletDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-flex-tablet')).toBeTruthy();
@@ -2396,7 +2571,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexDesktopDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexDesktopDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-flex-desktop')).toBeTruthy();
@@ -2451,17 +2628,25 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexWidescreenDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexWidescreenDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('is-inline-flex-widescreen')).toBeTruthy();
+      expect(
+        test1.classList.contains('is-inline-flex-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('is-inline-flex-widescreen')).toBeTruthy();
+      expect(
+        test2.classList.contains('is-inline-flex-widescreen')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('is-inline-flex-widescreen')).toBeTruthy();
+      expect(
+        test4.classList.contains('is-inline-flex-widescreen')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -2506,7 +2691,9 @@ describe('ShowResponsive Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsInlineFlexFullhdDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsInlineFlexFullhdDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-inline-flex-fullhd')).toBeTruthy();

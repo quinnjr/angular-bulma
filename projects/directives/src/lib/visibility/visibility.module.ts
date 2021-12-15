@@ -6,7 +6,7 @@ import {
   BulmaIsFlexDirective,
   BulmaIsInlineDirective,
   BulmaIsInlineBlockDirective,
-  BulmaIsInlineFlexDirective,
+  BulmaIsInlineFlexDirective
 } from './show.directive';
 
 import {
@@ -54,7 +54,7 @@ import {
   BulmaIsInlineFlexTabletDirective,
   BulmaIsInlineFlexDesktopDirective,
   BulmaIsInlineFlexWidescreenDirective,
-  BulmaIsInlineFlexFullhdDirective,
+  BulmaIsInlineFlexFullhdDirective
 } from './show-responsive.directive';
 
 import {
@@ -66,13 +66,13 @@ import {
   BulmaIsHiddenTabletDirective,
   BulmaIsHiddenDesktopDirective,
   BulmaIsHiddenWidescreenDirective,
-  BulmaIsHiddenFullhdDirective,
+  BulmaIsHiddenFullhdDirective
 } from './hide.directive';
 
 import {
   BulmaIsInvisibleDirective,
   BulmaIsHiddenDirective,
-  BulmaIsSrOnlyDirective,
+  BulmaIsSrOnlyDirective
 } from './other.directive';
 
 @NgModule({
@@ -139,7 +139,7 @@ import {
     BulmaIsHiddenFullhdDirective,
     BulmaIsInvisibleDirective,
     BulmaIsHiddenDirective,
-    BulmaIsSrOnlyDirective,
+    BulmaIsSrOnlyDirective
   ],
   exports: [
     BulmaIsBlockDirective,
@@ -203,7 +203,7 @@ import {
     BulmaIsHiddenFullhdDirective,
     BulmaIsInvisibleDirective,
     BulmaIsHiddenDirective,
-    BulmaIsSrOnlyDirective,
+    BulmaIsSrOnlyDirective
   ]
 })
 export class BulmaVisibilityDirectivesModule {}

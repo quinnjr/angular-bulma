@@ -3,8 +3,12 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 @Directive({
   selector: '[bu-is-align-content-flex-start]'
 })
-export class BulmaIsAlignContentFlexStartDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-flex-start') public set buIsAlignContentFlexStart(val: string | boolean) {
+export class BulmaIsAlignContentFlexStartDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-align-content-flex-start') public set buIsAlignContentFlexStart(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -26,17 +30,25 @@ export class BulmaIsAlignContentFlexStartDirective implements OnChanges, OnInit 
 
   public ngOnInit() {
     if (this.buIsAlignContentFlexStart) {
-      this.elementRef.nativeElement.classList.add('is-align-content-flex-start');
+      this.elementRef.nativeElement.classList.add(
+        'is-align-content-flex-start'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-flex-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-flex-start'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsAlignContentFlexStart) {
-      this.elementRef.nativeElement.classList.add('is-align-content-flex-start');
+      this.elementRef.nativeElement.classList.add(
+        'is-align-content-flex-start'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-flex-start');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-flex-start'
+      );
     }
   }
 }
@@ -45,7 +57,9 @@ export class BulmaIsAlignContentFlexStartDirective implements OnChanges, OnInit 
   selector: '[bu-is-align-content-flex-end]'
 })
 export class BulmaIsAlignContentFlexEndDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-flex-end') public set buIsAlignContentFlexEnd(val: string | boolean) {
+  @Input('bu-is-align-content-flex-end') public set buIsAlignContentFlexEnd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -69,7 +83,9 @@ export class BulmaIsAlignContentFlexEndDirective implements OnChanges, OnInit {
     if (this.buIsAlignContentFlexEnd) {
       this.elementRef.nativeElement.classList.add('is-align-content-flex-end');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-flex-end');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-flex-end'
+      );
     }
   }
 
@@ -77,7 +93,9 @@ export class BulmaIsAlignContentFlexEndDirective implements OnChanges, OnInit {
     if (this.buIsAlignContentFlexEnd) {
       this.elementRef.nativeElement.classList.add('is-align-content-flex-end');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-flex-end');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-flex-end'
+      );
     }
   }
 }
@@ -86,7 +104,9 @@ export class BulmaIsAlignContentFlexEndDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-content-center]'
 })
 export class BulmaIsAlignContentCenterDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-center') public set buIsAlignContentCenter(val: string | boolean) {
+  @Input('bu-is-align-content-center') public set buIsAlignContentCenter(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -126,8 +146,11 @@ export class BulmaIsAlignContentCenterDirective implements OnChanges, OnInit {
 @Directive({
   selector: '[bu-is-align-content-space-between]'
 })
-export class BulmaIsAlignContentSpaceBetweenDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-space-between') public set buIsAlignContentSpaceBetween(val: string | boolean) {
+export class BulmaIsAlignContentSpaceBetweenDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-align-content-space-between')
+  public set buIsAlignContentSpaceBetween(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -149,17 +172,25 @@ export class BulmaIsAlignContentSpaceBetweenDirective implements OnChanges, OnIn
 
   public ngOnInit() {
     if (this.buIsAlignContentSpaceBetween) {
-      this.elementRef.nativeElement.classList.add('is-align-content-space-between');
+      this.elementRef.nativeElement.classList.add(
+        'is-align-content-space-between'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-space-between');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-space-between'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsAlignContentSpaceBetween) {
-      this.elementRef.nativeElement.classList.add('is-align-content-space-between');
+      this.elementRef.nativeElement.classList.add(
+        'is-align-content-space-between'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-space-between');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-space-between'
+      );
     }
   }
 }
@@ -167,8 +198,11 @@ export class BulmaIsAlignContentSpaceBetweenDirective implements OnChanges, OnIn
 @Directive({
   selector: '[bu-is-align-content-space-around]'
 })
-export class BulmaIsAlignContentSpaceAroundDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-space-around') public set buIsAlignContentSpaceAround(val: string | boolean) {
+export class BulmaIsAlignContentSpaceAroundDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-align-content-space-around')
+  public set buIsAlignContentSpaceAround(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -190,17 +224,25 @@ export class BulmaIsAlignContentSpaceAroundDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buIsAlignContentSpaceAround) {
-      this.elementRef.nativeElement.classList.add('is-align-content-space-around');
+      this.elementRef.nativeElement.classList.add(
+        'is-align-content-space-around'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-space-around');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-space-around'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsAlignContentSpaceAround) {
-      this.elementRef.nativeElement.classList.add('is-align-content-space-around');
+      this.elementRef.nativeElement.classList.add(
+        'is-align-content-space-around'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-space-around');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-space-around'
+      );
     }
   }
 }
@@ -208,8 +250,11 @@ export class BulmaIsAlignContentSpaceAroundDirective implements OnChanges, OnIni
 @Directive({
   selector: '[bu-is-align-content-space-evenly]'
 })
-export class BulmaIsAlignContentSpaceEvenlyDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-space-evenly') public set buIsAlignContentSpaceEvenly(val: string | boolean) {
+export class BulmaIsAlignContentSpaceEvenlyDirective
+  implements OnChanges, OnInit
+{
+  @Input('bu-is-align-content-space-evenly')
+  public set buIsAlignContentSpaceEvenly(val: string | boolean) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -231,17 +276,25 @@ export class BulmaIsAlignContentSpaceEvenlyDirective implements OnChanges, OnIni
 
   public ngOnInit() {
     if (this.buIsAlignContentSpaceEvenly) {
-      this.elementRef.nativeElement.classList.add('is-align-content-space-evenly');
+      this.elementRef.nativeElement.classList.add(
+        'is-align-content-space-evenly'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-space-evenly');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-space-evenly'
+      );
     }
   }
 
   public ngOnChanges() {
     if (this.buIsAlignContentSpaceEvenly) {
-      this.elementRef.nativeElement.classList.add('is-align-content-space-evenly');
+      this.elementRef.nativeElement.classList.add(
+        'is-align-content-space-evenly'
+      );
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-space-evenly');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-space-evenly'
+      );
     }
   }
 }
@@ -250,7 +303,9 @@ export class BulmaIsAlignContentSpaceEvenlyDirective implements OnChanges, OnIni
   selector: '[bu-is-align-content-stretch]'
 })
 export class BulmaIsAlignContentStretchDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-stretch') public set buIsAlignContentStretch(val: string | boolean) {
+  @Input('bu-is-align-content-stretch') public set buIsAlignContentStretch(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -274,7 +329,9 @@ export class BulmaIsAlignContentStretchDirective implements OnChanges, OnInit {
     if (this.buIsAlignContentStretch) {
       this.elementRef.nativeElement.classList.add('is-align-content-stretch');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-stretch');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-stretch'
+      );
     }
   }
 
@@ -282,7 +339,9 @@ export class BulmaIsAlignContentStretchDirective implements OnChanges, OnInit {
     if (this.buIsAlignContentStretch) {
       this.elementRef.nativeElement.classList.add('is-align-content-stretch');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-stretch');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-stretch'
+      );
     }
   }
 }
@@ -291,7 +350,9 @@ export class BulmaIsAlignContentStretchDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-content-start]'
 })
 export class BulmaIsAlignContentStartDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-start') public set buIsAlignContentStart(val: string | boolean) {
+  @Input('bu-is-align-content-start') public set buIsAlignContentStart(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -332,7 +393,9 @@ export class BulmaIsAlignContentStartDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-content-end]'
 })
 export class BulmaIsAlignContentEndDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-end') public set buIsAlignContentEnd(val: string | boolean) {
+  @Input('bu-is-align-content-end') public set buIsAlignContentEnd(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -373,7 +436,9 @@ export class BulmaIsAlignContentEndDirective implements OnChanges, OnInit {
   selector: '[bu-is-align-content-baseline]'
 })
 export class BulmaIsAlignContentBaselineDirective implements OnChanges, OnInit {
-  @Input('bu-is-align-content-baseline') public set buIsAlignContentBaseline(val: string | boolean) {
+  @Input('bu-is-align-content-baseline') public set buIsAlignContentBaseline(
+    val: string | boolean
+  ) {
     if (typeof val === 'string') {
       if (val.length === 0) {
         val = true;
@@ -397,7 +462,9 @@ export class BulmaIsAlignContentBaselineDirective implements OnChanges, OnInit {
     if (this.buIsAlignContentBaseline) {
       this.elementRef.nativeElement.classList.add('is-align-content-baseline');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-baseline');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-baseline'
+      );
     }
   }
 
@@ -405,7 +472,9 @@ export class BulmaIsAlignContentBaselineDirective implements OnChanges, OnInit {
     if (this.buIsAlignContentBaseline) {
       this.elementRef.nativeElement.classList.add('is-align-content-baseline');
     } else {
-      this.elementRef.nativeElement.classList.remove('is-align-content-baseline');
+      this.elementRef.nativeElement.classList.remove(
+        'is-align-content-baseline'
+      );
     }
   }
 }

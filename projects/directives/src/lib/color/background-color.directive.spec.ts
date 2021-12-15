@@ -29,7 +29,7 @@ import {
   BulmaHasBackgroundInfoDarkDirective,
   BulmaHasBackgroundSuccessDarkDirective,
   BulmaHasBackgroundWarningDarkDirective,
-  BulmaHasBackgroundDangerDarkDirective,
+  BulmaHasBackgroundDangerDarkDirective
 } from './background-color.directive';
 
 import { TestBed } from '@angular/core/testing';
@@ -72,7 +72,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundWhiteDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundWhiteDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-white')).toBeTruthy();
@@ -127,7 +129,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundBlackDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundBlackDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-black')).toBeTruthy();
@@ -182,7 +186,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-light')).toBeTruthy();
@@ -237,7 +243,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-dark')).toBeTruthy();
@@ -292,7 +300,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundPrimaryDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundPrimaryDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-primary')).toBeTruthy();
@@ -347,7 +357,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundLinkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundLinkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-link')).toBeTruthy();
@@ -402,7 +414,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundInfoDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundInfoDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-info')).toBeTruthy();
@@ -457,7 +471,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundSuccessDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundSuccessDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-success')).toBeTruthy();
@@ -512,7 +528,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundWarningDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundWarningDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-warning')).toBeTruthy();
@@ -567,7 +585,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundDangerDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundDangerDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-danger')).toBeTruthy();
@@ -622,7 +642,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundBlackBisDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundBlackBisDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-black-bis')).toBeTruthy();
@@ -677,7 +699,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundBlackTerDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundBlackTerDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-black-ter')).toBeTruthy();
@@ -732,24 +756,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundGreyDarkerDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundGreyDarkerDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-grey-darker')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-grey-darker')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-grey-darker')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-grey-darker')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-grey-darker')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-grey-darker')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-grey-darker')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-grey-darker')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-grey-darker')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-grey-darker')
+      ).toBeFalsy();
     });
   });
 
@@ -787,7 +823,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundGreyDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundGreyDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-grey-dark')).toBeTruthy();
@@ -842,7 +880,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundGreyDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundGreyDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-grey')).toBeTruthy();
@@ -897,17 +937,25 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundGreyLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundGreyLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-grey-light')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-grey-light')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-grey-light')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-grey-light')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-grey-light')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-grey-light')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -952,24 +1000,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundGreyLighterDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundGreyLighterDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-grey-lighter')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-grey-lighter')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-grey-lighter')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-grey-lighter')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-grey-lighter')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-grey-lighter')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-grey-lighter')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-grey-lighter')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-grey-lighter')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-grey-lighter')
+      ).toBeFalsy();
     });
   });
 
@@ -1007,7 +1067,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundWhiteTerDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundWhiteTerDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-white-ter')).toBeTruthy();
@@ -1062,7 +1124,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundWhiteBisDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundWhiteBisDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-white-bis')).toBeTruthy();
@@ -1117,24 +1181,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundPrimaryLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundPrimaryLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-primary-light')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-primary-light')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-primary-light')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-primary-light')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-primary-light')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-primary-light')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-primary-light')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-primary-light')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-primary-light')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-primary-light')
+      ).toBeFalsy();
     });
   });
 
@@ -1172,17 +1248,25 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundLinkLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundLinkLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-link-light')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-link-light')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-link-light')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-link-light')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-link-light')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-link-light')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -1227,17 +1311,25 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundInfoLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundInfoLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-info-light')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-info-light')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-info-light')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-info-light')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-info-light')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-info-light')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
@@ -1282,24 +1374,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundSuccessLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundSuccessLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-success-light')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-success-light')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-success-light')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-success-light')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-success-light')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-success-light')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-success-light')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-success-light')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-success-light')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-success-light')
+      ).toBeFalsy();
     });
   });
 
@@ -1337,24 +1441,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundWarningLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundWarningLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-warning-light')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-warning-light')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-warning-light')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-warning-light')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-warning-light')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-warning-light')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-warning-light')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-warning-light')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-warning-light')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-warning-light')
+      ).toBeFalsy();
     });
   });
 
@@ -1392,24 +1508,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundDangerLightDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundDangerLightDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-danger-light')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-danger-light')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-danger-light')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-danger-light')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-danger-light')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-danger-light')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-danger-light')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-danger-light')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-danger-light')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-danger-light')
+      ).toBeFalsy();
     });
   });
 
@@ -1447,24 +1575,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundPrimaryDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundPrimaryDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-primary-dark')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-primary-dark')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-primary-dark')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-primary-dark')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-primary-dark')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-primary-dark')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-primary-dark')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-primary-dark')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-primary-dark')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-primary-dark')
+      ).toBeFalsy();
     });
   });
 
@@ -1502,7 +1642,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundLinkDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundLinkDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-link-dark')).toBeTruthy();
@@ -1557,7 +1699,9 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundInfoDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundInfoDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('has-background-info-dark')).toBeTruthy();
@@ -1612,24 +1756,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundSuccessDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundSuccessDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-success-dark')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-success-dark')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-success-dark')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-success-dark')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-success-dark')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-success-dark')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-success-dark')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-success-dark')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-success-dark')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-success-dark')
+      ).toBeFalsy();
     });
   });
 
@@ -1667,24 +1823,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundWarningDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundWarningDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-warning-dark')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-warning-dark')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-warning-dark')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-warning-dark')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-warning-dark')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-warning-dark')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-warning-dark')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-warning-dark')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-warning-dark')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-warning-dark')
+      ).toBeFalsy();
     });
   });
 
@@ -1722,24 +1890,36 @@ describe('BackgroundColor Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaHasBackgroundDangerDarkDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaHasBackgroundDangerDarkDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
-      expect(test1.classList.contains('has-background-danger-dark')).toBeTruthy();
+      expect(
+        test1.classList.contains('has-background-danger-dark')
+      ).toBeTruthy();
     });
 
     it('should properly apply to an element with a 1-way direction binding of true boolean value', () => {
       const test2: HTMLElement = fixture.nativeElement.querySelector('#test2');
-      expect(test2.classList.contains('has-background-danger-dark')).toBeTruthy();
+      expect(
+        test2.classList.contains('has-background-danger-dark')
+      ).toBeTruthy();
       const test4: HTMLElement = fixture.nativeElement.querySelector('#test4');
-      expect(test4.classList.contains('has-background-danger-dark')).toBeTruthy();
+      expect(
+        test4.classList.contains('has-background-danger-dark')
+      ).toBeTruthy();
     });
 
     it('should properly /not/ apply to an element with a 1-way direction binding of false boolean value', () => {
       const test3: HTMLElement = fixture.nativeElement.querySelector('#test3');
-      expect(test3.classList.contains('has-background-danger-dark')).toBeFalsy();
+      expect(
+        test3.classList.contains('has-background-danger-dark')
+      ).toBeFalsy();
       const test5: HTMLElement = fixture.nativeElement.querySelector('#test5');
-      expect(test5.classList.contains('has-background-danger-dark')).toBeFalsy();
+      expect(
+        test5.classList.contains('has-background-danger-dark')
+      ).toBeFalsy();
     });
   });
 });

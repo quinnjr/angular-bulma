@@ -1,6 +1,4 @@
-import {
-  BulmaIsActiveDirective,
-} from './special.directive';
+import { BulmaIsActiveDirective } from './special.directive';
 
 import { TestBed } from '@angular/core/testing';
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -42,7 +40,9 @@ describe('Special Directives', () => {
     });
 
     it('should properly apply to an element as an HTML attribute', () => {
-      const test: HTMLElement[] = fixture.debugElement.queryAll(By.directive(BulmaIsActiveDirective));
+      const test: HTMLElement[] = fixture.debugElement.queryAll(
+        By.directive(BulmaIsActiveDirective)
+      );
       expect(test.length).toBe(5);
       const test1: HTMLElement = fixture.nativeElement.querySelector('#test1');
       expect(test1.classList.contains('is-active')).toBeTruthy();
