@@ -2,7 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/@angular-bulma/components)
 
-[![Angular-Bulma Testing](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml) [![CodeQL](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml/badge.svg)](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml)
+[![Angular-Bulma Testing](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml/badge.svg?branch=main)](https://github.com/quinnjr/angular-bulma/actions/workflows/testing.yml) [![CodeQL](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/quinnjr/angular-bulma/actions/workflows/codeql.yml)
 
 ## Current Components
 
