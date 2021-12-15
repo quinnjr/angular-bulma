@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-py-0]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaPy0Directive implements OnChanges, OnInit {
   @Input('bu-py-0') public set buPy0(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaPy0Directive implements OnChanges, OnInit {
 export class BulmaPy1Directive implements OnChanges, OnInit {
   @Input('bu-py-1') public set buPy1(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaPy1Directive implements OnChanges, OnInit {
 export class BulmaPy2Directive implements OnChanges, OnInit {
   @Input('bu-py-2') public set buPy2(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -129,10 +130,10 @@ export class BulmaPy2Directive implements OnChanges, OnInit {
 export class BulmaPy3Directive implements OnChanges, OnInit {
   @Input('bu-py-3') public set buPy3(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -170,10 +171,10 @@ export class BulmaPy3Directive implements OnChanges, OnInit {
 export class BulmaPy4Directive implements OnChanges, OnInit {
   @Input('bu-py-4') public set buPy4(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -211,10 +212,10 @@ export class BulmaPy4Directive implements OnChanges, OnInit {
 export class BulmaPy5Directive implements OnChanges, OnInit {
   @Input('bu-py-5') public set buPy5(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -252,10 +253,10 @@ export class BulmaPy5Directive implements OnChanges, OnInit {
 export class BulmaPy6Directive implements OnChanges, OnInit {
   @Input('bu-py-6') public set buPy6(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

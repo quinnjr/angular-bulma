@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-pl-0]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaPl0Directive implements OnChanges, OnInit {
   @Input('bu-pl-0') public set buPl0(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaPl0Directive implements OnChanges, OnInit {
 export class BulmaPl1Directive implements OnChanges, OnInit {
   @Input('bu-pl-1') public set buPl1(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaPl1Directive implements OnChanges, OnInit {
 export class BulmaPl2Directive implements OnChanges, OnInit {
   @Input('bu-pl-2') public set buPl2(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -129,10 +130,10 @@ export class BulmaPl2Directive implements OnChanges, OnInit {
 export class BulmaPl3Directive implements OnChanges, OnInit {
   @Input('bu-pl-3') public set buPl3(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -170,10 +171,10 @@ export class BulmaPl3Directive implements OnChanges, OnInit {
 export class BulmaPl4Directive implements OnChanges, OnInit {
   @Input('bu-pl-4') public set buPl4(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -211,10 +212,10 @@ export class BulmaPl4Directive implements OnChanges, OnInit {
 export class BulmaPl5Directive implements OnChanges, OnInit {
   @Input('bu-pl-5') public set buPl5(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -252,10 +253,10 @@ export class BulmaPl5Directive implements OnChanges, OnInit {
 export class BulmaPl6Directive implements OnChanges, OnInit {
   @Input('bu-pl-6') public set buPl6(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

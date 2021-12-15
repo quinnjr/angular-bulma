@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-block]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaIsBlockDirective implements OnChanges, OnInit {
   @Input('bu-is-block') public set buIsBlock(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaIsBlockDirective implements OnChanges, OnInit {
 export class BulmaIsFlexDirective implements OnChanges, OnInit {
   @Input('bu-is-flex') public set buIsFlex(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaIsFlexDirective implements OnChanges, OnInit {
 export class BulmaIsInlineDirective implements OnChanges, OnInit {
   @Input('bu-is-inline') public set buIsInline(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -131,10 +132,10 @@ export class BulmaIsInlineBlockDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -172,10 +173,10 @@ export class BulmaIsInlineBlockDirective implements OnChanges, OnInit {
 export class BulmaIsInlineFlexDirective implements OnChanges, OnInit {
   @Input('bu-is-inline-flex') public set buIsInlineFlex(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

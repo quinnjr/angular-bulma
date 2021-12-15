@@ -40,7 +40,7 @@ import { By } from '@angular/platform-browser';
 
 describe('${startCase(file).replace(/\s/g, '')} Directives', () => {`;
 
-      let fileContents = `import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';\n`;
+      let fileContents = `import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';\nimport isBoolean from 'lodash.isboolean';\n`;
 
       /* eslint-disable-next-line @typescript-eslint/prefer-for-of */
       for (let i = 0; i < directives.length; i++) {
@@ -54,10 +54,10 @@ describe('${startCase(file).replace(/\s/g, '')} Directives', () => {`;
 export class Bulma${directiveName}Directive implements OnChanges, OnInit {
   @Input('bu-${directive}') public set bu${directiveName}(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true
       }
     }
 

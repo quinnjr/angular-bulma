@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-px-0]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaPx0Directive implements OnChanges, OnInit {
   @Input('bu-px-0') public set buPx0(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaPx0Directive implements OnChanges, OnInit {
 export class BulmaPx1Directive implements OnChanges, OnInit {
   @Input('bu-px-1') public set buPx1(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaPx1Directive implements OnChanges, OnInit {
 export class BulmaPx2Directive implements OnChanges, OnInit {
   @Input('bu-px-2') public set buPx2(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -129,10 +130,10 @@ export class BulmaPx2Directive implements OnChanges, OnInit {
 export class BulmaPx3Directive implements OnChanges, OnInit {
   @Input('bu-px-3') public set buPx3(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -170,10 +171,10 @@ export class BulmaPx3Directive implements OnChanges, OnInit {
 export class BulmaPx4Directive implements OnChanges, OnInit {
   @Input('bu-px-4') public set buPx4(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -211,10 +212,10 @@ export class BulmaPx4Directive implements OnChanges, OnInit {
 export class BulmaPx5Directive implements OnChanges, OnInit {
   @Input('bu-px-5') public set buPx5(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -252,10 +253,10 @@ export class BulmaPx5Directive implements OnChanges, OnInit {
 export class BulmaPx6Directive implements OnChanges, OnInit {
   @Input('bu-px-6') public set buPx6(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

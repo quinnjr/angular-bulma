@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-capitalized]'
@@ -8,10 +9,10 @@ export class BulmaIsCapitalizedDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -49,10 +50,10 @@ export class BulmaIsCapitalizedDirective implements OnChanges, OnInit {
 export class BulmaIsLowercaseDirective implements OnChanges, OnInit {
   @Input('bu-is-lowercase') public set buIsLowercase(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -90,10 +91,10 @@ export class BulmaIsLowercaseDirective implements OnChanges, OnInit {
 export class BulmaIsUppercaseDirective implements OnChanges, OnInit {
   @Input('bu-is-uppercase') public set buIsUppercase(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -131,10 +132,10 @@ export class BulmaIsUppercaseDirective implements OnChanges, OnInit {
 export class BulmaIsItalicDirective implements OnChanges, OnInit {
   @Input('bu-is-italic') public set buIsItalic(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -172,10 +173,10 @@ export class BulmaIsItalicDirective implements OnChanges, OnInit {
 export class BulmaIsUnderlinedDirective implements OnChanges, OnInit {
   @Input('bu-is-underlined') public set buIsUnderlined(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

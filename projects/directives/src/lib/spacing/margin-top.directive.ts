@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-mt-0]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaMt0Directive implements OnChanges, OnInit {
   @Input('bu-mt-0') public set buMt0(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaMt0Directive implements OnChanges, OnInit {
 export class BulmaMt1Directive implements OnChanges, OnInit {
   @Input('bu-mt-1') public set buMt1(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaMt1Directive implements OnChanges, OnInit {
 export class BulmaMt2Directive implements OnChanges, OnInit {
   @Input('bu-mt-2') public set buMt2(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -129,10 +130,10 @@ export class BulmaMt2Directive implements OnChanges, OnInit {
 export class BulmaMt3Directive implements OnChanges, OnInit {
   @Input('bu-mt-3') public set buMt3(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -170,10 +171,10 @@ export class BulmaMt3Directive implements OnChanges, OnInit {
 export class BulmaMt4Directive implements OnChanges, OnInit {
   @Input('bu-mt-4') public set buMt4(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -211,10 +212,10 @@ export class BulmaMt4Directive implements OnChanges, OnInit {
 export class BulmaMt5Directive implements OnChanges, OnInit {
   @Input('bu-mt-5') public set buMt5(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -252,10 +253,10 @@ export class BulmaMt5Directive implements OnChanges, OnInit {
 export class BulmaMt6Directive implements OnChanges, OnInit {
   @Input('bu-mt-6') public set buMt6(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

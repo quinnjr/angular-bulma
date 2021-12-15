@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-has-text-centered]'
@@ -8,10 +9,10 @@ export class BulmaHasTextCenteredDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -51,10 +52,10 @@ export class BulmaHasTextJustifiedDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -92,10 +93,10 @@ export class BulmaHasTextJustifiedDirective implements OnChanges, OnInit {
 export class BulmaHasTextLeftDirective implements OnChanges, OnInit {
   @Input('bu-has-text-left') public set buHasTextLeft(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -133,10 +134,10 @@ export class BulmaHasTextLeftDirective implements OnChanges, OnInit {
 export class BulmaHasTextRightDirective implements OnChanges, OnInit {
   @Input('bu-has-text-right') public set buHasTextRight(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

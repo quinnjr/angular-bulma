@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-flex-direction-row]'
@@ -8,10 +9,10 @@ export class BulmaIsFlexDirectionRowDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -52,10 +53,10 @@ export class BulmaIsFlexDirectionRowReverseDirective
   @Input('bu-is-flex-direction-row-reverse')
   public set buIsFlexDirectionRowReverse(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -103,10 +104,10 @@ export class BulmaIsFlexDirectionColumnDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -151,10 +152,10 @@ export class BulmaIsFlexDirectionColumnReverseDirective
   @Input('bu-is-flex-direction-column-reverse')
   public set buIsFlexDirectionColumnReverse(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

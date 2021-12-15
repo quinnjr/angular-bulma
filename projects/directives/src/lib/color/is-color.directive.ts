@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-primary]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaIsPrimaryDirective implements OnChanges, OnInit {
   @Input('bu-is-primary') public set buIsPrimary(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaIsPrimaryDirective implements OnChanges, OnInit {
 export class BulmaIsInfoDirective implements OnChanges, OnInit {
   @Input('bu-is-info') public set buIsInfo(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaIsInfoDirective implements OnChanges, OnInit {
 export class BulmaIsLinkDirective implements OnChanges, OnInit {
   @Input('bu-is-link') public set buIsLink(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -129,10 +130,10 @@ export class BulmaIsLinkDirective implements OnChanges, OnInit {
 export class BulmaIsSuccessDirective implements OnChanges, OnInit {
   @Input('bu-is-success') public set buIsSuccess(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -170,10 +171,10 @@ export class BulmaIsSuccessDirective implements OnChanges, OnInit {
 export class BulmaIsWarningDirective implements OnChanges, OnInit {
   @Input('bu-is-warning') public set buIsWarning(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -211,10 +212,10 @@ export class BulmaIsWarningDirective implements OnChanges, OnInit {
 export class BulmaIsDangerDirective implements OnChanges, OnInit {
   @Input('bu-is-danger') public set buIsDanger(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -252,10 +253,10 @@ export class BulmaIsDangerDirective implements OnChanges, OnInit {
 export class BulmaIsBlackDirective implements OnChanges, OnInit {
   @Input('bu-is-black') public set buIsBlack(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -293,10 +294,10 @@ export class BulmaIsBlackDirective implements OnChanges, OnInit {
 export class BulmaIsDarkDirective implements OnChanges, OnInit {
   @Input('bu-is-dark') public set buIsDark(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -334,10 +335,10 @@ export class BulmaIsDarkDirective implements OnChanges, OnInit {
 export class BulmaIsLightDirective implements OnChanges, OnInit {
   @Input('bu-is-light') public set buIsLight(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -375,10 +376,10 @@ export class BulmaIsLightDirective implements OnChanges, OnInit {
 export class BulmaIsWhiteDirective implements OnChanges, OnInit {
   @Input('bu-is-white') public set buIsWhite(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

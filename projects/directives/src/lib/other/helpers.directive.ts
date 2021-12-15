@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-clearfix]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaIsClearfixDirective implements OnChanges, OnInit {
   @Input('bu-is-clearfix') public set buIsClearfix(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaIsClearfixDirective implements OnChanges, OnInit {
 export class BulmaIsPulledLeftDirective implements OnChanges, OnInit {
   @Input('bu-is-pulled-left') public set buIsPulledLeft(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -90,10 +91,10 @@ export class BulmaIsPulledRightDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -131,10 +132,10 @@ export class BulmaIsPulledRightDirective implements OnChanges, OnInit {
 export class BulmaIsOverlayDirective implements OnChanges, OnInit {
   @Input('bu-is-overlay') public set buIsOverlay(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -172,10 +173,10 @@ export class BulmaIsOverlayDirective implements OnChanges, OnInit {
 export class BulmaIsClippedDirective implements OnChanges, OnInit {
   @Input('bu-is-clipped') public set buIsClipped(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -213,10 +214,10 @@ export class BulmaIsClippedDirective implements OnChanges, OnInit {
 export class BulmaIsRadiuslessDirective implements OnChanges, OnInit {
   @Input('bu-is-radiusless') public set buIsRadiusless(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -254,10 +255,10 @@ export class BulmaIsRadiuslessDirective implements OnChanges, OnInit {
 export class BulmaIsShadowlessDirective implements OnChanges, OnInit {
   @Input('bu-is-shadowless') public set buIsShadowless(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -297,10 +298,10 @@ export class BulmaIsUnselectableDirective implements OnChanges, OnInit {
     val: string | boolean
   ) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -338,10 +339,10 @@ export class BulmaIsUnselectableDirective implements OnChanges, OnInit {
 export class BulmaIsClickableDirective implements OnChanges, OnInit {
   @Input('bu-is-clickable') public set buIsClickable(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -379,10 +380,10 @@ export class BulmaIsClickableDirective implements OnChanges, OnInit {
 export class BulmaIsRelativeDirective implements OnChanges, OnInit {
   @Input('bu-is-relative') public set buIsRelative(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

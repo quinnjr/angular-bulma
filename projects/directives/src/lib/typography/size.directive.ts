@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-is-size-1]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaIsSize1Directive implements OnChanges, OnInit {
   @Input('bu-is-size-1') public set buIsSize1(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaIsSize1Directive implements OnChanges, OnInit {
 export class BulmaIsSize2Directive implements OnChanges, OnInit {
   @Input('bu-is-size-2') public set buIsSize2(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaIsSize2Directive implements OnChanges, OnInit {
 export class BulmaIsSize3Directive implements OnChanges, OnInit {
   @Input('bu-is-size-3') public set buIsSize3(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -129,10 +130,10 @@ export class BulmaIsSize3Directive implements OnChanges, OnInit {
 export class BulmaIsSize4Directive implements OnChanges, OnInit {
   @Input('bu-is-size-4') public set buIsSize4(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -170,10 +171,10 @@ export class BulmaIsSize4Directive implements OnChanges, OnInit {
 export class BulmaIsSize5Directive implements OnChanges, OnInit {
   @Input('bu-is-size-5') public set buIsSize5(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -211,10 +212,10 @@ export class BulmaIsSize5Directive implements OnChanges, OnInit {
 export class BulmaIsSize6Directive implements OnChanges, OnInit {
   @Input('bu-is-size-6') public set buIsSize6(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -252,10 +253,10 @@ export class BulmaIsSize6Directive implements OnChanges, OnInit {
 export class BulmaIsSize7Directive implements OnChanges, OnInit {
   @Input('bu-is-size-7') public set buIsSize7(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 

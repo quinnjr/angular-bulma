@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
+import isBoolean from 'lodash.isboolean';
 
 @Directive({
   selector: '[bu-mr-0]'
@@ -6,10 +7,10 @@ import { Directive, ElementRef, Input, OnChanges, OnInit } from '@angular/core';
 export class BulmaMr0Directive implements OnChanges, OnInit {
   @Input('bu-mr-0') public set buMr0(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -47,10 +48,10 @@ export class BulmaMr0Directive implements OnChanges, OnInit {
 export class BulmaMr1Directive implements OnChanges, OnInit {
   @Input('bu-mr-1') public set buMr1(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -88,10 +89,10 @@ export class BulmaMr1Directive implements OnChanges, OnInit {
 export class BulmaMr2Directive implements OnChanges, OnInit {
   @Input('bu-mr-2') public set buMr2(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -129,10 +130,10 @@ export class BulmaMr2Directive implements OnChanges, OnInit {
 export class BulmaMr3Directive implements OnChanges, OnInit {
   @Input('bu-mr-3') public set buMr3(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -170,10 +171,10 @@ export class BulmaMr3Directive implements OnChanges, OnInit {
 export class BulmaMr4Directive implements OnChanges, OnInit {
   @Input('bu-mr-4') public set buMr4(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -211,10 +212,10 @@ export class BulmaMr4Directive implements OnChanges, OnInit {
 export class BulmaMr5Directive implements OnChanges, OnInit {
   @Input('bu-mr-5') public set buMr5(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
@@ -252,10 +253,10 @@ export class BulmaMr5Directive implements OnChanges, OnInit {
 export class BulmaMr6Directive implements OnChanges, OnInit {
   @Input('bu-mr-6') public set buMr6(val: string | boolean) {
     if (typeof val === 'string') {
-      if (val.length === 0) {
-        val = true;
-      } else {
+      if (isBoolean(val)) {
         val = !!val;
+      } else {
+        val = true;
       }
     }
 
