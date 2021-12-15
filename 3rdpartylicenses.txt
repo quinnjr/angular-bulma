@@ -10,6 +10,9 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 @angular-bulma/demo
 ISC
 
+@angular-bulma/directives
+ISC
+
 @angular/common
 MIT
 
