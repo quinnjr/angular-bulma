@@ -1,0 +1,55 @@
+<section class="section">
+  <h1 class="title">Configuration</h1>
+  <h2 class="subtitle">Make <code>@angular-bulma</code> work for you!</h2>
+</section>
+<section class="section">
+  <div class="content">
+    <h3 class="title"><a href="">#</a> SASS/SCSS</h3>
+    <p><code>@angular-bulma</code> includes only a minimal set of <code>sass/scss</code> styling on top of the Bulma framework. Unless otherwise specified per-component or per-element, all styling for your application is based on the Bulma styles you load or overwrite.</p>
+    <p>For example, if you want to use a <a href="https://jenil.github.io/bulmaswatch/">Bulmaswatch</a> theme instead of the default Bulma stylings, you can simply import it in your main <code>styles.scss</code>:</p>
+    <app-code-snippet title="SASS/SCSS">
+      <pre #highlight class="language-scss">
+        <code>
+  @import '~bulmaswatch/lux/variables';
+  @import '~bulma';
+  @import '~bulmaswatch/lux/overrides';
+        </code>
+      </pre>
+    </app-code-snippet>
+    <p>And your application will be themed with the <a href="https://jenil.github.io/bulmaswatch/lux/">Lux</a> theme!</p>
+  </div>
+</section>
+<section class="section">
+  <div class="content">
+    <h3><a href="">#</a> Font Icons</h3>
+    <p><code>@angular-bulma</code> components default to using <a href="https://fontawesome.com/">Font Awesome</a> glyphs for font icons, but <code>@angular-bulma</code> does not load the Font Awesome fonts automatically. Font Awesome must be loaded separately in your <code>styles.scss</code> or from a CDN:</p>
+    <app-code-snippet title="SASS/SCSS">
+      <pre #highlight class="language-scss">
+        <code>
+@import '~bulma'
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+        </code>
+      </pre>
+    </app-code-snippet>
+    <p>You'll also need to configure your <code>webpack</code> build for <code>Angular</code> to properly handle loading the font files. We suggest looking at <a href="https://www.npmjs.com/package/@angular-builders/custom-webpack"><code>@angular-builders/custom-webpack</code></a> for this.</p>
+    <p>Alternatively, you can just load Font Awesome from a CDN:</p>
+    <app-code-snippet title="HTML">
+      <pre #highlight class="language-xml">
+        <code>
+&lt;head&gt;
+  ...
+  &lt;link
+    rel=&quot;stylesheet&quot;
+    href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css&quot;
+    integrity=&quot;sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==&quot;
+    crossorigin=&quot;anonymous&quot;
+    referrerpolicy=&quot;no-referrer&quot;
+  /&gt;
+&lt;/head&gt;
+        </code>
+      </pre>
+    </app-code-snippet>
+    <p>Styles can also be set for other packs of icon fonts. See the documentation for each component/element to see how to style the icons.</p>
+  </div>
+</section>

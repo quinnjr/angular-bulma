@@ -4,8 +4,44 @@
       <h1 class="title">Color Helpers</h1>
       <h2 class="subtitle">Change the <strong>color</strong> of the text and/or background.</h2>
     </section>
-    <section class="section">
-      <div class="content"></div>
+    <section class="section" id="is-color">
+      <div class="content">
+        <h3><a routerLink="./" fragment="is-color">#</a> Color Selection</h3>
+        <p>Angular directives for <code>is-[color]</code> exist to make styling of Bulma components easy.</p>
+        <ul>
+          <li><code>is-primary</code></li>
+          <li><code>is-link</code></li>
+          <li><code>is-info</code></li>
+          <li><code>is-success</code></li>
+          <li><code>is-warning</code></li>
+          <li><code>is-danger</code></li>
+          <li><code>is-dark</code></li>
+          <li><code>is-light</code></li>
+        </ul>
+        <br />
+        <article
+          class="message"
+          [bu-is-primary]="isColor[0]"
+          [bu-is-link]="isColor[1]"
+          [bu-is-info]="isColor[2]"
+          [bu-is-success]="isColor[3]"
+          [bu-is-warning]="isColor[4]"
+          [bu-is-danger]="isColor[5]"
+          [bu-is-dark]="isColor[6]"
+        >
+          <div class="message-header">
+            <p>Hello World</p>
+          </div>
+          <div class="message-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="text-color">
+      <div class="content">
+        <h3><a routerLink="./" fragment="text-color">#</a> Text Color</h3>
+      </div>
       <table class="table is-hoverable is-fullwidth">
         <thead>
           <tr>
@@ -161,7 +197,10 @@
         </tbody>
       </table>
     </section>
-    <section class="section">
+    <section class="section" id="background-color">
+      <div class="content">
+        <h3><a routerLink="./" fragment="background-color">#</a> Background Color</h3>
+      </div>
       <table class="table is-fullwidth is-hoverable">
         <thead>
           <tr>
@@ -317,6 +356,25 @@
         </tbody>
       </table>
     </section>
+    <hr />
+    <div class="level">
+      <div class="level-left">
+        <a
+          class="button is-primary"
+          routerLink="/directives/overview"
+        >
+          &laquo; Overview
+        </a>
+      </div>
+      <div class="level-right">
+        <a
+          class="button is-primary"
+          routerLink="/directives/flexbox"
+        >
+          Flexbox &raquo;
+        </a>
+      </div>
+    </div>
   </div>
   <div class="column is-2"></div>
 </div>

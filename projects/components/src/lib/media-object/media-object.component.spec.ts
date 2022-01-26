@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MediaObjectComponent } from './media-object.component';
+import { BulmaMediaObjectComponent } from './media-object.component';
 
 describe('MediaObjectComponent', () => {
-  let component: MediaObjectComponent;
-  let fixture: ComponentFixture<MediaObjectComponent>;
+  let component: BulmaMediaObjectComponent;
+  let fixture: ComponentFixture<BulmaMediaObjectComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MediaObjectComponent]
+      declarations: [BulmaMediaObjectComponent]
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MediaObjectComponent);
+    fixture = TestBed.createComponent(BulmaMediaObjectComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

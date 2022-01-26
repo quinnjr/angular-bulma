@@ -10,7 +10,8 @@
     "lodash.mergewith": "^4.6.2"
   },
   "optionalDependencies": {
-    "@angular-bulma/directives": "^1.0.0"
+    "@angular-bulma/directives": "^1.0.0",
+    "bulma": "^0.9.3"
   },
   "keywords": [
     "angular",

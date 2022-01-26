@@ -40,7 +40,8 @@
         ],
         "rxjs/no-nested-subscribe": ["error"],
         "no-underscore-dangle": ["off"],
-        "@typescript-eslint/member-ordering": ["off"]
+        "@typescript-eslint/member-ordering": ["off"],
+        "@angular-eslint/no-empty-lifecycle-method": ["warn"]
       }
     },
     {

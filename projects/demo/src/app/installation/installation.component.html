@@ -1,0 +1,95 @@
+<section class="section">
+  <h1 class="title">Installation</h1>
+  <h2 class="subtitle">Getting you up and running with <code>@angular-bulma</code> libraries</h2>
+</section>
+<div class="content">
+  <section class="section">
+    <p>Getting started with each <code>@angular-bulma</code> is easy!</p>
+    <p>First, install the <code>@angular-bulma</code> library of your choice using your preferred nodejs package manager:</p>
+    <app-code-snippet title="SHELL">
+      <pre #highlight class="language-bash">
+        <code>
+npm i --save @angular-bulma/components
+        </code>
+      </pre>
+    </app-code-snippet>
+    <app-code-snippet title="SHELL">
+      <pre #highlight class="language-bash">
+        <code>
+yarn add @angular-bulma/components
+        </code>
+      </pre>
+    </app-code-snippet>
+    <app-code-snippet title="SHELL">
+      <pre #highlight class="language-bash">
+        <code>
+pnpm add @angular-bulma/components
+        </code>
+      </pre>
+    </app-code-snippet>
+  </section>
+  <section class="section">
+    <p><code>@angular-bulma</code> libraries do <strong>NOT</strong> come with Bulma stylings automatically loaded. You'll need to import Bulma's CSS into your project in <code>styles.scss</code>:</p>
+    <app-code-snippet title="SASS/SCSS">
+      <pre #highlight class="language-scss">
+        <code>
+@import '~bulma';
+        </code>
+      </pre>
+    </app-code-snippet>
+    <p>Alternatively, you can load Bulma's CSS from your prefered CDN service in your <code>index.html</code> file:</p>
+    <app-code-snippet title="HTML">
+      <pre #highlight class="language-xml">
+        <code>
+&lt;head&gt;
+...
+  &lt;link
+    rel=&quot;stylesheet&quot;
+    href=&quot;https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css&quot;
+    integrity=&quot;sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q==&quot;
+    crossorigin=&quot;anonymous&quot;
+    referrerpolicy=&quot;no-referrer&quot;
+  /&gt;
+&lt;/head&gt;
+        </code>
+      </pre>
+    </app-code-snippet>
+  </section>
+  <section class="section">
+    <p>Finally, import your desired modules into your <code>Angular</code> project:</p>
+    <app-code-snippet title="TYPESCRIPT">
+      <pre #highlight class="language-typescript">
+        <code>
+...
+import &#123; BulmaComponentsModule &#125; from '@angular-bulma/components';
+
+@NgModule&#40;&#123;
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    // Angular-Bulma modules
+    BulmaComponentsModule
+  ],
+  declarations: [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent]
+&#125;&#41;
+export class AppModule &#123;&#125;
+        </code>
+      </pre>
+    </app-code-snippet>
+  </section>
+  <hr />
+    <div class="level">
+      <div class="level-left">
+      </div>
+      <div class="level-right">
+        <a
+          class="button is-primary"
+          routerLink="/configuration"
+        >
+          Configuration &raquo;
+        </a>
+      </div>
+    </div>
+</div>

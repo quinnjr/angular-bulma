@@ -1,0 +1,45 @@
+<section class="section" id="intro">
+  <h1 class="title">Overview</h1>
+  <div class="content">
+    <p><code>@angular-bulma/components</code> is a collection of easy to use, functional Angular components based around the components provided by the Bulma CSS framework. Each component is designed to be easy to use in any sized Angular project, repeatable, configurable, and implemented in a way such that boilerplate for the component is reduced from the traditional implementation in plain HTML.</p>
+    <p>The current available components from the Bulma CSS framework are:</p>
+    <table class="table is-striped is-fullwidth">
+      <thead>
+        <tr>
+          <th>Bulma CSS Component</th>
+          <th><code>@angular-bulma/component</code> Component</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let component of components">
+          <tr>
+            <td><a href="https://bulma.io/documentation/components/{{ component }}/">{{ component | titlecase }}</a></td>
+          <td><a [routerLink]="['/components', component]">{{ component | titlecase }}</a></td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+    <p>As well, some layout helpers are implemented as additional Angular components. The layout components are:</p>
+    <table class="table is-striped is-fullwidth">
+      <thead>
+        <tr>
+          <th>Bulma CSS Component</th>
+          <th><code>@angular-bulma/component</code> Component</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let layout of layouts">
+          <tr>
+            <td><a href="https://bulma.io/documentation/layout/{{ layout }}/">{{ layout | titlecase }}</a></td>
+            <td><a [routerLink]="['/components', layout]">{{ layout | titlecase }}</a></td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+    <p>Finally, for ease of use and to compliment the development of Angular websites using Bulma, the following <code>@angular-bulma/components</code> components are implemented:</p>
+    <ul>
+      <li><a routerLink="/components/carousel">Carousel</a></li>
+      <li><a routerLink="/compnents/icon">Icon</a></li>
+    </ul>
+  </div>
+</section>

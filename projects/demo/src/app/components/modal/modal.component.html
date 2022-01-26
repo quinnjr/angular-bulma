@@ -1,0 +1,30 @@
+<div class="columns">
+  <div class="column">
+    <section class="section">
+      <bu-modal [(show)]="showModal"
+        [card]="false"
+      >
+        <div class="box">
+          <h1>Hello!</h1>
+          <p>I am a modal!</p>
+        </div>
+      </bu-modal>
+      <button class="button is-success is-large"
+        (click)="showModal = true"
+      >Launch Simple Modal</button>
+    </section>
+    <section class="section">
+      <bu-modal [(show)]="showCardModal"
+        [card]="true"
+        card-title="Test Modal"
+      >
+        <h1>Hello!</h1>
+        <p>I am a modal!</p>
+      </bu-modal>
+      <button class="button is-success is-large"
+        (click)="showCardModal = true"
+      >Launch Card Modal</button>
+    </section>
+  </div>
+  <div class="column is-2"></div>
+</div>

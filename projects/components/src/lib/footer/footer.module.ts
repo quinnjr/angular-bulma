@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer.component';
+import { BulmaFooterComponent } from './footer.component';
 
 @NgModule({
-  declarations: [FooterComponent],
+  declarations: [BulmaFooterComponent],
   imports: [CommonModule]
 })
 export class BulmaFooterModule {}

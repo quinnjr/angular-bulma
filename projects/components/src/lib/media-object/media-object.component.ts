@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './media-object.component.html',
   styleUrls: ['./media-object.component.scss']
 })
-export class MediaObjectComponent {
+export class BulmaMediaObjectComponent {
   constructor() {}
 }

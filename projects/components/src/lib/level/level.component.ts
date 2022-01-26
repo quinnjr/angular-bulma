@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './level.component.html',
   styleUrls: ['./level.component.scss']
 })
-export class LevelComponent {
+export class BulmaLevelComponent {
   constructor() {}
 }

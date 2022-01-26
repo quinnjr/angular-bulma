@@ -59,6 +59,7 @@
     "@angular/router": "^13.1.0",
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@types/glob": "^7.2.0",
     "@types/jest": "^27.0.3",
     "@types/lodash.isboolean": "^3.0.6",
