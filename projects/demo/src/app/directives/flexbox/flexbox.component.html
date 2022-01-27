@@ -1,0 +1,178 @@
+<div class="columns">
+  <div class="column is-10">
+    <section class="section">
+      <h1 class="title">Flexbox Directives</h1>
+      <h2 class="subtitle">Helpers for all <strong>Flexbox</strong> properties</h2>
+    </section>
+    <section class="section" id="overview">
+      <div class="content">
+        Combined with the <code>bu-is-flex</code> directive, all of the <strong>Flexbox CSS properties</strong> are available as <code>@angular-bulma/directives</code> directives:
+        <ul>
+          <li><code>flex-direction</code></li>
+          <li><code>flex-wrap</code></li>
+          <li><code>justify-content</code></li>
+          <li><code>align-content</code></li>
+          <li><code>align-items</code></li>
+          <li><code>align-self</code></li>
+          <li><code>flex-grow</code></li>
+          <li><code>flex-shrink</code></li>
+        </ul>
+       </div>
+    </section>
+    <section class="section" id="flex-direction">
+      <div class="content">
+        <h3 class="title"><a routerLink="./" fragment="flex-direction">#</a> Flex Direction</h3>
+        <table class="table is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>Directive</th>
+              <th>Property: Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let directive of directions | keyvalue">
+              <td><code>{{ directive.key }}</code></td>
+              <td><code>{{ directive.value }}</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section" id="flex-wrap">
+      <div class="content">
+        <h3 class="title"><a routerLink="./" fragment="flex-wrap">#</a> Flex Wrap</h3>
+        <table class="table is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>Directive</th>
+              <th>Property: Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let directive of wraps | keyvalue">
+              <td><code>{{ directive.key }}</code></td>
+              <td><code>{{ directive.value }}</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section" id="justify-content">
+      <div class="content">
+        <h3 class="title"><a routerLink="./" fragment="justify-content">#</a> Justify Content</h3>
+        <table class="table is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>Directive</th>
+              <th>Property: Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let directive of justifyContent | keyvalue">
+              <td><code>{{ directive.key }}</code></td>
+              <td><code>{{ directive.value }}</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section" id="align-content">
+      <div class="content">
+        <h3 class="title"><a routerLink="./" fragment="align-content">#</a> Align Content</h3>
+        <table class="table is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>Directive</th>
+              <th>Property: Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let directive of alignContent | keyvalue">
+              <td><code>{{ directive.key }}</code></td>
+              <td><code>{{ directive.value }}</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section" id="align-items">
+      <div class="content">
+        <h3 class="title"><a routerLink="./" fragment="align-items">#</a> Align Items</h3>
+        <table class="table is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>Directive</th>
+              <th>Property: Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let directive of alignItems | keyvalue">
+              <td><code>{{ directive.key }}</code></td>
+              <td><code>{{ directive.value }}</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section" id="align-self">
+      <div class="content">
+        <h3 class="title"><a routerLink="./" fragment="align-self">#</a> Align Self</h3>
+        <table class="table is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>Directive</th>
+              <th>Property: Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let directive of alignSelf | keyvalue">
+              <td><code>{{ directive.key }}</code></td>
+              <td><code>{{ directive.value }}</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section" id="flex-grow-shrink">
+      <div class="content">
+        <h3 class="title"><a routerLink="./" fragment="flex-grow-shrink">#</a> Flex Grow & Flex Shrink</h3>
+        <table class="table is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>Directive</th>
+              <th>Property: Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let directive of flexGrowShrink | keyvalue">
+              <td><code>{{ directive.key }}</code></td>
+              <td><code>{{ directive.value }}</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <hr />
+    <div class="level">
+      <div class="level-left">
+        <a
+          class="button is-primary"
+          [routerLink]="['directives', 'color']"
+        >
+          &laquo; Colors
+        </a>
+      </div>
+      <div class="level-right">
+        <a
+          class="button is-primary"
+          [routerLink]="['directives', 'other']"
+        >
+          Other &raquo;
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+
+  </div>
+</div>

@@ -9,10 +9,8 @@ import hljs from 'highlight.js';
 
 @Component({
   selector: 'app-code-snippet',
-  template: `
-    <p class="snippet-title">{{ title }}</p>
-    <ng-content></ng-content>
-  `,
+  template: `<p class="snippet-title">{{ title }}</p>
+    <ng-content></ng-content>`,
   styleUrls: ['./code-snippet.component.scss']
 })
 export class CodeSnippetComponent implements AfterViewInit {

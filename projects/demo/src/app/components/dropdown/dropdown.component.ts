@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from '../../navigation.service';
 
 @Component({
   selector: 'app-dropdown',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent {
-  constructor() {}
+  constructor(public readonly navigationService: NavigationService) {}
 }

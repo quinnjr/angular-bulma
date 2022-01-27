@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LevelComponent } from './level.component';
+import { BulmaLevelComponent } from './level.component';
 
 describe('LevelComponent', () => {
-  let component: LevelComponent;
-  let fixture: ComponentFixture<LevelComponent>;
+  let component: BulmaLevelComponent;
+  let fixture: ComponentFixture<BulmaLevelComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LevelComponent]
+      declarations: [BulmaLevelComponent]
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LevelComponent);
+    fixture = TestBed.createComponent(BulmaLevelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

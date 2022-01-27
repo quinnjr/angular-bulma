@@ -14,7 +14,7 @@
       <a class="navbar-link">Theme</a>
       <div class="navbar-dropdown">
         <a
-          *ngFor="let theme of themes"
+          *ngFor="let theme of (themesKeys | async)"
           class="navbar-item"
           (click)="changeStylesheet(theme); isDropdownActive = false"
         >{{ theme }}</a>
@@ -35,38 +35,44 @@
   </div>
 </bu-navbar>
 <div class="columns" style="margin: 0.5rem 0rem">
-  <div class="column is-2">
+  <div class="column is-2" appFloatable style="overflow-y: scroll">
     <bu-menu>
       <bu-menu-label>Concepts</bu-menu-label>
       <bu-menu-list>
         <ng-container *ngFor="let concept of concepts">
-          <a [routerLink]="[concept]">{{ capitalizeFirstLetter(concept) }}</a>
+          <a [routerLink]="[concept]" routerLinkActive="is-active">{{ concept | titlecase }}</a>
         </ng-container>
       </bu-menu-list>
-      <bu-menu-label>Elements</bu-menu-label>
+      <bu-menu-label>Elements <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@angular-bulma/elements"></bu-menu-label>
       <bu-menu-list>
+        <a [routerLink]="['elements', 'overview'] " routerLinkActive="is-active">Overview</a>
         <ng-container *ngFor="let element of elements">
-          <a [routerLink]="['elements', element]">{{ capitalizeFirstLetter(element) }}</a>
+          <a [routerLink]="['elements', element]" routerLinkActive="is-active">{{ element | titlecase }}</a>
         </ng-container>
       </bu-menu-list>
-      <bu-menu-label>Components</bu-menu-label>
+      <bu-menu-label>Components <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@angular-bulma/components"></bu-menu-label>
       <bu-menu-list>
+        <a [routerLink]="['components', 'overview'] " routerLinkActive="is-active">Overview</a>
         <ng-container *ngFor="let component of components">
-          <a [routerLink]="['components', component]">{{ capitalizeFirstLetter(component) }}</a>
+          <a [routerLink]="['components', component]" routerLinkActive="is-active">{{ component | titlecase }}</a>
         </ng-container>
       </bu-menu-list>
-      <bu-menu-label>Directives</bu-menu-label>
+      <bu-menu-label>Directives <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@angular-bulma/directives"></bu-menu-label>
       <bu-menu-list>
+        <a [routerLink]="['directives', 'overview'] " routerLinkActive="is-active">Overview</a>
         <ng-container *ngFor="let directive of directives">
-          <a [routerLink]="['directives', directive]">{{ capitalizeFirstLetter(directive) }}</a>
+          <a [routerLink]="['directives', directive]" routerLinkActive="is-active">{{ directive | titlecase }}</a>
         </ng-container>
       </bu-menu-list>
     </bu-menu>
   </div>
-  <div class="column">
+  <div class="column is-8">
     <div class="container">
       <router-outlet></router-outlet>
     </div>
+  </div>
+  <div class="column is-2" appFloatable>
+    <router-outlet name="sidebar"></router-outlet>
   </div>
 </div>
 <link #stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet" type="text/css" />

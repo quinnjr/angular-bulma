@@ -1,0 +1,32 @@
+<bu-menu>
+  <bu-menu-list>
+    <a
+      routerLink="/components/breadcrumbs"
+      fragment="intro"
+      [ngClass]="{
+        'is-active': (navigationService.activeFragment | async) === 'intro'
+      }"
+    >Introduction</a>
+    <a
+      routerLink="/components/breadcrumbs"
+      fragment="alignment"
+      [ngClass]="{
+        'is-active': (navigationService.activeFragment | async) === 'alignment'
+      }"
+    >Alignment</a>
+    <a
+      routerLink="/components/breadcrumbs"
+      fragment="separators"
+      [ngClass]="{
+        'is-active': (navigationService.activeFragment | async) === 'separators'
+      }"
+    >Separators</a>
+    <a
+      routerLink="/components/breadcrumbs"
+      fragment="sizes"
+      [ngClass]="{
+        'is-active': (navigationService.activeFragment | async) === 'sizes'
+      }"
+    >Sizes</a>
+  </bu-menu-list>
+</bu-menu>
