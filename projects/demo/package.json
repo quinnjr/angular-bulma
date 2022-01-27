@@ -1,6 +1,6 @@
 {
   "name": "@angular-bulma/demo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Demo application to show off the `angular-bulma` project",
   "main": "src/main.ts",
   "private": true,
