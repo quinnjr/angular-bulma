@@ -1,26 +1,26 @@
 <div class="columns">
   <div class="column">
-    <section class="section">
+    <section class="section" id="modal">
       <bu-modal [(show)]="showModal"
-        [card]="false"
       >
         <div class="box">
           <h1>Hello!</h1>
           <p>I am a modal!</p>
+          <figure class="image is-4by5">
+            <img src="https://placedog.net/480/640" />
+          </figure>
         </div>
       </bu-modal>
       <button class="button is-success is-large"
         (click)="showModal = true"
       >Launch Simple Modal</button>
     </section>
-    <section class="section">
-      <bu-modal [(show)]="showCardModal"
-        [card]="true"
-        card-title="Test Modal"
-      >
-        <h1>Hello!</h1>
-        <p>I am a modal!</p>
-      </bu-modal>
+    <section class="section" id="card-modal">
+      <bu-card-modal [(show)]="showCardModal"
+        title="Test Modal">
+          <h1>Hello!</h1>
+          <p>I am a card modal!</p>
+      </bu-card-modal>
       <button class="button is-success is-large"
         (click)="showCardModal = true"
       >Launch Card Modal</button>

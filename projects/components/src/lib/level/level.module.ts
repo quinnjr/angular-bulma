@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LevelComponent } from './level.component';
+import { BulmaLevelComponent } from './level.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [LevelComponent]
+  declarations: [BulmaLevelComponent]
 })
 export class BulmaLevelModule {}
