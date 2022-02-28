@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {
-  BulmaCarouselComponent,
-  BulmaCarouselItemComponent
+  BulmaCarouselSlideDirective,
+  BulmaCarouselComponent
 } from './carousel.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [BulmaCarouselComponent, BulmaCarouselItemComponent],
-  exports: [BulmaCarouselComponent, BulmaCarouselItemComponent]
+  declarations: [BulmaCarouselComponent, BulmaCarouselSlideDirective],
+  exports: [BulmaCarouselComponent, BulmaCarouselSlideDirective]
 })
 export class BulmaCarouselModule {}
