@@ -1,58 +1,25 @@
 /* eslint-disable no-underscore-dangle */
 
 import {
-  AfterContentChecked,
-  AfterContentInit,
-  AfterViewInit,
   ChangeDetectionStrategy,
-  ChangeDetectorRef,
   Component,
-  ContentChildren,
-  Directive,
   ElementRef,
-  EventEmitter,
-  Inject,
   Input,
   OnInit,
-  OnDestroy,
-  Output,
-  PLATFORM_ID,
   QueryList,
   Renderer2,
-  TemplateRef,
   ViewChild,
   ViewChildren,
   ViewEncapsulation,
   HostBinding
 } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-import {
-  distinctUntilChanged,
-  combineLatest,
-  NEVER,
-  Observable,
-  Subject,
-  timer,
-  zip,
-  BehaviorSubject
-} from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import merge from 'lodash.mergewith';
 
 import { BulmaCarouselOptions } from './carousel-options';
 import { BULMA_CAROUSEL_DEFAULT_OPTIONS } from './default-options';
-
-let nextId = 0;
-
-@Directive({
-  selector: 'ng-template[buCarouselSlide]'
-})
-export class BulmaCarouselSlideDirective {
-  @Input() id = `ngb-slide-${nextId++}`;
-
-  @Output() slid: EventEmitter<boolean> = new EventEmitter(false);
-
-  constructor(public readonly templateRef: TemplateRef<any>) {}
-}
+import { BulmaCarouselItem } from './carousel-item';
+import { values } from 'cypress/types/lodash';
 
 @Component({
   selector: 'bu-carousel',
@@ -78,8 +45,8 @@ export class BulmaCarouselSlideDirective {
         *ngFor="let slide of slides"
         [class.active]="slide.id === activeId"
         role="tab"
-        [attr.aria-labelledby]="'slide-' + slide.id"
-        [attr.aria-controls]="'slide-' + slide.id"
+        [attr.aria-labelledby]="slide.id"
+        [attr.aria-controls]="slide.id"
         [attr.aria-selected]="slide.id === activeId"
         (click)="focus(); select(slide.id)"
       ></button>
@@ -88,10 +55,10 @@ export class BulmaCarouselSlideDirective {
       <div
         *ngFor="let slide of slides; index as idx; count as c"
         class="carousel-item"
-        [id]="'slide-' + slide.id"
+        [id]="slide.id"
         role="tabpanel"
       >
-        <span class="visually-hidden">Slide {{ i + 1 }} of {{ c }}</span>
+        <span class="visually-hidden">Slide {{ idx + 1 }} of {{ c }}</span>
         <ng-template [ngTemplateOutlet]="slide.templateRef"></ng-template>
       </div>
     </div>
@@ -114,9 +81,7 @@ export class BulmaCarouselSlideDirective {
   `,
   styleUrls: ['./carousel.component.scss']
 })
-export class BulmaCarouselComponent
-  implements AfterContentInit, AfterContentChecked, AfterViewInit, OnDestroy
-{
+export class BulmaCarouselComponent implements OnInit {
   @HostBinding('class')
   public class = 'carousel slide';
 
@@ -126,65 +91,21 @@ export class BulmaCarouselComponent
   @HostBinding('tabIndex')
   public tabIndex = 0;
 
-  @Input() activeId!: string;
+  @Input() public keyboard = false;
 
-  @Input() keyboard = true;
+  @Input() public interval = 500;
 
-  @Input()
-  set interval(value: number) {
-    this._interval.next(value);
-  }
+  @Input() public pauseOnFocus = true;
 
-  get interval(): number {
-    return this._interval.value;
-  }
+  @Input() public pauseOnHover = true;
 
-  @Input()
-  set pauseOnFocus(value: boolean) {
-    this._pauseOnFocus.next(value);
-  }
+  @Input() public wrap = true;
 
-  get pauseOnFocus(): boolean {
-    return this._pauseOnFocus.value;
-  }
+  @Input() public showNavigationArrows = true;
 
-  @Input()
-  set pauseOnHover(value: boolean) {
-    this._pauseOnHover.next(value);
-  }
+  @Input() public showNavigationIndicators = true;
 
-  get pauseOnHover(): boolean {
-    return this._pauseOnHover.value;
-  }
-
-  @Input()
-  set wrap(value: boolean) {
-    this._wrap.next(value);
-  }
-
-  get wrap(): boolean {
-    return this._wrap.value;
-  }
-
-  @Input() showNavigationArrows = true;
-
-  @Input() showNavigationIndicators = true;
-
-  set mouseHover(value: boolean) {
-    this._mouseHover.next(value);
-  }
-
-  get mouseHover(): boolean {
-    return this._mouseHover.value;
-  }
-
-  set focused(value: boolean) {
-    this._focused.next(value);
-  }
-
-  get focused(): boolean {
-    return this._focused.value;
-  }
+  public pause = false;
 
   @ViewChild('sliderNavigationPrevious')
   public sliderNavigationPrevious!: ElementRef;
@@ -192,32 +113,24 @@ export class BulmaCarouselComponent
   @ViewChild('sliderNavigationNext')
   public sliderNavigationNext!: ElementRef;
 
-  @ViewChildren(BulmaCarouselSlideDirective)
-  public images?: QueryList<BulmaCarouselSlideDirective>;
-
-  private _options: BulmaCarouselOptions = BULMA_CAROUSEL_DEFAULT_OPTIONS;
-
-  private _destroy = new Subject<void>();
-  private _interval = new BehaviorSubject(5000);
-  private _mouseHover = new BehaviorSubject(false);
-  private _focused = new BehaviorSubject(false);
-  private _pauseOnHover = new BehaviorSubject(false);
-  private _pauseOnFocus = new BehaviorSubject(false);
-  private _pause = new BehaviorSubject(false);
-  private _wrap = new BehaviorSubject(false);
-
-  private _transitionIds: [string, string] | null = null;
-
-  constructor(private readonly renderer: Renderer2) {}
+  @ViewChildren(BulmaCarouselItem)
+  public images?: QueryList<BulmaCarouselItem>;
 
   public get options() {
-    return this._options;
+    return this._options.value;
   }
 
   @Input()
   public set options(val: BulmaCarouselOptions) {
-    this._options = merge(this._options, val);
+    const options = this._options.value;
+    this._options.next(merge(options, val));
   }
+
+  private _options: BehaviorSubject<BulmaCarouselOptions> = new BehaviorSubject(
+    BULMA_CAROUSEL_DEFAULT_OPTIONS
+  );
+
+  constructor(private readonly renderer: Renderer2) {}
 
   public ngOnInit() {
     const prevButton = document.createElement('template');
