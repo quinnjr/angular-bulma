@@ -3,7 +3,7 @@ import { BulmaAlertModule } from './alert';
 
 import { BulmaBreadcrumbsModule } from './breadcrumbs/breadcrumbs.module';
 import { BulmaCardModule } from './card/card.module';
-import { BulmaCarouselModule } from './carousel/carousel.module';
+// import { BulmaCarouselModule } from './carousel/carousel.module';
 import { BulmaDropdownModule } from './dropdown/dropdown.module';
 import { BulmaFooterModule } from './footer/footer.module';
 import { BulmaLevelModule } from './level/level.module';
@@ -21,7 +21,7 @@ import { BulmaTabsModule } from './tabs/tabs.module';
     BulmaAlertModule,
     BulmaBreadcrumbsModule,
     BulmaCardModule,
-    BulmaCarouselModule,
+    // BulmaCarouselModule,
     BulmaDropdownModule,
     BulmaFooterModule,
     BulmaLevelModule,

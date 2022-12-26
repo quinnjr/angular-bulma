@@ -4,7 +4,7 @@
 export * from './lib/alert';
 export * from './lib/breadcrumbs';
 export * from './lib/card';
-export * from './lib/carousel';
+// export * from './lib/carousel';
 export * from './lib/dropdown';
 export * from './lib/footer';
 export * from './lib/level';

@@ -1,6 +1,6 @@
 {
   "name": "@angular-bulma/directives",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "scripts": {
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
     "generate": "pnpm ts-node ./bin/generate-directives.ts",
@@ -8,8 +8,8 @@
     "build": "ng-packgr"
   },
   "peerDependencies": {
-    "@angular/common": "^13.0.0 || ^14.0.0",
-    "@angular/core": "^13.0.0 || ^14.0.0"
+    "@angular/common": "^13.0.0 || ^14.0.0 || ^15.0.0",
+    "@angular/core": "^13.0.0 || ^14.0.0 || ^15.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0",
